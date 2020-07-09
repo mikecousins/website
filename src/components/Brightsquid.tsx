@@ -8,14 +8,14 @@ import JobDescription from './Job/JobDescription';
 const Brightsquid = () => (
   <Job>
     <JobCompany>
-      Brightquid
+      Brightsquid
     </JobCompany>
-    <JobDate>
-      July 2014 - November 2019
-    </JobDate>
     <JobTitle>
       Senior Front-End Architect
     </JobTitle>
+    <JobDate>
+      July 2014 - November 2019
+    </JobDate>
     <JobDescription>
       <ul className="list-disc ml-8">
         <li>Healthcare telemedicine startup, focused on remote communities and temporarily pivoting to COVID-19 support</li>

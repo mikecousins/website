@@ -10,12 +10,13 @@ const CalgaryScientific = () => (
     <JobCompany>
       Calgary Scientific/PureWeb
     </JobCompany>
-    <JobDate>
-      August 2010 - July 2012
-    </JobDate>
     <JobTitle>
       Software Developer
     </JobTitle>
+    <JobDate>
+      August 2010 - July 2012
+    </JobDate>
+
     <JobDescription>
       <ul className="list-disc ml-8">
         <li>Healthcare telemedicine startup, focused on remote communities and temporarily pivoting to COVID-19 support</li>

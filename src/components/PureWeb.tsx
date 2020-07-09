@@ -10,12 +10,12 @@ const PureWeb = () => (
     <JobCompany>
       Calgary Scientific/PureWeb
     </JobCompany>
-    <JobDate>
-      November 2019 - July 2020
-    </JobDate>
     <JobTitle>
       Contract Software Developer
     </JobTitle>
+    <JobDate>
+      November 2019 - July 2020
+    </JobDate>
     <JobDescription>
       <ul className="list-disc ml-8">
         <li>Healthcare telemedicine startup, focused on remote communities and temporarily pivoting to COVID-19 support</li>

@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 
 const JobDescription: FunctionComponent = ({ children }) => (
-  <div>{children}</div>
+  <div className="text-sm">{children}</div>
 );
 
 export default JobDescription;

@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 
 const JobTitle: FunctionComponent = ({ children }) => (
-  <div>{children}</div>
+  <span className="text-sm">{children}</span>
 );
 
 export default JobTitle;

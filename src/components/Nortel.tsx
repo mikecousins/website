@@ -5,18 +5,17 @@ import JobDate from './Job/JobDate';
 import JobTitle from './Job/JobTitle';
 import JobDescription from './Job/JobDescription';
 
-const Markit = () => (
+const Nortel = () => (
   <Job>
     <JobCompany>
-      Markit
+      Nortel
     </JobCompany>
     <JobTitle>
-      Assistant Vice President – Developer/Technical Lead
+      Software Developer
     </JobTitle>
     <JobDate>
-      July 2012 - July 2014
+      January 2020 - Present
     </JobDate>
-
     <JobDescription>
       <ul className="list-disc ml-8">
         <li>Healthcare telemedicine startup, focused on remote communities and temporarily pivoting to COVID-19 support</li>
@@ -27,4 +26,4 @@ const Markit = () => (
   </Job>
 );
 
-export default Markit;
+export default Nortel;

@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 
 const JobDate: FunctionComponent = ({ children }) => (
-  <div>{children}</div>
+  <div className="font-light text-sm">{children}</div>
 );
 
 export default JobDate;

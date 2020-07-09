@@ -10,14 +10,14 @@ const Passiv = () => (
     <JobCompany>
       Passiv
     </JobCompany>
-    <JobDate>
-      July 2018 - Present
-    </JobDate>
     <JobTitle>
       Front End Architect
     </JobTitle>
+    <JobDate>
+      July 2018 - Present
+    </JobDate>
     <JobDescription>
-      <ul className="list-disc ml-8">
+      <ul className="list-disc ml-6">
         <li>Healthcare telemedicine startup, focused on remote communities and temporarily pivoting to COVID-19 support</li>
         <li>Responsible for managing the development team including both local and offshore resources</li>
         <li>Converting business requirements into software architecture and passing technical requirements to the development team</li>

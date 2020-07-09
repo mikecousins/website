@@ -10,12 +10,12 @@ const PurposeMed = () => (
     <JobCompany>
       PurposeMed
     </JobCompany>
-    <JobDate>
-      January 2020 - Present
-    </JobDate>
     <JobTitle>
       VP Software
     </JobTitle>
+    <JobDate>
+      January 2020 - Present
+    </JobDate>
     <JobDescription>
       <ul className="list-disc ml-8">
         <li>Healthcare telemedicine startup, focused on remote communities and temporarily pivoting to COVID-19 support</li>

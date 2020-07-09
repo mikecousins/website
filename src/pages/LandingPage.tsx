@@ -3,13 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import IconLink from '../components/IconLink';
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => (
   <div className="flex h-screen bg-gray-50">
     <div className="p-2 mx-auto my-auto max-w-2xl">
       <h1 className="text-6xl font-serif">Mike Cousins</h1>
       <p className="font-mono">
-        Software professional specializing in front end development, UX and team leadership. React/Typescript, Swift, Kotlin. Crafting modern, simple, user-focused software.
+        Software professional specializing in front end development, UX and team leadership. React/Typescript, Swift, Kotlin. Crafting modern, simple, user-focused software. Check out my <Link to="/resume" className="text-pink-700 hover:text-pink-400 hover:bg-teal-200 hover:underline">resume</Link>.
       </p>
       <div className="text-xl mt-4">
         <IconLink
