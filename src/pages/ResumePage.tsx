@@ -15,7 +15,7 @@ const ResumePage = () => (
     <div className="max-w-7xl mx-auto bg-white">
       <h1 className="text-4xl font-extrabold font-serif p-4">Mike Cousins</h1>
       <h3 className="font-semibold w-full px-4 uppercase">Experience</h3>
-      <div className="grid grid-cols-2 gap-4 p-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4">
         <PurposeMed />
         <Passiv />
         <PureWeb />
@@ -27,7 +27,7 @@ const ResumePage = () => (
         <Nortel />
       </div>
       <h3 className="font-semibold w-full px-4 uppercase">Education</h3>
-      <div className="grid grid-cols-2 gap-6 p-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 p-4">
         <UVic />
       </div>
     </div>
