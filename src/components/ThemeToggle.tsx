@@ -9,6 +9,7 @@ const ThemeToggle = () => {
 
   return (
     <span
+      id="theme-toggle"
       role="checkbox"
       tabIndex={0}
       aria-checked="false"
