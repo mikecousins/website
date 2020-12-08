@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useState, createContext } from 'react';
+import { FunctionComponent, useState, createContext } from 'react';
 
 type Theme = 'light' | 'dark';
 
