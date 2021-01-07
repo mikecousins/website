@@ -16,7 +16,7 @@ const LandingPage = () => {
       <div className="p-2 mx-auto my-auto max-w-2xl">
         <h1 className="text-6xl font-serif leading-none mb-2">Mike Cousins</h1>
         <p className="font-mono">
-          Software professional specializing in front end development, UX and team leadership. React/Typescript, Swift, Kotlin. Crafting modern, simple, user-focused software. Check out my <Link to="/resume" className="text-pink-700 hover:text-pink-400 hover:bg-teal-200 hover:underline">resume</Link>.
+          Software professional specializing in front end development, UX and team leadership. React/Typescript, Swift, Kotlin. Crafting modern, simple, user-focused software.
         </p>
         <div className="text-xl mt-4">
           <IconLink
