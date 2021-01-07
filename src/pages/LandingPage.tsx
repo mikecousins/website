@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import clsx from 'clsx';
-import { Link } from 'react-router-dom';
 import IconLink from '../components/IconLink';
 import { store } from '../providers/ThemeProvider';
 import ThemeToggle from '../components/ThemeToggle';
@@ -12,7 +11,10 @@ const LandingPage = () => {
   const { theme } = useContext(store);
   
   return (
-    <div className={clsx('flex h-screen transition-colors ease-in-out duration-1000', theme === 'light' ? 'text-gray-800 bg-gray-50' : ' text-gray-100 bg-gray-700')}>
+    <div className={clsx(
+        'flex h-screen transition-colors ease-in-out duration-1000',
+        theme === 'light' ? 'text-gray-800 bg-gray-50' : ' text-gray-100 bg-gray-700'
+    )}>
       <div className="p-2 mx-auto my-auto max-w-2xl">
         <h1 className="text-6xl font-serif leading-none mb-2">Mike Cousins</h1>
         <p className="font-mono">
