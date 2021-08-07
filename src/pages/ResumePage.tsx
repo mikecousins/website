@@ -1,4 +1,3 @@
-import React from 'react';
 import PurposeMed from '../components/PurposeMed';
 import PureWeb from '../components/PureWeb';
 import Brightsquid from '../components/Brightsquid';

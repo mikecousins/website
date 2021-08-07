@@ -11,8 +11,7 @@
     "clsx": "1.1.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-router-dom": "5.2.0",
-    "react-scripts": "4.0.1"
+    "react-router-dom": "5.2.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "5.11.8",
@@ -23,20 +22,17 @@
     "@types/react": "17.0.0",
     "@types/react-dom": "17.0.0",
     "@types/react-router-dom": "5.1.7",
+    "@vitejs/plugin-react-refresh": "1.3.6",
     "autoprefixer": "10.2.0",
-    "cross-env": "7.0.3",
-    "postcss": "8.2.3",
-    "tailwindcss": "2.0.2",
-    "typescript": "4.1.3"
+    "postcss": "8.3.6",
+    "tailwindcss": "2.2.7",
+    "typescript": "4.1.3",
+    "vite": "2.4.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "prestart": "npm run create-css",
-    "prebuild": "cross-env NODE_ENV=production npm run create-css",
-    "create-css": "npx tailwindcss build node_modules/tailwindcss/tailwind.css -o src/tailwind.css",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
   },
   "eslintConfig": {
     "extends": [

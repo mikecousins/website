@@ -1,4 +1,3 @@
-import React from 'react';
 import Job from './Job';
 import JobCompany from './Job/JobCompany';
 import JobDate from './Job/JobDate';

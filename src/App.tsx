@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import ResumePage from './pages/ResumePage';
 import LandingPage from './pages/LandingPage';

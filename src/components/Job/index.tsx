@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import { FunctionComponent } from 'react';
 
 const Job: FunctionComponent = ({ children }) => (
   <div className="bg-gray-50 rounded-lg shadow p-4">
