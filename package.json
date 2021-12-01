@@ -5,7 +5,7 @@
   "license": "",
   "scripts": {
     "postinstall": "remix setup cloudflare-workers",
-    "build": "remix build",
+    "build": "npm run build:css && remix build",
     "build:css": "tailwindcss -o ./app/tailwind.css",
     "remix:watch": "remix watch",
     "wrangler:dev": "npx wrangler pages dev ./public",
