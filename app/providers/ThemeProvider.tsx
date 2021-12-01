@@ -7,22 +7,15 @@ type ThemeContext = {
   toggleTheme: () => void;
 };
 
-let matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-if(matched)
-	console.log('Currently in dark mode');
-else
-	console.log('Currently not in dark mode');
-
 export const store = createContext<ThemeContext>({
-  theme: matched ? 'dark' : 'light',
+  theme: 'light',
   toggleTheme: () => {}
 });
 
 const { Provider } = store;
 
 const ThemeProvider: FunctionComponent = ({ children }) => {
-  const [theme, setTheme] = useState<Theme>(matched ? 'dark' : 'light');
+  const [theme, setTheme] = useState<Theme>('light');
   return (
     <Provider value={{ theme, toggleTheme: () => setTheme(theme === 'light' ? 'dark' : 'light')}}>
       {children}
