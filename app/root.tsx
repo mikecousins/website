@@ -1,16 +1,13 @@
 import {
-  Link,
   Links,
-  LiveReload,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
   useCatch
 } from "remix";
-import type { LinksFunction } from "remix";
-import clsx from 'clsx';
-import styles from "./tailwind.css";
+import type { LinksFunction } from 'remix';
+import styles from'./tailwind.css';
 import ThemeProvider from './providers/ThemeProvider';
 import Layout from './layouts';
 
@@ -109,7 +106,6 @@ function Document({
         </ThemeProvider>
         <ScrollRestoration />
         <Scripts />
-        {process.env.NODE_ENV === "development" && <LiveReload />}
       </body>
     </html>
   );
