@@ -18,7 +18,7 @@ const Index = () => (
     <p className="font-mono">
       Software professional specializing in front end development, UX and team leadership. React/Typescript, Swift, Kotlin. Crafting modern, simple, user-focused software.
     </p>
-    <div className="text-xl mt-4">
+    <div className="text-xl mt-4 flex">
       <IconLink
         href="https://github.com/mikecousins"
         title="Github"
@@ -44,6 +44,7 @@ const Index = () => (
       >
         <FontAwesomeIcon icon={faEnvelope} />
       </IconLink>
+      <div className="flex-1" />
       <ThemeToggle />
     </div>
   </>
