@@ -25,11 +25,11 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Layout>
-          <ThemeProvider>
+        <ThemeProvider>
+          <Layout>
             <Outlet />
-          </ThemeProvider>
-        </Layout>
+          </Layout>
+        </ThemeProvider>
         <ScrollRestoration />
         <Scripts />
         {process.env.NODE_ENV === "development" && <LiveReload />}
