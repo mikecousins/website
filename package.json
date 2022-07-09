@@ -10,7 +10,7 @@
     "dev": "remix build && run-p \"dev:*\"",
     "start": "cross-env NODE_ENV=production npm run dev:wrangler",
     "prebuild": "npm run build:css",
-    "predev": "npm run dev:css",
+    "predev": "npm run build:css",
     "build:css": "tailwindcss -o ./app/tailwind.css",
     "dev:css": "tailwindcss -o ./app/tailwind.css --watch"
   },
