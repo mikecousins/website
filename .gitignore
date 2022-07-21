@@ -13,3 +13,4 @@ app/tailwind.css
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+api/index.js

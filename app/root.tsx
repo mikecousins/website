@@ -5,8 +5,8 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-} from 'remix';
-import type { LinksFunction } from 'remix';
+} from '@remix-run/react';
+import type { LinksFunction } from '@remix-run/react';
 import styles from './tailwind.css';
 import ThemeProvider from './providers/ThemeProvider';
 import Layout from './layouts';
