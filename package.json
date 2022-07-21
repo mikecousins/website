@@ -4,7 +4,7 @@
   "description": "",
   "license": "",
   "scripts": {
-    "build": "remix build",
+    "build": "npm run build:css && remix build",
     "dev:remix": "remix watch",
     "dev:wrangler": "cross-env NODE_ENV=development wrangler pages dev ./public",
     "dev": "remix build && run-p \"dev:*\"",
@@ -45,5 +45,6 @@
     "node": ">=14"
   },
   "sideEffects": false,
-  "main": "dist/worker.js"
+  "main": "dist/worker.js",
+  "packageManager": "yarn@3.2.1"
 }
