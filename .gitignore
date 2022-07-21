@@ -14,3 +14,4 @@ app/tailwind.css
 !.yarn/sdks
 !.yarn/versions
 api/index.js
+api/index.js.map
