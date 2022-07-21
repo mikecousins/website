@@ -9,7 +9,7 @@ type ThemeContext = {
 
 export const store = createContext<ThemeContext>({
   theme: 'light',
-  toggleTheme: () => {}
+  toggleTheme: () => {},
 });
 
 const { Provider } = store;
@@ -17,10 +17,15 @@ const { Provider } = store;
 const ThemeProvider: FunctionComponent = ({ children }) => {
   const [theme, setTheme] = useState<Theme>('light');
   return (
-    <Provider value={{ theme, toggleTheme: () => setTheme(theme === 'light' ? 'dark' : 'light')}}>
+    <Provider
+      value={{
+        theme,
+        toggleTheme: () => setTheme(theme === 'light' ? 'dark' : 'light'),
+      }}
+    >
       {children}
     </Provider>
   );
-}
+};
 
 export default ThemeProvider;

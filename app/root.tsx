@@ -7,12 +7,12 @@ import {
   ScrollRestoration,
 } from 'remix';
 import type { LinksFunction } from 'remix';
-import styles from'./tailwind.css';
+import styles from './tailwind.css';
 import ThemeProvider from './providers/ThemeProvider';
 import Layout from './layouts';
 
 export let links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: styles }];
+  return [{ rel: 'stylesheet', href: styles }];
 };
 
 export default function App() {
@@ -32,7 +32,7 @@ export default function App() {
         </ThemeProvider>
         <ScrollRestoration />
         <Scripts />
-        {process.env.NODE_ENV === "development" && <LiveReload />}
+        {process.env.NODE_ENV === 'development' && <LiveReload />}
       </body>
     </html>
   );

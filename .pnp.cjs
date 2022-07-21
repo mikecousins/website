@@ -50,6 +50,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cross-env", "npm:7.0.3"],\
             ["eslint", "npm:8.20.0"],\
             ["npm-run-all", "npm:4.1.5"],\
+            ["prettier", "npm:2.7.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:f74a50b23e1e4573bd668c17829955eb37423d7fd6d81e6c18a256af52c97f44a9dbe0ebff062b5b04bdceebc7c1414720574936d4b628fe0054c71980d440f2#npm:18.2.0"],\
             ["remix", "npm:1.6.4"],\
@@ -9311,6 +9312,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cross-env", "npm:7.0.3"],\
             ["eslint", "npm:8.20.0"],\
             ["npm-run-all", "npm:4.1.5"],\
+            ["prettier", "npm:2.7.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:f74a50b23e1e4573bd668c17829955eb37423d7fd6d81e6c18a256af52c97f44a9dbe0ebff062b5b04bdceebc7c1414720574936d4b628fe0054c71980d440f2#npm:18.2.0"],\
             ["remix", "npm:1.6.4"],\
@@ -10501,6 +10503,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/prettier-npm-2.6.1-94a3731152-78be1f8a3d.zip/node_modules/prettier/",\
           "packageDependencies": [\
             ["prettier", "npm:2.6.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.7.1", {\
+          "packageLocation": "./.yarn/cache/prettier-npm-2.7.1-d1f40f5e1a-55a4409182.zip/node_modules/prettier/",\
+          "packageDependencies": [\
+            ["prettier", "npm:2.7.1"]\
           ],\
           "linkType": "HARD"\
         }]\

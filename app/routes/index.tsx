@@ -1,18 +1,18 @@
-import type { MetaFunction } from "remix";
-import IconLink from "../components/IconLink";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import type { MetaFunction } from 'remix';
+import IconLink from '../components/IconLink';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faGithub,
   faLinkedin,
   faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import ThemeToggle from "../components/ThemeToggle";
+} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import ThemeToggle from '../components/ThemeToggle';
 
 export let meta: MetaFunction = () => {
   return {
-    title: "Mike Cousins",
-    description: "The personal site of Mike Cousins",
+    title: 'Mike Cousins',
+    description: 'The personal site of Mike Cousins',
   };
 };
 
