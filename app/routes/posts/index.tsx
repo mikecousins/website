@@ -3,7 +3,7 @@ import { Link, useLoaderData } from "@remix-run/react";
 
 import * as postA from "./dr-gillis-1.md";
 
-function postFromModule(mod) {
+function postFromModule(mod: any) {
   return {
     ...mod.attributes,
   };
@@ -24,7 +24,7 @@ export default function Index() {
 
   return (
     <ul>
-      {posts.map((post) => (
+      {posts.map((post: any) => (
         <li key={post.slug}>
           <Link to={post.slug}>*{post.title}*</Link>
           {post.description ? (
