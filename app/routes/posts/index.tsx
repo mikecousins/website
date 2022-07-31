@@ -5,8 +5,7 @@ import * as postA from "./dr-gillis-1.md";
 
 function postFromModule(mod) {
   return {
-    slug: mod.filename.replace(/\.mdx?$/, ""),
-    ...mod.attributes.meta,
+    ...mod.attributes,
   };
 }
 
@@ -27,7 +26,7 @@ export default function Index() {
     <ul>
       {posts.map((post) => (
         <li key={post.slug}>
-          <Link to={post.slug}>{post.title}</Link>
+          <Link to={post.slug}>*{post.title}*</Link>
           {post.description ? (
             <p>{post.description}</p>
           ) : null}
