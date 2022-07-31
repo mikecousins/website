@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-08-16T08:11:00Z
-description: ""
-draft: false
-slug: "the-wheels-in-motion"
-tags: ["Cancer"]
-title: "The wheel's in motion!"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-08-16T08:11:00Z
+  description: ""
+  draft: false
+  slug: "the-wheels-in-motion"
+  tags: ["Cancer"]
+  title: "The wheel's in motion!"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

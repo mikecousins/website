@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-07-14T20:30:00Z
-description: ""
-draft: false
-slug: "a-lump"
-tags: ["Cancer"]
-title: "A Lump"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-07-14T20:30:00Z
+  description: ""
+  draft: false
+  slug: "a-lump"
+  tags: ["Cancer"]
+  title: "A Lump"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

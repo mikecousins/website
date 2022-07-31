@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-08-04T11:38:00Z
-description: ""
-draft: false
-slug: "cat-scan"
-tags: ["Cancer"]
-title: "CAT Scan"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-08-04T11:38:00Z
+  description: ""
+  draft: false
+  slug: "cat-scan"
+  tags: ["Cancer"]
+  title: "CAT Scan"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2006-01-19T17:09:00Z
-description: ""
-draft: false
-slug: "ouch-2"
-tags: ["Cancer"]
-title: "Ouch #2"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2006-01-19T17:09:00Z
+  description: ""
+  draft: false
+  slug: "ouch-2"
+  tags: ["Cancer"]
+  title: "Ouch #2"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

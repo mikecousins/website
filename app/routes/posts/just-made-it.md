@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-10-05T12:03:00Z
-description: ""
-draft: false
-slug: "just-made-it"
-tags: ["Cancer"]
-title: "Just Made It!"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-10-05T12:03:00Z
+  description: ""
+  draft: false
+  slug: "just-made-it"
+  tags: ["Cancer"]
+  title: "Just Made It!"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

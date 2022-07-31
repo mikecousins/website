@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-08-08T18:49:00Z
-description: ""
-draft: false
-slug: "back-to-waiting"
-tags: ["Cancer"]
-title: "Back to waiting"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-08-08T18:49:00Z
+  description: ""
+  draft: false
+  slug: "back-to-waiting"
+  tags: ["Cancer"]
+  title: "Back to waiting"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

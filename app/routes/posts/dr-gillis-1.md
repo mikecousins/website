@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-07-22T20:47:00Z
-description: ""
-draft: false
-slug: "dr-gillis-1"
-tags: ["Cancer"]
-title: "Dr. Gillis #1"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-07-22T20:47:00Z
+  description: ""
+  draft: false
+  slug: "dr-gillis-1"
+  tags: ["Cancer"]
+  title: "Dr. Gillis #1"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

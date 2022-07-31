@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-09-13T13:41:00Z
-description: ""
-draft: false
-slug: "excuse-me"
-tags: ["Cancer"]
-title: "Excuse me?"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-09-13T13:41:00Z
+  description: ""
+  draft: false
+  slug: "excuse-me"
+  tags: ["Cancer"]
+  title: "Excuse me?"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

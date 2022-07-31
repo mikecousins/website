@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-08-26T15:39:00Z
-description: ""
-draft: false
-slug: "im-oriented"
-tags: ["Cancer"]
-title: "I'm Oriented"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-08-26T15:39:00Z
+  description: ""
+  draft: false
+  slug: "im-oriented"
+  tags: ["Cancer"]
+  title: "I'm Oriented"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

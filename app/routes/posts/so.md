@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2006-05-14T18:39:00Z
-description: ""
-draft: false
-slug: "so"
-tags: ["Cancer"]
-title: "So...."
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2006-05-14T18:39:00Z
+  description: ""
+  draft: false
+  slug: "so"
+  tags: ["Cancer"]
+  title: "So...."
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

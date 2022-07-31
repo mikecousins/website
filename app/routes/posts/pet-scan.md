@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-09-01T11:54:00Z
-description: ""
-draft: false
-slug: "pet-scan"
-tags: ["Cancer"]
-title: "PET Scan"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-09-01T11:54:00Z
+  description: ""
+  draft: false
+  slug: "pet-scan"
+  tags: ["Cancer"]
+  title: "PET Scan"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

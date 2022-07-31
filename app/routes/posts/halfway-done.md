@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-12-03T13:06:00Z
-description: ""
-draft: false
-slug: "halfway-done"
-tags: ["Cancer"]
-title: "Halfway Done!"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-12-03T13:06:00Z
+  description: ""
+  draft: false
+  slug: "halfway-done"
+  tags: ["Cancer"]
+  title: "Halfway Done!"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

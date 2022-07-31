@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-08-05T13:00:00Z
-description: ""
-draft: false
-slug: "vacation"
-tags: ["Cancer"]
-title: "Vacation!"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-08-05T13:00:00Z
+  description: ""
+  draft: false
+  slug: "vacation"
+  tags: ["Cancer"]
+  title: "Vacation!"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

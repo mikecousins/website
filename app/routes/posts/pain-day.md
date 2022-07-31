@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-11-11T10:48:00Z
-description: ""
-draft: false
-slug: "pain-day"
-tags: ["Cancer"]
-title: "Pain Day"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-11-11T10:48:00Z
+  description: ""
+  draft: false
+  slug: "pain-day"
+  tags: ["Cancer"]
+  title: "Pain Day"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-08-18T16:00:00Z
-description: ""
-draft: false
-slug: "first-visit-to-tom-baker"
-tags: ["Cancer"]
-title: "First visit to Tom Baker"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-08-18T16:00:00Z
+  description: ""
+  draft: false
+  slug: "first-visit-to-tom-baker"
+  tags: ["Cancer"]
+  title: "First visit to Tom Baker"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

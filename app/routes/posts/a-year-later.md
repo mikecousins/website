@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2007-03-26T13:10:00Z
-description: ""
-draft: false
-slug: "a-year-later"
-tags: ["Cancer"]
-title: "A Year Later....."
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2007-03-26T13:10:00Z
+  description: ""
+  draft: false
+  slug: "a-year-later"
+  tags: ["Cancer"]
+  title: "A Year Later....."
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

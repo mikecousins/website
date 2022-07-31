@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2006-10-06T07:08:00Z
-description: ""
-draft: false
-slug: "new-condo"
-tags: ["Cancer"]
-title: "New condo!"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2006-10-06T07:08:00Z
+  description: ""
+  draft: false
+  slug: "new-condo"
+  tags: ["Cancer"]
+  title: "New condo!"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

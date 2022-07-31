@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2006-02-12T16:24:00Z
-description: ""
-draft: false
-slug: "nearing-the-end"
-tags: ["Cancer"]
-title: "Nearing the end"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2006-02-12T16:24:00Z
+  description: ""
+  draft: false
+  slug: "nearing-the-end"
+  tags: ["Cancer"]
+  title: "Nearing the end"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

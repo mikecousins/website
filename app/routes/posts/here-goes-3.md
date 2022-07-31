@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-10-19T11:56:00Z
-description: ""
-draft: false
-slug: "here-goes-3"
-tags: ["Cancer"]
-title: "Here goes #3!"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-10-19T11:56:00Z
+  description: ""
+  draft: false
+  slug: "here-goes-3"
+  tags: ["Cancer"]
+  title: "Here goes #3!"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

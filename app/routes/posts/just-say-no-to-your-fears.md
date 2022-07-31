@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-09-27T15:38:00Z
-description: ""
-draft: false
-slug: "just-say-no-to-your-fears"
-tags: ["Cancer"]
-title: "Just say no to your fears!"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-09-27T15:38:00Z
+  description: ""
+  draft: false
+  slug: "just-say-no-to-your-fears"
+  tags: ["Cancer"]
+  title: "Just say no to your fears!"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

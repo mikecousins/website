@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-07-20T20:44:00Z
-description: ""
-draft: false
-slug: "the-ultrasound"
-tags: ["Cancer"]
-title: "The Ultrasound"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-07-20T20:44:00Z
+  description: ""
+  draft: false
+  slug: "the-ultrasound"
+  tags: ["Cancer"]
+  title: "The Ultrasound"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

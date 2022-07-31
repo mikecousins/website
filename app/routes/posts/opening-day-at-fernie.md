@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-12-14T12:01:00Z
-description: ""
-draft: false
-slug: "opening-day-at-fernie"
-tags: ["Cancer"]
-title: "Opening Day at Fernie!"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-12-14T12:01:00Z
+  description: ""
+  draft: false
+  slug: "opening-day-at-fernie"
+  tags: ["Cancer"]
+  title: "Opening Day at Fernie!"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2006-03-08T23:42:00Z
-description: ""
-draft: false
-slug: "finished-but-crying"
-tags: ["Cancer"]
-title: "Finished, but crying"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+   author: "Mike Cousins"
+   category: "Cancer"
+   date: 2006-03-08T23:42:00Z
+   description: ""
+   draft: false
+   slug: "finished-but-crying"
+   tags: ["Cancer"]
+   title: "Finished, but crying"
+   cover: "https://www.fillmurray.com/200/300"
 
 ---
 

@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-09-08T13:25:00Z
-description: ""
-draft: false
-slug: "confirmation"
-tags: ["Cancer"]
-title: "Confirmation"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-09-08T13:25:00Z
+  description: ""
+  draft: false
+  slug: "confirmation"
+  tags: ["Cancer"]
+  title: "Confirmation"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-11-01T14:59:00Z
-description: ""
-draft: false
-slug: "good-news-finally"
-tags: ["Cancer"]
-title: "Good News Finally!"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-11-01T14:59:00Z
+  description: ""
+  draft: false
+  slug: "good-news-finally"
+  tags: ["Cancer"]
+  title: "Good News Finally!"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

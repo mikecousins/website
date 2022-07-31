@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2006-01-29T20:16:00Z
-description: ""
-draft: false
-slug: "back-to-skiing"
-tags: ["Cancer"]
-title: "Back to skiing!"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2006-01-29T20:16:00Z
+  description: ""
+  draft: false
+  slug: "back-to-skiing"
+  tags: ["Cancer"]
+  title: "Back to skiing!"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

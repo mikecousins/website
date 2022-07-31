@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-08-30T13:13:00Z
-description: ""
-draft: false
-slug: "bone-marrow-biopsy"
-tags: ["Cancer"]
-title: "Bone Marrow Biopsy"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-08-30T13:13:00Z
+  description: ""
+  draft: false
+  slug: "bone-marrow-biopsy"
+  tags: ["Cancer"]
+  title: "Bone Marrow Biopsy"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-08-30T13:03:00Z
-description: ""
-draft: false
-slug: "lymph-node-biopsy"
-tags: ["Cancer"]
-title: "Lymph Node Biopsy"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-08-30T13:03:00Z
+  description: ""
+  draft: false
+  slug: "lymph-node-biopsy"
+  tags: ["Cancer"]
+  title: "Lymph Node Biopsy"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

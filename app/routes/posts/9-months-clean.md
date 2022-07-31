@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2006-11-07T22:08:00Z
-description: ""
-draft: false
-slug: "9-months-clean"
-tags: ["Cancer"]
-title: "+9 Months - Clean!"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2006-11-07T22:08:00Z
+  description: ""
+  draft: false
+  slug: "9-months-clean"
+  tags: ["Cancer"]
+  title: "+9 Months - Clean!"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

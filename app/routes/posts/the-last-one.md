@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2006-03-08T11:39:00Z
-description: ""
-draft: false
-slug: "the-last-one"
-tags: ["Cancer"]
-title: "The last one......"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2006-03-08T11:39:00Z
+  description: ""
+  draft: false
+  slug: "the-last-one"
+  tags: ["Cancer"]
+  title: "The last one......"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

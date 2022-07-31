@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2006-02-18T19:29:00Z
-description: ""
-draft: false
-slug: "i-want-to-be-sedated"
-tags: ["Cancer"]
-title: "I want to be sedated"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2006-02-18T19:29:00Z
+  description: ""
+  draft: false
+  slug: "i-want-to-be-sedated"
+  tags: ["Cancer"]
+  title: "I want to be sedated"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

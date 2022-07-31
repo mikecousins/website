@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-09-13T09:12:00Z
-description: ""
-draft: false
-slug: "party"
-tags: ["Cancer"]
-title: "Party!"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-09-13T09:12:00Z
+  description: ""
+  draft: false
+  slug: "party"
+  tags: ["Cancer"]
+  title: "Party!"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

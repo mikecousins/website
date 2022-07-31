@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2008-02-06T13:44:00Z
-description: ""
-draft: false
-slug: "2-years"
-tags: ["Cancer"]
-title: "2 Years!"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2008-02-06T13:44:00Z
+  description: ""
+  draft: false
+  slug: "2-years"
+  tags: ["Cancer"]
+  title: "2 Years!"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

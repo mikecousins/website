@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-07-15T20:38:00Z
-description: ""
-draft: false
-slug: "let-the-fun-begin"
-tags: ["Cancer"]
-title: "Let the fun begin"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-07-15T20:38:00Z
+  description: ""
+  draft: false
+  slug: "let-the-fun-begin"
+  tags: ["Cancer"]
+  title: "Let the fun begin"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

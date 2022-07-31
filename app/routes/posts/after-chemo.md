@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-09-23T08:44:00Z
-description: ""
-draft: false
-slug: "after-chemo"
-tags: ["Cancer"]
-title: "After Chemo"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-09-23T08:44:00Z
+  description: ""
+  draft: false
+  slug: "after-chemo"
+  tags: ["Cancer"]
+  title: "After Chemo"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

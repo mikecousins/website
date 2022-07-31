@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-07-27T20:51:00Z
-description: ""
-draft: false
-slug: "results-are-in"
-tags: ["Cancer"]
-title: "Results are in"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-07-27T20:51:00Z
+  description: ""
+  draft: false
+  slug: "results-are-in"
+  tags: ["Cancer"]
+  title: "Results are in"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

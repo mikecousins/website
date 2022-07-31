@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-09-06T14:33:00Z
-description: ""
-draft: false
-slug: "a-wild-weekend"
-tags: ["Cancer"]
-title: "A Wild Weekend"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-09-06T14:33:00Z
+  description: ""
+  draft: false
+  slug: "a-wild-weekend"
+  tags: ["Cancer"]
+  title: "A Wild Weekend"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

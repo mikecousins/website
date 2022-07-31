@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2006-08-31T11:46:00Z
-description: ""
-draft: false
-slug: "6-months"
-tags: ["Cancer"]
-title: "+6 Months"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+   author: "Mike Cousins"
+   category: "Cancer"
+   date: 2006-08-31T11:46:00Z
+   description: ""
+   draft: false
+   slug: "6-months"
+   tags: ["Cancer"]
+   title: "+6 Months"
+   cover: "https://www.fillmurray.com/200/300"
 
 ---
 

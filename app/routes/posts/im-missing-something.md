@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-09-29T21:06:00Z
-description: ""
-draft: false
-slug: "im-missing-something"
-tags: ["Cancer"]
-title: "I'm missing something..."
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-09-29T21:06:00Z
+  description: ""
+  draft: false
+  slug: "im-missing-something"
+  tags: ["Cancer"]
+  title: "I'm missing something..."
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

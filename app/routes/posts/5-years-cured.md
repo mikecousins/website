@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2011-02-12T21:41:50Z
-description: ""
-draft: false
-slug: "5-years-cured"
-tags: ["Cancer"]
-title: "5 years, cured!"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2011-02-12T21:41:50Z
+  description: ""
+  draft: false
+  slug: "5-years-cured"
+  tags: ["Cancer"]
+  title: "5 years, cured!"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

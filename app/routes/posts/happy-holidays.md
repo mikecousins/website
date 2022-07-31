@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2005-12-27T00:44:00Z
-description: ""
-draft: false
-slug: "happy-holidays"
-tags: ["Cancer"]
-title: "Happy Holidays!"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2005-12-27T00:44:00Z
+  description: ""
+  draft: false
+  slug: "happy-holidays"
+  tags: ["Cancer"]
+  title: "Happy Holidays!"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 

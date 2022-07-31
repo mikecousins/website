@@ -1,13 +1,14 @@
 ---
-author: "Mike Cousins"
-category: "Cancer"
-date: 2007-06-07T13:24:00Z
-description: ""
-draft: false
-slug: "16-month-tests-delayed"
-tags: ["Cancer"]
-title: "+16 Month Tests Delayed"
-cover: "https://www.fillmurray.com/200/300"
+meta:
+  author: "Mike Cousins"
+  category: "Cancer"
+  date: 2007-06-07T13:24:00Z
+  description: ""
+  draft: false
+  slug: "16-month-tests-delayed"
+  tags: ["Cancer"]
+  title: "+16 Month Tests Delayed"
+  cover: "https://www.fillmurray.com/200/300"
 
 ---
 
