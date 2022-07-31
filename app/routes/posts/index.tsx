@@ -5,7 +5,7 @@ import * as postA from "./dr-gillis-1.md";
 
 function postFromModule(mod: any) {
   return {
-    ...mod.meta.attributes,
+    ...mod.attributes.meta,
   };
 }
 
