@@ -43,5 +43,5 @@
   },
   "sideEffects": false,
   "main": "dist/worker.js",
-  "packageManager": "yarn@3.2.1"
+  "packageManager": "npm@8.15.0"
 }
