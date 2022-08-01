@@ -2,6 +2,9 @@ import { json } from '@remix-run/node'; // or cloudflare/deno
 import { Link, useLoaderData } from '@remix-run/react';
 import { compareAsc, parseISO } from 'date-fns';
 
+import * as twoDown from './2-down.md';
+import * as twoYears from './2-years.md';
+import * as threeMonths from './3-months.md';
 import * as drGillis1 from './dr-gillis-1.md';
 import * as drGillis2 from './dr-gillis-2.md';
 import * as fasting from './fasting.md';
@@ -35,11 +38,14 @@ export async function loader() {
   // lets us avoid bundling the actual posts themselves in the bundle for the
   // index page.
   return json([
+    postFromModule(twoDown),
+    postFromModule(twoYears),
+    postFromModule(threeMonths),
     postFromModule(drGillis1),
     postFromModule(drGillis2),
     postFromModule(fasting),
-    postFromModule(firstVisit),
     postFromModule(finished),
+    postFromModule(firstVisit),
   ]);
 }
 
@@ -52,7 +58,7 @@ export default function Index() {
         .sort((a, b) => compareAsc(parseISO(a.date), parseISO(b.date)))
         .map((post) => (
           <li key={post.slug}>
-            <Link to={post.slug}>*{post.title}*</Link>
+            <Link to={post.slug}>{post.title}</Link>
             {post.description ? <p>{post.description}</p> : null}
           </li>
         ))}
