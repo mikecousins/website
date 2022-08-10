@@ -4,7 +4,8 @@ node_modules
 /build
 /public/build
 
-app/tailwind.css
+api
+app/styles/app.css
 
 .yarn/*
 !.yarn/cache
@@ -13,5 +14,3 @@ app/tailwind.css
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-api/index.js
-api/index.js.map
