@@ -1,4 +1,4 @@
-import { FunctionComponent, useState, createContext } from 'react';
+import { useState, createContext, FC, PropsWithChildren } from 'react';
 
 type Theme = 'light' | 'dark';
 
@@ -14,7 +14,7 @@ export const store = createContext<ThemeContext>({
 
 const { Provider } = store;
 
-const ThemeProvider: FunctionComponent = ({ children }) => {
+const ThemeProvider: FC<PropsWithChildren<unknown>> = ({ children }) => {
   const [theme, setTheme] = useState<Theme>('light');
   return (
     <Provider

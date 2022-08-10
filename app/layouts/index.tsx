@@ -1,8 +1,8 @@
-import { FunctionComponent, useContext } from 'react';
+import { FC, PropsWithChildren, useContext } from 'react';
 import clsx from 'clsx';
 import { store } from '../providers/ThemeProvider';
 
-const Layout: FunctionComponent = ({ children }) => {
+const Layout: FC<PropsWithChildren<unknown>> = ({ children }) => {
   const { theme } = useContext(store);
 
   return (
