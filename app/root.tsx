@@ -7,7 +7,7 @@ import {
   ScrollRestoration,
 } from '@remix-run/react';
 import type { LinksFunction } from '@remix-run/react';
-import styles from './tailwind.css';
+import styles from './styles/app.css';
 import ThemeProvider from './providers/ThemeProvider';
 import Layout from './layouts';
 
