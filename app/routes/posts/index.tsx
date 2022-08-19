@@ -5,6 +5,17 @@ import { compareAsc, parseISO } from 'date-fns';
 import * as twoDown from './2-down.md';
 import * as twoYears from './2-years.md';
 import * as threeMonths from './3-months.md';
+import * as fiveYears from './5-years-cured.md';
+import * as sixMonth from './6-months.md';
+import * as nineMonths from './9-months-clean.md';
+import * as sixteenMonthsDelayed from './16-month-tests-delayed.md';
+import * as sixteenMonths from './16-months.md';
+import * as fiveTwelve from './512.md';
+import * as sevenTwelve from './712.md';
+import * as aLump from 'a-lump.md';
+import * as aWildWeekend from 'a-wild-weekend.md';
+import * as aYearLater from './a-year-later.md';
+import * as afterChemo from './after-chemo.md';
 import * as drGillis1 from './dr-gillis-1.md';
 import * as drGillis2 from './dr-gillis-2.md';
 import * as fasting from './fasting.md';
@@ -41,6 +52,17 @@ export async function loader() {
     postFromModule(twoDown),
     postFromModule(twoYears),
     postFromModule(threeMonths),
+    postFromModule(fiveYears),
+    postFromModule(sixMonth),
+    postFromModule(nineMonths),
+    postFromModule(sixteenMonthsDelayed),
+    postFromModule(sixteenMonths),
+    postFromModule(fiveTwelve),
+    postFromModule(sevenTwelve),
+    postFromModule(aLump),
+    postFromModule(aWildWeekend),
+    postFromModule(aYearLater),
+    postFromModule(afterChemo),
     postFromModule(drGillis1),
     postFromModule(drGillis2),
     postFromModule(fasting),

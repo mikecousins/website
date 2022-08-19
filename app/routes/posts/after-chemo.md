@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-09-23T08:44:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "after-chemo"
-  tags: ["Cancer"]
-  title: "After Chemo"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'after-chemo'
+  tags: ['Cancer']
+  title: 'After Chemo'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 I'm feeling pretty much back to normal now. After the first chemo I was nauseous

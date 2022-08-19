@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-09-29T21:06:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "im-missing-something"
-  tags: ["Cancer"]
+  slug: 'im-missing-something'
+  tags: ['Cancer']
   title: "I'm missing something..."
-  cover: "https://www.fillmurray.com/200/300"
-
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 ![](https://photos1.blogger.com/blogger/1294/1387/1600/shaved.jpg)

@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-08-05T13:00:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "vacation"
-  tags: ["Cancer"]
-  title: "Vacation!"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'vacation'
+  tags: ['Cancer']
+  title: 'Vacation!'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 No, not mine, every doctor in the city of Calgary! I need to get a referral to

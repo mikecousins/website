@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-09-08T13:25:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "confirmation"
-  tags: ["Cancer"]
-  title: "Confirmation"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'confirmation'
+  tags: ['Cancer']
+  title: 'Confirmation'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 Just got back from getting my stitches out of my neck. I asked for the results

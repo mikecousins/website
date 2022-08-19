@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2006-10-31T23:34:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "waiting"
-  tags: ["Cancer"]
-  title: "Waiting....."
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'waiting'
+  tags: ['Cancer']
+  title: 'Waiting.....'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 I had my +9 month PET scan and now begins the longest week ever waiting for the

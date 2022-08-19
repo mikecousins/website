@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-10-23T20:46:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "ouch"
-  tags: ["Cancer"]
-  title: "Ouch"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'ouch'
+  tags: ['Cancer']
+  title: 'Ouch'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 I think #3 was the worst so far. I've been pretty sick the entire time since

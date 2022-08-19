@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2008-02-06T13:44:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "2-years"
-  tags: ["Cancer"]
-  title: "2 Years!"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: '2-years'
+  tags: ['Cancer']
+  title: '2 Years!'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 Well, yesterday was my 2 year check up. It actually hasn't been two full years

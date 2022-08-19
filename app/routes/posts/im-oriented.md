@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-08-26T15:39:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "im-oriented"
-  tags: ["Cancer"]
+  slug: 'im-oriented'
+  tags: ['Cancer']
   title: "I'm Oriented"
-  cover: "https://www.fillmurray.com/200/300"
-
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 Just got back from a great session at Tom Baker. My parents, Dawn and Jon all

@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-10-19T11:56:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "here-goes-3"
-  tags: ["Cancer"]
-  title: "Here goes #3!"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'here-goes-3'
+  tags: ['Cancer']
+  title: 'Here goes #3!'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 I had my bloodwork done yesterday and chatted with the doctor a bit. My white

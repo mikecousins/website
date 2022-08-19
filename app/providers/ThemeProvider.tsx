@@ -3,12 +3,10 @@ import { useState, createContext, FC, PropsWithChildren } from 'react';
 type Theme = 'light' | 'dark';
 
 type ThemeContext = {
-  theme: Theme;
   toggleTheme: () => void;
 };
 
 export const store = createContext<ThemeContext>({
-  theme: 'light',
   toggleTheme: () => {},
 });
 
@@ -19,11 +17,10 @@ const ThemeProvider: FC<PropsWithChildren<unknown>> = ({ children }) => {
   return (
     <Provider
       value={{
-        theme,
         toggleTheme: () => setTheme(theme === 'light' ? 'dark' : 'light'),
       }}
     >
-      {children}
+      <div className={theme}>{children}</div>
     </Provider>
   );
 };

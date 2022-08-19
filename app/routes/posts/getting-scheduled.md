@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-08-23T09:05:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "getting-scheduled"
-  tags: ["Cancer"]
-  title: "Getting scheduled"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'getting-scheduled'
+  tags: ['Cancer']
+  title: 'Getting scheduled'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 I'm getting most of my staging scheduled now. PET scan this Thursday,

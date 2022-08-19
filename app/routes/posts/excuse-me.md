@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-09-13T13:41:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "excuse-me"
-  tags: ["Cancer"]
-  title: "Excuse me?"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'excuse-me'
+  tags: ['Cancer']
+  title: 'Excuse me?'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 I have always believed that I caught this early, and I've always feared that I

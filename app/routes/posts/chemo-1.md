@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-09-15T08:23:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "chemo-1"
-  tags: ["Cancer"]
-  title: "Chemo #1"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'chemo-1'
+  tags: ['Cancer']
+  title: 'Chemo #1'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 It turns out they do all of the chemo through a hand IV, I hate hand IVs! It

@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-11-22T14:19:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "skiing-soon"
-  tags: ["Cancer"]
-  title: "Skiing Soon!"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'skiing-soon'
+  tags: ['Cancer']
+  title: 'Skiing Soon!'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 This weekend is my friend Dave's stag and we've got chalets booked in Banff for

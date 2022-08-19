@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-07-22T20:47:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "dr-gillis-1"
-  tags: ["Cancer"]
-  title: "Dr. Gillis #1"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'dr-gillis-1'
+  tags: ['Cancer']
+  title: 'Dr. Gillis #1'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 Dr. Gillis is my new ear, nose and throat specialist and I arrive to hear the

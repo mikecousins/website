@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2006-05-14T18:39:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "so"
-  tags: ["Cancer"]
-  title: "So...."
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'so'
+  tags: ['Cancer']
+  title: 'So....'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 I think this blog is pretty much done. I'll keep you updated with scan results

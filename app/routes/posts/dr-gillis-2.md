@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-07-28T20:53:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "dr-gillis-2"
-  tags: ["Cancer"]
-  title: "Dr. Gillis #2"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'dr-gillis-2'
+  tags: ['Cancer']
+  title: 'Dr. Gillis #2'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 I show up nice and early, the receptionist is very happy and cheerful to me. I

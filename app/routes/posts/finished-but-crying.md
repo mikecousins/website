@@ -1,15 +1,14 @@
 ---
 meta:
-   author: "Mike Cousins"
-   category: "Cancer"
-   date: 2006-03-08T23:42:00Z
-   description: ""
-   draft: false
-   slug: "finished-but-crying"
-   tags: ["Cancer"]
-   title: "Finished, but crying"
-   cover: "https://www.fillmurray.com/200/300"
-
+  author: 'Mike Cousins'
+  category: 'Cancer'
+  date: 2006-03-08T23:42:00Z
+  description: ''
+  draft: false
+  slug: 'finished-but-crying'
+  tags: ['Cancer']
+  title: 'Finished, but crying'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 I can't remember the last time I was crying, probably last year when my
@@ -36,17 +35,14 @@ read all of the condolences left by the members (all people who have gone
 through or who are going through Hodgkins). I completely lost it, and I think I
 did so for two reasons.
 
- 1. She was just an amazing girl. She was probably only 20 but she seemed so
+1.  She was just an amazing girl. She was probably only 20 but she seemed so
     incredibly happy right up until the end. Her comments always included funny
     pictures of her and her friends, she enjoyed life, she made those around her
     happy. She was worried that her sadness would impact her parents so she
     tried to hide it. Why do we lose those who are so good so young?
 
-
- 2. It made me realize my own mortality. My 30% recurrence chances are not good
+2.  It made me realize my own mortality. My 30% recurrence chances are not good
     odds. I've made it this far, but am I really done? I sure hope so.
-
-
 
 Here are some great pictures of Caitlin, she will always be remembered.
 

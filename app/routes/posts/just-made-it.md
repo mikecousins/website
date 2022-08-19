@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-10-05T12:03:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "just-made-it"
-  tags: ["Cancer"]
-  title: "Just Made It!"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'just-made-it'
+  tags: ['Cancer']
+  title: 'Just Made It!'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 Our white blood cell counts are supposed to be between 2 and 8. Last week's test

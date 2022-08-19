@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-08-16T08:11:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "the-wheels-in-motion"
-  tags: ["Cancer"]
+  slug: 'the-wheels-in-motion'
+  tags: ['Cancer']
   title: "The wheel's in motion!"
-  cover: "https://www.fillmurray.com/200/300"
-
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 Dr. Gillis is back in the office so I can resume pestering them over the phone!

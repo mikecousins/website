@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-08-18T16:00:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "first-visit-to-tom-baker"
-  tags: ["Cancer"]
-  title: "First visit to Tom Baker"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'first-visit-to-tom-baker'
+  tags: ['Cancer']
+  title: 'First visit to Tom Baker'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 I'm back from the doctor finally. I had to get a whole bunch of preliminary

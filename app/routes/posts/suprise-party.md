@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-12-29T22:08:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "suprise-party"
-  tags: ["Cancer"]
-  title: "Suprise Party!"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'suprise-party'
+  tags: ['Cancer']
+  title: 'Suprise Party!'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 Wow. I had no idea this was going to happen at all. I was hanging out with my

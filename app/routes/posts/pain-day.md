@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-11-11T10:48:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "pain-day"
-  tags: ["Cancer"]
-  title: "Pain Day"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'pain-day'
+  tags: ['Cancer']
+  title: 'Pain Day'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 Days 5-8 of each cycle are days that I get my Neupogen injections. They

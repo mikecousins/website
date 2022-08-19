@@ -1,14 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-10-25T08:42:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "fasting"
-  tags: ["Cancer"]
-  title: "Fasting"
-  cover: "https://www.fillmurray.com/200/300"
+  slug: 'fasting'
+  tags: ['Cancer']
+  title: 'Fasting'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 It's 10:30 and I have now finished my last food and drink until dinner time.

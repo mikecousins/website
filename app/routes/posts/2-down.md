@@ -1,14 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-10-11T11:16:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "2-down"
-  tags: ["Cancer"]
-  title: "2 Down!"
-  cover: "https://www.fillmurray.com/200/300"
+  slug: '2-down'
+  tags: ['Cancer']
+  title: '2 Down!'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 The second chemo didn't seem to be all that bad so far. First couple days

@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2006-11-07T22:08:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "9-months-clean"
-  tags: ["Cancer"]
-  title: "+9 Months - Clean!"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: '9-months-clean'
+  tags: ['Cancer']
+  title: '+9 Months - Clean!'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 I have no idea why the last one showed activity but my +9 month scan was

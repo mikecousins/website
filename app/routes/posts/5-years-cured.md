@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2011-02-12T21:41:50Z
-  description: ""
+  description: ''
   draft: false
-  slug: "5-years-cured"
-  tags: ["Cancer"]
-  title: "5 years, cured!"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: '5-years-cured'
+  tags: ['Cancer']
+  title: '5 years, cured!'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 I recently had my last check up at the Tom Baker Cancer Center.  It marked my

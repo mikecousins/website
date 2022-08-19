@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react';
+import { FC, PropsWithChildren } from 'react';
 import clsx from 'clsx';
 
 type Props = {
@@ -7,7 +7,7 @@ type Props = {
   first?: boolean;
 };
 
-const IconLink: FunctionComponent<Props> = ({
+const IconLink: FC<PropsWithChildren<Props>> = ({
   children,
   title,
   href,

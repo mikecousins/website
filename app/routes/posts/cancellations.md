@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-08-20T20:57:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "cancellations"
-  tags: ["Cancer"]
-  title: "Cancellations"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'cancellations'
+  tags: ['Cancer']
+  title: 'Cancellations'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 As much as I didn't want this to affect my life, it has started to really affect

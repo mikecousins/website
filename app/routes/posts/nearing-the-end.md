@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2006-02-12T16:24:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "nearing-the-end"
-  tags: ["Cancer"]
-  title: "Nearing the end"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'nearing-the-end'
+  tags: ['Cancer']
+  title: 'Nearing the end'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 I've had 10 out of 12 treatments now with the 2nd last one this Wednesday. I'm

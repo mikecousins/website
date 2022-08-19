@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-09-06T14:33:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "a-wild-weekend"
-  tags: ["Cancer"]
-  title: "A Wild Weekend"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'a-wild-weekend'
+  tags: ['Cancer']
+  title: 'A Wild Weekend'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 I was in the Okanagan with Dawn for the long weekend, visiting my Grandma,

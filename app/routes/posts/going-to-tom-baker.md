@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-08-17T11:15:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "going-to-tom-baker"
-  tags: ["Cancer"]
-  title: "Going to Tom Baker"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'going-to-tom-baker'
+  tags: ['Cancer']
+  title: 'Going to Tom Baker'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 When I talked to the Tom Baker Cancer Centre yesterday they were pretty

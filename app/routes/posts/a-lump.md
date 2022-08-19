@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-07-14T20:30:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "a-lump"
-  tags: ["Cancer"]
-  title: "A Lump"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'a-lump'
+  tags: ['Cancer']
+  title: 'A Lump'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 I feel a lump in my neck in the shower. It's about half the size of a golf ball

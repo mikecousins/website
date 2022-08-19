@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-09-13T09:12:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "party"
-  tags: ["Cancer"]
-  title: "Party!"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'party'
+  tags: ['Cancer']
+  title: 'Party!'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 I had a great time last night! Most of my Calgary friends showed up at the Bull

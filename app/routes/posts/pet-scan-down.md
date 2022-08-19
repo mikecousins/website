@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-08-25T08:17:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "pet-scan-down"
-  tags: ["Cancer"]
-  title: "PET Scan Down!"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'pet-scan-down'
+  tags: ['Cancer']
+  title: 'PET Scan Down!'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 The PET scanner is down today so they rescheduled me for next Wednesday. I guess

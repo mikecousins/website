@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2006-05-30T14:21:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "3-months"
-  tags: ["Cancer"]
-  title: "+3 Months"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: '3-months'
+  tags: ['Cancer']
+  title: '+3 Months'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 Well, it's been 3 months already. I went for my first post treatment check-up

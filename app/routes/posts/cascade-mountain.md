@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-08-01T21:02:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "cascade-mountain"
-  tags: ["Cancer"]
-  title: "Cascade Mountain"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'cascade-mountain'
+  tags: ['Cancer']
+  title: 'Cascade Mountain'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 My friend Dave and I had decided long ago to climb Cascade Mountain, and being

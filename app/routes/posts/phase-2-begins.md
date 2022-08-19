@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2006-03-20T20:30:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "phase-2-begins"
-  tags: ["Cancer"]
-  title: "Phase 2 Begins"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'phase-2-begins'
+  tags: ['Cancer']
+  title: 'Phase 2 Begins'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 Phase 1 (beat cancer) - check

@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-07-15T20:38:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "let-the-fun-begin"
-  tags: ["Cancer"]
-  title: "Let the fun begin"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'let-the-fun-begin'
+  tags: ['Cancer']
+  title: 'Let the fun begin'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 I go to a walk-in clinic with my girlfriend Dawn. I show him the lump and he

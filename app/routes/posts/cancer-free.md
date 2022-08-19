@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2006-01-17T18:37:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "cancer-free"
-  tags: ["Cancer"]
-  title: "Cancer Free!!!!!"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'cancer-free'
+  tags: ['Cancer']
+  title: 'Cancer Free!!!!!'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 Got the results of my PET scan back today and I am officially cancer free! As

@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2006-01-29T20:16:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "back-to-skiing"
-  tags: ["Cancer"]
-  title: "Back to skiing!"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'back-to-skiing'
+  tags: ['Cancer']
+  title: 'Back to skiing!'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 I had a great day at Sunshine Village today. Dave and I headed out and were

@@ -2,3 +2,5 @@
 tailwind.css
 build
 .pnp.*
+.yarn
+api

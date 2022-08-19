@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2005-12-03T13:06:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "halfway-done"
-  tags: ["Cancer"]
-  title: "Halfway Done!"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'halfway-done'
+  tags: ['Cancer']
+  title: 'Halfway Done!'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 I have now finished number 6! They are definitely getting worse. I get this

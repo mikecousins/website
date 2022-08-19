@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2006-01-19T17:09:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "ouch-2"
-  tags: ["Cancer"]
-  title: "Ouch #2"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'ouch-2'
+  tags: ['Cancer']
+  title: 'Ouch #2'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 Chemo is a good way to kill your high. I'm feeling pretty crappy again, but I'm

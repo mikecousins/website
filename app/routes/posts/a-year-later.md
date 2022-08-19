@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2007-03-26T13:10:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "a-year-later"
-  tags: ["Cancer"]
-  title: "A Year Later....."
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'a-year-later'
+  tags: ['Cancer']
+  title: 'A Year Later.....'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 I'm still clean! Sorry this is a bit late, I've been a bit busy with everything.

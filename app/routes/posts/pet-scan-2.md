@@ -1,15 +1,14 @@
 ---
 meta:
-  author: "Mike Cousins"
-  category: "Cancer"
+  author: 'Mike Cousins'
+  category: 'Cancer'
   date: 2006-01-10T15:05:00Z
-  description: ""
+  description: ''
   draft: false
-  slug: "pet-scan-2"
-  tags: ["Cancer"]
-  title: "PET Scan #2"
-  cover: "https://www.fillmurray.com/200/300"
-
+  slug: 'pet-scan-2'
+  tags: ['Cancer']
+  title: 'PET Scan #2'
+  cover: 'https://www.fillmurray.com/200/300'
 ---
 
 Well, I've now finished two-thirds of my chemo and this morning I had my second
