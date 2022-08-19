@@ -1,4 +1,3 @@
-import type { MetaFunction } from 'remix';
 import IconLink from '../components/IconLink';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -8,6 +7,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import ThemeToggle from '../components/ThemeToggle';
+import { MetaFunction } from '@remix-run/node';
 
 export let meta: MetaFunction = () => {
   return {
