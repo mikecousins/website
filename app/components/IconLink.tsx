@@ -17,6 +17,7 @@ const IconLink: FC<PropsWithChildren<Props>> = ({
     href={href}
     className={clsx('py-2 pr-2 mr-2', !first && 'pl-2')}
     title={title}
+    rel="me"
   >
     {children}
     <span className="sr-only">{title}</span>

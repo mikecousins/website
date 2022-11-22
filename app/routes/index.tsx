@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faGithub,
   faLinkedin,
+  faMastodon,
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
@@ -30,6 +31,9 @@ const Index = () => (
       </IconLink>
       <IconLink href="https://twitter.com/mikecousins" title="Twitter">
         <FontAwesomeIcon icon={faTwitter} />
+      </IconLink>
+      <IconLink href="https://hachyderm.io/@mikecousins" title="Mastodon">
+        <FontAwesomeIcon icon={faMastodon} />
       </IconLink>
       <IconLink
         href="https://www.linkedin.com/in/mikecousins/"
