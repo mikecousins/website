@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren, useContext } from 'react';
+import { FC, PropsWithChildren } from 'react';
 
 const Layout: FC<PropsWithChildren<unknown>> = ({ children }) => (
   <div className="flex h-screen transition-colors ease-in-out duration-1000 bg-gradient-to-r from-cyan-100 to-blue-100 dark:from-cyan-900 dark:to-blue-900">

@@ -9,8 +9,9 @@ import {
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import ThemeToggle from '../components/ThemeToggle';
 import { MetaFunction } from '@remix-run/node';
+import Layout from '~/layouts';
 
-export let meta: MetaFunction = () => {
+export const meta: MetaFunction = () => {
   return {
     title: 'Mike Cousins',
     description: 'The personal site of Mike Cousins',
@@ -18,7 +19,7 @@ export let meta: MetaFunction = () => {
 };
 
 const Index = () => (
-  <>
+  <Layout>
     <h1 className="text-6xl font-serif leading-none mb-2">Mike Cousins</h1>
     <p className="font-mono">
       Software professional specializing in front end development, UX and team
@@ -47,7 +48,7 @@ const Index = () => (
       <div className="flex-1" />
       <ThemeToggle />
     </div>
-  </>
+  </Layout>
 );
 
 export default Index;

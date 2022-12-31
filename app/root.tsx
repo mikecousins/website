@@ -25,9 +25,7 @@ export default function App() {
       </head>
       <body>
         <ThemeProvider>
-          <Layout>
-            <Outlet />
-          </Layout>
+          <Outlet />
         </ThemeProvider>
         <ScrollRestoration />
         <Scripts />

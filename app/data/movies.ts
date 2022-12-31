@@ -74,11 +74,12 @@ export const movies: Movie[] = [
   },
   {
     name: 'Pulp Fiction',
+    imdb: '0110912',
     watched: true,
     resolution: '4k',
     source: 'UHD BD',
     remux: true,
-    imdb: '0111161',
+    dolbyVision: true,
   },
   {
     name: 'The Lord Of The Rings: The Fellowship Of The Ring',
