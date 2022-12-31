@@ -49,13 +49,13 @@ const Movies = () => (
             scope="col"
             className="sticky top-0 z-10 border-b border-gray-300 bg-gray-50 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter"
           >
-            Watched
+            DV
           </th>
           <th
             scope="col"
             className="sticky top-0 z-10 border-b border-gray-300 bg-gray-50 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter"
           >
-            IMDb
+            Watched
           </th>
         </tr>
       </thead>

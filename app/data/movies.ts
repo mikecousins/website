@@ -1,68 +1,76 @@
 export type Movie = {
   name: string;
+  imdb: string;
   watched: boolean;
   resolution?: '4k' | '1080p';
   source?: 'UHD BD' | 'BD' | 'Web';
   remux?: boolean;
-  imdb: string;
+  dolbyVision?: boolean;
 };
 
 export const movies: Movie[] = [
   {
     name: 'The Shawshank Redemption',
+    imdb: '0111161',
     watched: true,
     resolution: '4k',
     source: 'UHD BD',
     remux: true,
-    imdb: '0111161',
+    dolbyVision: true,
   },
   {
     name: 'The Godfather',
+    imdb: '0068646',
     watched: true,
     resolution: '4k',
     source: 'UHD BD',
     remux: true,
-    imdb: '0068646',
+    dolbyVision: true,
   },
   {
     name: 'The Dark Knight',
+    imdb: '0468569',
     watched: true,
     resolution: '4k',
     source: 'UHD BD',
     remux: true,
-    imdb: '0468569',
+    dolbyVision: false,
   },
   {
     name: 'The Godfather Part II',
+    imdb: '0071562',
     watched: true,
     resolution: '4k',
     source: 'UHD BD',
     remux: true,
-    imdb: '0111161',
+    dolbyVision: true,
   },
   {
     name: '12 Angry Men',
+    imdb: '0050083',
     watched: true,
-    resolution: '4k',
-    source: 'UHD BD',
-    remux: true,
-    imdb: '0111161',
+    resolution: '1080p',
+    source: 'BD',
+    remux: false,
+    dolbyVision: false,
   },
   {
     name: "Schindler's List",
+    imdb: '0108052',
     watched: true,
     resolution: '4k',
     source: 'UHD BD',
     remux: true,
-    imdb: '0111161',
+    dolbyVision: true,
   },
   {
     name: 'The Lord Of The Rings: The Return Of The King',
+    imdb: '0167260',
     watched: true,
     resolution: '4k',
     source: 'UHD BD',
     remux: true,
-    imdb: '0111161',
+    dolbyVision: true,
   },
   {
     name: 'Pulp Fiction',
@@ -89,7 +97,7 @@ export const movies: Movie[] = [
     imdb: '0111161',
   },
   {
-    name: 'The Shawshank Redemption',
+    name: 'Forrest Gump',
     watched: true,
     resolution: '4k',
     source: 'UHD BD',
@@ -97,7 +105,7 @@ export const movies: Movie[] = [
     imdb: '0111161',
   },
   {
-    name: 'The Godfather',
+    name: 'Fight Club',
     watched: true,
     resolution: '4k',
     source: 'UHD BD',
@@ -105,7 +113,7 @@ export const movies: Movie[] = [
     imdb: '0068646',
   },
   {
-    name: 'The Dark Knight',
+    name: 'The Lord Of The Rings: The Two Towers',
     watched: true,
     resolution: '4k',
     source: 'UHD BD',
@@ -113,7 +121,7 @@ export const movies: Movie[] = [
     imdb: '0468569',
   },
   {
-    name: 'The Godfather Part II',
+    name: 'Inception',
     watched: true,
     resolution: '4k',
     source: 'UHD BD',
@@ -121,7 +129,7 @@ export const movies: Movie[] = [
     imdb: '0111161',
   },
   {
-    name: '12 Angry Men',
+    name: 'Star Wars: Episode V - The Empire Strikes Back',
     watched: true,
     resolution: '4k',
     source: 'UHD BD',
@@ -129,7 +137,7 @@ export const movies: Movie[] = [
     imdb: '0111161',
   },
   {
-    name: "Schindler's List",
+    name: 'The Matrix',
     watched: true,
     resolution: '4k',
     source: 'UHD BD',
@@ -137,7 +145,7 @@ export const movies: Movie[] = [
     imdb: '0111161',
   },
   {
-    name: 'The Lord Of The Rings: The Return Of The King',
+    name: 'Goodfellas',
     watched: true,
     resolution: '4k',
     source: 'UHD BD',
@@ -145,7 +153,7 @@ export const movies: Movie[] = [
     imdb: '0111161',
   },
   {
-    name: 'Pulp Fiction',
+    name: "One Flew Over The Cuckoo's Nest",
     watched: true,
     resolution: '4k',
     source: 'UHD BD',
@@ -153,7 +161,7 @@ export const movies: Movie[] = [
     imdb: '0111161',
   },
   {
-    name: 'The Lord Of The Rings: The Fellowship Of The Ring',
+    name: 'Seven',
     watched: true,
     resolution: '4k',
     source: 'UHD BD',
@@ -161,8 +169,8 @@ export const movies: Movie[] = [
     imdb: '0111161',
   },
   {
-    name: 'The Good, The Bad And The Ugly',
-    watched: true,
+    name: 'Seven Samurai',
+    watched: false,
     resolution: '4k',
     source: 'UHD BD',
     remux: true,
