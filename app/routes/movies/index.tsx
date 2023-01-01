@@ -23,25 +23,25 @@ const Movies = () => (
           <tr>
             <th
               scope="col"
-              className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 py-3.5 pl-4 pr-3 text-left text-sm font-semibold backdrop-blur backdrop-filter sm:pl-6 lg:pl-8"
+              className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter"
             >
               #
             </th>
             <th
               scope="col"
-              className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 py-3.5 pl-4 pr-3 text-left text-sm font-semibold backdrop-blur backdrop-filter sm:pl-6 lg:pl-8"
+              className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter"
             >
               Name
             </th>
             <th
               scope="col"
-              className="sticky top-0 z-10 hidden border-b border-gray-900 bg-gray-700 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter sm:table-cell"
+              className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter"
             >
               Resolution
             </th>
             <th
               scope="col"
-              className="sticky top-0 z-10 hidden border-b border-gray-900 bg-gray-700 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter lg:table-cell"
+              className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter"
             >
               Source
             </th>

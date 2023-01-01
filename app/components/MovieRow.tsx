@@ -14,10 +14,10 @@ export const MovieRow = ({
   imdb,
 }: Movie & { number: number }) => (
   <tr className="bg-gray-800 text-white">
-    <td className="whitespace-nowrap border-b border-gray-700 py-4 pl-4 pr-3 text-sm font-medium sm:pl-6 lg:pl-8">
+    <td className="whitespace-nowrap border-b border-gray-700 py-4 px-4 text-sm font-medium">
       {number}
     </td>
-    <td className="whitespace-nowrap border-b border-gray-700 py-4 pl-4 pr-3 text-sm font-medium sm:pl-6 lg:pl-8">
+    <td className="whitespace-nowrap border-b border-gray-700 py-4 px-4 text-sm font-medium text-ellipsis">
       <a
         href={`https://www.imdb.com/title/tt${imdb}`}
         className={clsx(
