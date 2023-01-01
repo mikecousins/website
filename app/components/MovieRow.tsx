@@ -23,7 +23,7 @@ export const MovieRow = ({
         className={clsx(
           watched
             ? resolution
-              ? 'text-green-800'
+              ? 'text-white'
               : 'text-blue-800'
             : resolution
             ? 'text-yellow-800'
@@ -42,17 +42,21 @@ export const MovieRow = ({
     </td>
     <td className="whitespace-nowrap border-b border-gray-700 px-3 py-4 text-sm">
       {remux && <FontAwesomeIcon icon={faCheck} />}
-      {remux === false && <FontAwesomeIcon icon={faX} />}
+      {remux === false && (
+        <FontAwesomeIcon icon={faX} className="text-red-900" />
+      )}
     </td>
     <td className="whitespace-nowrap border-b border-gray-700 px-3 py-4 text-sm">
       {dolbyVision && <FontAwesomeIcon icon={faCheck} />}
-      {dolbyVision === false && <FontAwesomeIcon icon={faX} />}
+      {dolbyVision === false && (
+        <FontAwesomeIcon icon={faX} className="text-red-900" />
+      )}
     </td>
     <td className="whitespace-nowrap border-b border-gray-700 px-3 py-4 text-sm">
       {watched ? (
         <FontAwesomeIcon icon={faCheck} />
       ) : (
-        <FontAwesomeIcon icon={faX} />
+        <FontAwesomeIcon icon={faX} className="text-red-900" />
       )}
     </td>
   </tr>

@@ -8,7 +8,6 @@ import {
 } from '@remix-run/react';
 import styles from './styles/app.css';
 import ThemeProvider from './providers/ThemeProvider';
-import Layout from './layouts';
 
 export const links = () => {
   return [{ rel: 'stylesheet', href: styles }];
