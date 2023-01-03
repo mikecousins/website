@@ -24,10 +24,10 @@ export const MovieRow = ({
           watched
             ? resolution
               ? 'text-white'
-              : 'text-blue-800'
+              : 'text-blue-600'
             : resolution
-            ? 'text-yellow-800'
-            : 'text-red-800',
+            ? 'text-orange-600'
+            : 'text-red-600',
           'hover:underline'
         )}
       >
