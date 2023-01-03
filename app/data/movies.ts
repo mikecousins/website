@@ -490,6 +490,10 @@ export const movies: Movie[] = [
     name: 'Memento',
     imdb: '0209144',
     watched: true,
+    resolution: '1080p',
+    source: 'BD',
+    remux: false,
+    dolbyVision: false,
   },
   {
     name: 'Raiders Of The Lost Ark',
@@ -855,6 +859,10 @@ export const movies: Movie[] = [
     name: 'Come And See',
     imdb: '0091251',
     watched: false,
+    resolution: '1080p',
+    source: 'BD',
+    remux: true,
+    dolbyVision: false,
   },
   {
     name: 'Citizen Kane',
@@ -878,6 +886,10 @@ export const movies: Movie[] = [
     name: 'Lawrence Of Arabia',
     imdb: '0056172',
     watched: false,
+    resolution: '4k',
+    source: 'UHD BD',
+    remux: true,
+    dolbyVision: true,
   },
   {
     name: 'North By Northwest',
