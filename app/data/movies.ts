@@ -507,7 +507,7 @@ export const movies: Movie[] = [
   {
     name: 'Django Unchained',
     imdb: '1853728',
-    watched: false,
+    watched: true,
     resolution: '1080p',
     source: 'BD',
     remux: false,
