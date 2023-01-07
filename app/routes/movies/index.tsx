@@ -77,43 +77,43 @@ const Movies = () => {
             <tr>
               <th
                 scope="col"
-                className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter"
+                className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 px-1 lg:px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter"
               >
                 #
               </th>
               <th
                 scope="col"
-                className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter"
+                className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 px-1 lg:px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter"
               >
                 Name
               </th>
               <th
                 scope="col"
-                className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter"
+                className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter hidden lg:table-cell"
               >
                 Resolution
               </th>
               <th
                 scope="col"
-                className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter"
+                className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter hidden lg:table-cell"
               >
                 Source
               </th>
               <th
                 scope="col"
-                className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter"
+                className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter hidden lg:table-cell"
               >
                 Remux
               </th>
               <th
                 scope="col"
-                className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter"
+                className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter hidden lg:table-cell"
               >
                 DV
               </th>
               <th
                 scope="col"
-                className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter"
+                className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter hidden lg:table-cell"
               >
                 Watched
               </th>

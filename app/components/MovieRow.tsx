@@ -14,10 +14,10 @@ export const MovieRow = ({
   imdb,
 }: Movie & { number: number }) => (
   <tr className="bg-gray-800 text-white">
-    <td className="whitespace-nowrap border-b border-gray-700 py-4 px-4 text-sm font-medium">
+    <td className="whitespace-nowrap border-b border-gray-700 py-4 px-1 lg:px-3 text-sm font-medium">
       {number}
     </td>
-    <td className="whitespace-nowrap border-b border-gray-700 py-4 px-4 text-sm font-medium text-ellipsis">
+    <td className="whitespace-nowrap border-b border-gray-700 py-4 px-1 lg:px-3 text-sm font-medium truncate max-w-xs">
       <a
         href={`https://www.imdb.com/title/tt${imdb}`}
         className={clsx(
@@ -34,25 +34,25 @@ export const MovieRow = ({
         {name}
       </a>
     </td>
-    <td className="whitespace-nowrap border-b border-gray-700 px-3 py-4 text-sm">
+    <td className="whitespace-nowrap border-b border-gray-700 px-3 py-4 text-sm hidden lg:table-cell">
       {resolution}
     </td>
-    <td className="whitespace-nowrap border-b border-gray-700 px-3 py-4 text-sm">
+    <td className="whitespace-nowrap border-b border-gray-700 px-3 py-4 text-sm hidden lg:table-cell">
       {source}
     </td>
-    <td className="whitespace-nowrap border-b border-gray-700 px-3 py-4 text-sm">
+    <td className="whitespace-nowrap border-b border-gray-700 px-3 py-4 text-sm hidden lg:table-cell">
       {remux && <FontAwesomeIcon icon={faCheck} />}
       {remux === false && (
         <FontAwesomeIcon icon={faX} className="text-red-900" />
       )}
     </td>
-    <td className="whitespace-nowrap border-b border-gray-700 px-3 py-4 text-sm">
+    <td className="whitespace-nowrap border-b border-gray-700 px-3 py-4 text-sm hidden lg:table-cell">
       {dolbyVision && <FontAwesomeIcon icon={faCheck} />}
       {dolbyVision === false && (
         <FontAwesomeIcon icon={faX} className="text-red-900" />
       )}
     </td>
-    <td className="whitespace-nowrap border-b border-gray-700 px-3 py-4 text-sm">
+    <td className="whitespace-nowrap border-b border-gray-700 px-3 py-4 text-sm hidden lg:table-cell">
       {watched ? (
         <FontAwesomeIcon icon={faCheck} />
       ) : (
