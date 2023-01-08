@@ -2106,6 +2106,10 @@ export const movies: Movie[] = [
     name: 'Cool Hand Luke',
     imdb: '0061512',
     watched: false,
+    resolution: '720p',
+    source: 'BD',
+    remux: false,
+    dolbyVision: false,
   },
   {
     name: 'The Handmaiden',
@@ -2140,6 +2144,10 @@ export const movies: Movie[] = [
     name: 'Life Of Brian',
     imdb: '0079470',
     watched: true,
+    resolution: '1080p',
+    source: 'BD',
+    remux: false,
+    dolbyVision: false,
   },
   {
     name: 'Dersu Uzala',
