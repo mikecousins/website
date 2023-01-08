@@ -1776,7 +1776,11 @@ export const movies: Movie[] = [
   {
     name: 'Wild Tales',
     imdb: '3011894',
-    watched: true,
+    watched: false,
+    resolution: '1080p',
+    source: 'BD',
+    remux: true,
+    dolbyVision: false,
   },
   {
     name: 'Mad Max: Fury Road',
