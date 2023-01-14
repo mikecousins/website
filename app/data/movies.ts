@@ -687,7 +687,7 @@ export const movies: Movie[] = [
   {
     name: 'Braveheart',
     imdb: '0112573',
-    watched: false,
+    watched: true,
     resolution: '4k',
     source: 'UHD BD',
     remux: true,
@@ -750,7 +750,7 @@ export const movies: Movie[] = [
   {
     name: 'Requiem For A Dream',
     imdb: '0180093',
-    watched: false,
+    watched: true,
     resolution: '4k',
     source: 'UHD BD',
     remux: true,
