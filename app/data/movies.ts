@@ -2043,6 +2043,10 @@ export const movies: Movie[] = [
     name: 'To Be Or Not To Be',
     imdb: '0035446',
     watched: false,
+    resolution: '1080p',
+    source: 'BD',
+    remux: false,
+    dolbyVision: false,
   },
   {
     name: 'The Incredibles',
@@ -2057,6 +2061,10 @@ export const movies: Movie[] = [
     name: 'The Battle Of Algiers',
     imdb: '0058946',
     watched: false,
+    resolution: '720p',
+    source: 'BD',
+    remux: false,
+    dolbyVision: false,
   },
   {
     name: 'La Haine',
