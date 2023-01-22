@@ -552,7 +552,7 @@ export const movies: Movie[] = [
   {
     name: 'The Shining',
     imdb: '0081505',
-    watched: false,
+    watched: true,
     resolution: '4k',
     source: 'UHD BD',
     remux: true,
