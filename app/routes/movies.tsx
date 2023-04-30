@@ -1,6 +1,6 @@
 import { MetaFunction } from '@remix-run/node';
 import { movies } from '~/data/movies';
-import { MovieRow } from '../../components/MovieRow';
+import { MovieRow } from '~/components/MovieRow';
 
 export const meta: MetaFunction = () => {
   return {
