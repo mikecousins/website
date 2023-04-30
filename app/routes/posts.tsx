@@ -2,25 +2,25 @@ import { json } from '@remix-run/node'; // or cloudflare/deno
 import { Link, useLoaderData } from '@remix-run/react';
 import { compareAsc, parseISO } from 'date-fns';
 
-import * as twoDown from './2-down.md';
-import * as twoYears from './2-years.md';
-import * as threeMonths from './3-months.md';
-import * as fiveYears from './5-years-cured.md';
-import * as sixMonth from './6-months.md';
-import * as nineMonths from './9-months-clean.md';
-import * as sixteenMonthsDelayed from './16-month-tests-delayed.md';
-import * as sixteenMonths from './16-months.md';
-import * as fiveTwelve from './512.md';
-import * as sevenTwelve from './712.md';
-import * as aLump from 'a-lump.md';
-import * as aWildWeekend from 'a-wild-weekend.md';
-import * as aYearLater from './a-year-later.md';
-import * as afterChemo from './after-chemo.md';
-import * as drGillis1 from './dr-gillis-1.md';
-import * as drGillis2 from './dr-gillis-2.md';
-import * as fasting from './fasting.md';
-import * as finished from './finished-but-crying.md';
-import * as firstVisit from './first-visit-to-tom-baker.md';
+import * as twoDown from './posts/2-down.md';
+import * as twoYears from './posts/2-years.md';
+import * as threeMonths from './posts/3-months.md';
+import * as fiveYears from './posts/5-years-cured.md';
+import * as sixMonth from './posts/6-months.md';
+import * as nineMonths from './posts/9-months-clean.md';
+import * as sixteenMonthsDelayed from './posts/16-month-tests-delayed.md';
+import * as sixteenMonths from './posts/16-months.md';
+import * as fiveTwelve from './posts/512.md';
+import * as sevenTwelve from './posts/712.md';
+import * as aLump from './posts/a-lump.md';
+import * as aWildWeekend from './posts/a-wild-weekend.md';
+import * as aYearLater from './posts/a-year-later.md';
+import * as afterChemo from './posts/after-chemo.md';
+import * as drGillis1 from './posts/dr-gillis-1.md';
+import * as drGillis2 from './posts/dr-gillis-2.md';
+import * as fasting from './posts/fasting.md';
+import * as finished from './posts/finished-but-crying.md';
+import * as firstVisit from './posts/first-visit-to-tom-baker.md';
 
 type Meta = {
   title: string;
