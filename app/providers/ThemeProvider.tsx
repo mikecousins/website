@@ -7,7 +7,7 @@ type ThemeContext = {
 };
 
 export const store = createContext<ThemeContext>({
-  toggleTheme: () => {},
+  toggleTheme: () => null,
 });
 
 const { Provider } = store;
