@@ -1300,9 +1300,9 @@ export const movies: Movie[] = [
     name: 'Yojimbo',
     imdb: '0055630',
     watched: false,
-    resolution: '1080p',
-    source: 'BD',
-    remux: false,
+    resolution: '4k',
+    source: 'UHD BD',
+    remux: true,
     dolbyVision: false,
   },
   {
