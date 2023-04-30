@@ -8,14 +8,16 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import ThemeToggle from '../components/ThemeToggle';
-import { MetaFunction } from '@remix-run/node';
+import { V2_MetaFunction } from '@remix-run/node';
 import Layout from '~/layouts';
 
-export const meta: MetaFunction = () => {
-  return {
-    title: 'Mike Cousins',
-    description: 'The personal site of Mike Cousins',
-  };
+export const meta: V2_MetaFunction = () => {
+  return [
+    {
+      title: 'Mike Cousins',
+    },
+    { description: 'The personal site of Mike Cousins' },
+  ];
 };
 
 const Index = () => (

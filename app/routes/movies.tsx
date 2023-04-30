@@ -1,12 +1,14 @@
-import { MetaFunction } from '@remix-run/node';
+import { V2_MetaFunction } from '@remix-run/node';
 import { movies } from '~/data/movies';
 import { MovieRow } from '~/components/MovieRow';
 
-export const meta: MetaFunction = () => {
-  return {
-    title: 'Mike Cousins - Movies',
-    description: 'imdb Top 250 Movies',
-  };
+export const meta: V2_MetaFunction = () => {
+  return [
+    {
+      title: 'Mike Cousins - Movies',
+    },
+    { description: 'imdb Top 250 Movies' },
+  ];
 };
 
 const Movies = () => {
