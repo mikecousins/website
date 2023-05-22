@@ -6,8 +6,8 @@ module.exports = {
   serverModuleFormat: 'cjs',
   serverPlatform: 'node',
   serverMinify: false,
+  tailwind: true,
   future: {
-    unstable_tailwind: true,
     v2_errorBoundary: true,
     v2_meta: true,
     v2_normalizeFormMethod: true,
