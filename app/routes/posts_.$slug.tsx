@@ -13,7 +13,10 @@ export const loader = async ({ params }: LoaderArgs) => {
 
   const parsed = matter(file);
 
-  const html = marked.parse(parsed.content);
+  const html = marked.parse(parsed.content, {
+    mangle: false,
+    headerIds: false,
+  });
 
   return json({ html, title: parsed.data.meta.title });
 };

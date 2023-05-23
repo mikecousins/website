@@ -2,6 +2,7 @@
 module.exports = {
   publicPath: '/build/',
   serverBuildPath: 'api/index.js',
+  serverDependenciesToBundle: ['marked'],
   serverMainFields: ['main', 'module'],
   serverModuleFormat: 'cjs',
   serverPlatform: 'node',
