@@ -7,7 +7,6 @@ import {
   ScrollRestoration,
 } from '@remix-run/react';
 import styles from '~/tailwind.css';
-import ThemeProvider from './providers/ThemeProvider';
 
 export const links = () => {
   return [{ rel: 'stylesheet', href: styles }];
@@ -22,10 +21,8 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
-        <ThemeProvider>
-          <Outlet />
-        </ThemeProvider>
+      <body className="bg-black">
+        <Outlet />
         <ScrollRestoration />
         <Scripts />
         {process.env.NODE_ENV === 'development' && <LiveReload />}

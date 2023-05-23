@@ -13,7 +13,7 @@ export const MovieRow = ({
   watched,
   imdb,
 }: Movie & { number: number }) => (
-  <tr className="bg-gray-800 text-white">
+  <tr className="bg-black text-white">
     <td className="whitespace-nowrap border-b border-gray-700 py-4 px-1 lg:px-3 text-sm font-medium">
       {number}
     </td>

@@ -7,7 +7,6 @@ import {
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import ThemeToggle from '../components/ThemeToggle';
 import { V2_MetaFunction } from '@remix-run/node';
 import Layout from '~/layouts';
 
@@ -22,11 +21,14 @@ export const meta: V2_MetaFunction = () => {
 
 const Index = () => (
   <Layout>
-    <h1 className="text-6xl font-serif leading-none mb-2">Mike Cousins</h1>
+    <h1 className="text-6xl font-serif leading-none mb-2 mt-16">
+      Mike Cousins
+    </h1>
     <p className="font-mono">
-      Software professional specializing in front end development, UX and team
-      leadership. React/Typescript, Swift, Kotlin. Crafting modern, simple,
-      user-focused software.
+      Software professional specializing in front end development, UX,
+      architecture and team leadership. Early-stage startup junkie. Fractional
+      CTO. Contract mercenary. React, Typescript, Remix, and Tailwind. Crafting
+      modern, simple, user-focused software.
     </p>
     <div className="text-xl mt-4 flex">
       <IconLink href="https://github.com/mikecousins" title="Github" first>
@@ -47,8 +49,6 @@ const Index = () => (
       <IconLink href="mailto:mike@mikecousins.com" title="Email">
         <FontAwesomeIcon icon={faEnvelope} />
       </IconLink>
-      <div className="flex-1" />
-      <ThemeToggle />
     </div>
   </Layout>
 );

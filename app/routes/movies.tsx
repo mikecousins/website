@@ -1,6 +1,7 @@
 import { V2_MetaFunction } from '@remix-run/node';
 import { movies } from '~/data/movies';
 import { MovieRow } from '~/components/MovieRow';
+import Layout from '~/layouts';
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -23,7 +24,7 @@ const Movies = () => {
   ).length;
 
   return (
-    <div className="bg-slate-900">
+    <Layout>
       <div className="container mx-auto max-w-7xl py-8">
         <div className="pt-12 sm:pt-16">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -40,7 +41,7 @@ const Movies = () => {
             <div className="relative">
               <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-4xl">
-                  <dl className="rounded-lg bg-slate-800 shadow-lg sm:grid sm:grid-cols-3">
+                  <dl className="sm:grid sm:grid-cols-3">
                     <div className="flex flex-col border-b border-gray-900 p-6 text-center sm:border-0 sm:border-r">
                       <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-300">
                         Watched
@@ -75,47 +76,47 @@ const Movies = () => {
           className="min-w-full border-separate"
           style={{ borderSpacing: 0 }}
         >
-          <thead className="bg-gray-900 text-white">
+          <thead className="text-white">
             <tr>
               <th
                 scope="col"
-                className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 px-1 lg:px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter"
+                className="sticky top-0 z-10 border-b border-gray-900 px-1 lg:px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter"
               >
                 #
               </th>
               <th
                 scope="col"
-                className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 px-1 lg:px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter"
+                className="sticky top-0 z-10 border-b border-gray-900 px-1 lg:px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter"
               >
                 Name
               </th>
               <th
                 scope="col"
-                className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter hidden lg:table-cell"
+                className="sticky top-0 z-10 border-b border-gray-900 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter hidden lg:table-cell"
               >
                 Resolution
               </th>
               <th
                 scope="col"
-                className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter hidden lg:table-cell"
+                className="sticky top-0 z-10 border-b border-gray-900 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter hidden lg:table-cell"
               >
                 Source
               </th>
               <th
                 scope="col"
-                className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter hidden lg:table-cell"
+                className="sticky top-0 z-10 border-b border-gray-900 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter hidden lg:table-cell"
               >
                 Remux
               </th>
               <th
                 scope="col"
-                className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter hidden lg:table-cell"
+                className="sticky top-0 z-10 border-b border-gray-900 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter hidden lg:table-cell"
               >
                 DV
               </th>
               <th
                 scope="col"
-                className="sticky top-0 z-10 border-b border-gray-900 bg-gray-700 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter hidden lg:table-cell"
+                className="sticky top-0 z-10 border-b border-gray-900 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter hidden lg:table-cell"
               >
                 Watched
               </th>
@@ -128,7 +129,7 @@ const Movies = () => {
           </tbody>
         </table>
       </div>
-    </div>
+    </Layout>
   );
 };
 
