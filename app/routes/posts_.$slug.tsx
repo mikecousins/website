@@ -1,6 +1,7 @@
 import { LoaderArgs, json } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
 import fs from 'fs/promises';
+import matter from 'gray-matter';
 import { marked } from 'marked';
 import invariant from 'tiny-invariant';
 
@@ -13,16 +14,20 @@ export const loader = async ({ params }: LoaderArgs) => {
   );
   invariant(file, `File not found: ${params.slug}`);
 
-  const html = marked(file);
-  return json({ html, slug: params.slug });
+  const parsed = matter(file);
+  console.log(parsed);
+
+  const html = marked.parse(parsed.content);
+  console.log(html);
+  return json({ html, title: parsed.data.meta.title });
 };
 
 export default function Post() {
-  const { slug, html } = useLoaderData<typeof loader>();
+  const { title, html } = useLoaderData<typeof loader>();
   return (
-    <div>
-      {slug}
+    <article className="prose">
+      <h1>{title}</h1>
       <div dangerouslySetInnerHTML={{ __html: html }} />
-    </div>
+    </article>
   );
 }
