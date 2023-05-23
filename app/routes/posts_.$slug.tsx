@@ -15,10 +15,9 @@ export const loader = async ({ params }: LoaderArgs) => {
   invariant(file, `File not found: ${params.slug}`);
 
   const parsed = matter(file);
-  console.log(parsed);
 
   const html = marked.parse(parsed.content);
-  console.log(html);
+
   return json({ html, title: parsed.data.meta.title });
 };
 
