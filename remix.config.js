@@ -1,7 +1,7 @@
 /** @type {import('@remix-run/dev').AppConfig} */
 module.exports = {
   publicPath: '/build/',
-  serverBuildPath: 'api/index.js',
+  serverBuildPath: 'build/index.js',
   serverDependenciesToBundle: ['marked'],
   serverMainFields: ['main', 'module'],
   serverModuleFormat: 'cjs',

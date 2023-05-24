@@ -14,10 +14,10 @@ export const meta: V2_MetaFunction = () => {
 };
 
 export async function loader() {
-  const postFolder = await fs.readdir('./app/data/posts');
+  const postFolder = await fs.readdir('./public/posts');
   const posts = await Promise.all(
     postFolder.map(async (file) => {
-      const post = await fs.readFile(`./app/data/posts/${file}`);
+      const post = await fs.readFile(`./public/posts/${file}`);
       const parsed = matter(post);
       return { ...parsed.data.meta };
     })
