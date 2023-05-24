@@ -1,8 +1,5 @@
 import { LoaderArgs, json } from '@remix-run/node';
 import { V2_MetaFunction, useLoaderData } from '@remix-run/react';
-import fs from 'fs/promises';
-import matter from 'gray-matter';
-import { marked } from 'marked';
 import invariant from 'tiny-invariant';
 import Layout from '~/layouts';
 
@@ -17,17 +14,16 @@ export const meta: V2_MetaFunction = () => {
 export const loader = async ({ params }: LoaderArgs) => {
   invariant(params.slug, `params.slug is required`);
 
-  const file = await fs.readFile(`./app/data/posts/${params.slug}.md`, 'utf8');
-  invariant(file, `File not found: ${params.slug}`);
+  console.log(
+    `https://github-md.com/mikecousins/website/main/app/data/posts/${params.slug}.md`
+  );
 
-  const parsed = matter(file);
+  const postData = await fetch(
+    `https://github-md.com/mikecousins/website/main/app/data/posts/${params.slug}.md`
+  ).then((res) => res.json());
+  console.log(postData);
 
-  const html = marked.parse(parsed.content, {
-    mangle: false,
-    headerIds: false,
-  });
-
-  return json({ html, title: parsed.data.meta.title });
+  return json({ html: postData.html, title: postData.attributes.meta.title });
 };
 
 export default function Post() {
