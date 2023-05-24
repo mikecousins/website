@@ -1,4 +1,4 @@
-import { json } from '@remix-run/node'; // or cloudflare/deno
+import { json } from '@remix-run/node';
 import { Link, V2_MetaFunction, useLoaderData } from '@remix-run/react';
 import { compareAsc, format, parseISO } from 'date-fns';
 import Layout from '~/layouts';
