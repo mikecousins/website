@@ -17,7 +17,7 @@ export const meta: V2_MetaFunction = () => {
 export const loader = async ({ params }: LoaderArgs) => {
   invariant(params.slug, `params.slug is required`);
 
-  const file = await fs.readFile(`./public/posts/${params.slug}.md`, 'utf8');
+  const file = await fs.readFile(`./app/data/posts/${params.slug}.md`, 'utf8');
   invariant(file, `File not found: ${params.slug}`);
 
   const parsed = matter(file);
