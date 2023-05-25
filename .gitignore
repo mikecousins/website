@@ -5,7 +5,6 @@ node_modules
 /public/build
 
 api
-app/styles/app.css
 
 .yarn/*
 !.yarn/cache
