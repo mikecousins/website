@@ -23,13 +23,9 @@ export const MovieRow = ({
         href={`https://www.imdb.com/title/tt${imdb}`}
         className={clsx(
           watched
-            ? resolution
-              ? 'text-white'
-              : 'text-blue-600'
-            : resolution
-            ? 'text-orange-600'
-            : 'text-red-600',
-          'hover:underline'
+            ? 'text-white decoration-orange-500'
+            : 'text-red-600 decoration-red-500',
+          'hover:underline underline-offset-2'
         )}
       >
         {name}
