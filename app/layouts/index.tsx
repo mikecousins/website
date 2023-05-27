@@ -11,6 +11,18 @@ const Layout: FC<PropsWithChildren<unknown>> = ({ children }) => (
         Home
       </Link>
       <Link
+        to="/services"
+        className="decoration-orange-500 underline-offset-4 hover:underline"
+      >
+        Services
+      </Link>
+      <Link
+        to="/work"
+        className="decoration-orange-500 underline-offset-4 hover:underline"
+      >
+        Work
+      </Link>
+      <Link
         to="/movies"
         className="decoration-orange-500 underline-offset-4 hover:underline"
       >
