@@ -27,17 +27,15 @@ const Movies = () => {
     <Layout>
       <div className="container mx-auto max-w-7xl py-8">
         <div className="pt-12 sm:pt-16">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-4xl text-center">
-              <h2 className="text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
-                Mike&apos;s IMDb Top 250 Movie Status
-              </h2>
-              <p className="mt-3 text-xl text-gray-300 sm:mt-4">
-                Bucket list endeavour to watch all of the best movies ever made.
-              </p>
-            </div>
+          <div className="mx-auto max-w-7xl">
+            <h2 className="text-6xl tracking-tight text-gray-100 font-serif">
+              Mike&apos;s IMDb Top 250 Movie List
+            </h2>
+            <p className="mt-3 text-xl text-gray-300 sm:mt-4 font-mono">
+              Bucket list endeavour to watch all of the best movies ever made.
+            </p>
           </div>
-          <div className="mt-10 pb-12 sm:pb-16">
+          <div className="mt-10 pb-12 sm:pb-16 font-mono">
             <div className="relative">
               <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-4xl">
@@ -73,7 +71,7 @@ const Movies = () => {
           </div>
         </div>
         <table
-          className="min-w-full border-separate"
+          className="min-w-full border-separate font-mono"
           style={{ borderSpacing: 0 }}
         >
           <thead className="text-white">
