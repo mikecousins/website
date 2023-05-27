@@ -31,7 +31,7 @@ export const MovieRow = ({
         {name}
       </a>
     </td>
-    <td className="whitespace-nowrap border-b border-gray-700 px-3 py-4 text-sm">
+    <td className="whitespace-nowrap border-b border-gray-700 px-1 lg:px-3 py-4 text-sm">
       <Popover.Root>
         <Popover.Trigger asChild>
           <button>{resolution}</button>
