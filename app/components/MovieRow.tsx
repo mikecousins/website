@@ -1,6 +1,7 @@
 import { faCheck, faX } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import clsx from 'clsx';
+import * as Popover from '@radix-ui/react-popover';
 import { Movie } from '~/data/movies';
 
 export const MovieRow = ({
@@ -34,30 +35,39 @@ export const MovieRow = ({
         {name}
       </a>
     </td>
-    <td className="whitespace-nowrap border-b border-gray-700 px-3 py-4 text-sm hidden lg:table-cell">
-      {resolution}
-    </td>
-    <td className="whitespace-nowrap border-b border-gray-700 px-3 py-4 text-sm hidden lg:table-cell">
-      {source}
-    </td>
-    <td className="whitespace-nowrap border-b border-gray-700 px-3 py-4 text-sm hidden lg:table-cell">
-      {remux && <FontAwesomeIcon icon={faCheck} />}
-      {remux === false && (
-        <FontAwesomeIcon icon={faX} className="text-red-900" />
-      )}
-    </td>
-    <td className="whitespace-nowrap border-b border-gray-700 px-3 py-4 text-sm hidden lg:table-cell">
-      {dolbyVision && <FontAwesomeIcon icon={faCheck} />}
-      {dolbyVision === false && (
-        <FontAwesomeIcon icon={faX} className="text-red-900" />
-      )}
-    </td>
-    <td className="whitespace-nowrap border-b border-gray-700 px-3 py-4 text-sm hidden lg:table-cell">
-      {watched ? (
-        <FontAwesomeIcon icon={faCheck} />
-      ) : (
-        <FontAwesomeIcon icon={faX} className="text-red-900" />
-      )}
+    <td className="whitespace-nowrap border-b border-gray-700 px-3 py-4 text-sm">
+      <Popover.Root>
+        <Popover.Trigger asChild>
+          <button>{resolution}</button>
+        </Popover.Trigger>
+        <Popover.Portal>
+          <Popover.Content
+            className="bg-gray-950 text-white p-4 font-mono text-sm"
+            sideOffset={5}
+          >
+            <div className="flex flex-col gap-2">
+              <div>Resolution: {resolution}</div>
+              <div>Source: {source}</div>
+              <div>
+                Remux:{' '}
+                {remux ? (
+                  <FontAwesomeIcon icon={faCheck} />
+                ) : (
+                  <FontAwesomeIcon icon={faX} className="text-red-900" />
+                )}
+              </div>
+              <div>
+                Dolby Vision:{' '}
+                {dolbyVision ? (
+                  <FontAwesomeIcon icon={faCheck} />
+                ) : (
+                  <FontAwesomeIcon icon={faX} className="text-red-900" />
+                )}
+              </div>
+            </div>
+          </Popover.Content>
+        </Popover.Portal>
+      </Popover.Root>
     </td>
   </tr>
 );

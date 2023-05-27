@@ -90,33 +90,9 @@ const Movies = () => {
               </th>
               <th
                 scope="col"
-                className="sticky top-0 z-10 border-b border-gray-900 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter hidden lg:table-cell"
+                className="sticky top-0 z-10 border-b border-gray-900 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter"
               >
                 Resolution
-              </th>
-              <th
-                scope="col"
-                className="sticky top-0 z-10 border-b border-gray-900 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter hidden lg:table-cell"
-              >
-                Source
-              </th>
-              <th
-                scope="col"
-                className="sticky top-0 z-10 border-b border-gray-900 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter hidden lg:table-cell"
-              >
-                Remux
-              </th>
-              <th
-                scope="col"
-                className="sticky top-0 z-10 border-b border-gray-900 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter hidden lg:table-cell"
-              >
-                DV
-              </th>
-              <th
-                scope="col"
-                className="sticky top-0 z-10 border-b border-gray-900 px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter hidden lg:table-cell"
-              >
-                Watched
               </th>
             </tr>
           </thead>
