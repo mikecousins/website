@@ -38,7 +38,7 @@ export const MovieRow = ({
         </Popover.Trigger>
         <Popover.Portal>
           <Popover.Content
-            className="bg-gray-950 text-white p-4 font-mono text-sm"
+            className="bg-gray-950 text-white p-4 font-mono text-sm border rounded-md border-gray-700"
             sideOffset={5}
           >
             <div className="flex flex-col gap-2">
