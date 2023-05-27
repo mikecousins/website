@@ -15,7 +15,7 @@ export const meta: V2_MetaFunction = () => {
     {
       title: 'Mike Cousins',
     },
-    { description: 'The personal site of Mike Cousins' },
+    { name: 'description', content: 'The personal site of Mike Cousins' },
   ];
 };
 
