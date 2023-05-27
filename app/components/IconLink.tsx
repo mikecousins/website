@@ -15,7 +15,7 @@ const IconLink: FC<PropsWithChildren<Props>> = ({
 }) => (
   <a
     href={href}
-    className={clsx('py-2 pr-2 mr-2', !first && 'pl-2')}
+    className={clsx('py-2 pr-2 mr-2 hover:text-orange-500', !first && 'pl-2')}
     title={title}
     rel="me"
   >
