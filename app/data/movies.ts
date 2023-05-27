@@ -381,7 +381,7 @@ export const movies: Movie[] = [
   {
     name: 'Whiplash',
     imdb: '2582802',
-    watched: false,
+    watched: true,
     resolution: '4k',
     source: 'UHD BD',
     remux: true,
