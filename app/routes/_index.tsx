@@ -7,7 +7,7 @@ import {
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { V2_MetaFunction } from '@remix-run/node';
+import { type V2_MetaFunction } from '@remix-run/node';
 import Layout from '~/layouts';
 
 export const meta: V2_MetaFunction = () => {
