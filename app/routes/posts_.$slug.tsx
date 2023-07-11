@@ -1,5 +1,5 @@
-import { LoaderArgs, json } from '@remix-run/node';
-import { V2_MetaFunction, useLoaderData } from '@remix-run/react';
+import { type LoaderArgs, json } from '@remix-run/node';
+import { type V2_MetaFunction, useLoaderData } from '@remix-run/react';
 import invariant from 'tiny-invariant';
 import Layout from '~/layouts';
 
