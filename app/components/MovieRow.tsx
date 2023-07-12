@@ -18,7 +18,7 @@ export const MovieRow = ({
     <div className="whitespace-nowrap border-b border-gray-700 py-4 px-1 lg:px-3 text-sm font-medium">
       {number}
     </div>
-    <div className="flex-1 whitespace-nowrap border-b border-gray-700 py-4 px-1 lg:px-3 text-sm font-medium truncate max-w-xs">
+    <div className="flex-1 whitespace-nowrap border-b border-gray-700 py-4 px-1 lg:px-3 text-sm font-medium truncate">
       <a
         href={`https://www.imdb.com/title/tt${imdb}`}
         className={clsx(
