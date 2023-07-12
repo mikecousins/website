@@ -1,4 +1,4 @@
-import { V2_MetaFunction } from '@remix-run/node';
+import { type V2_MetaFunction } from '@remix-run/node';
 import { movies } from '~/data/movies';
 import { MovieRow } from '~/components/MovieRow';
 import Layout from '~/layouts';
@@ -27,35 +27,28 @@ const Movies = () => {
           </p>
         </div>
         <div className="my-8 font-mono text-4xl">Watched: {watched}/250</div>
-        <table className="w-full border-separate border-spacing-0 font-mono">
-          <thead className="text-white">
-            <tr>
-              <th
-                scope="col"
-                className="sticky top-0 z-10 border-b border-gray-900 px-1 lg:px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter"
+        <div className="w-full border-separate border-spacing-0 font-mono">
+          <div className="text-white flex">
+              <div
+                className="border-b border-gray-900 px-1 lg:px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter"
               >
                 #
-              </th>
-              <th
-                scope="col"
-                className="sticky top-0 z-10 border-b border-gray-900 px-1 lg:px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter"
+              </div>
+              <div
+                className="flex-1 border-b border-gray-900 px-1 lg:px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter"
               >
                 Name
-              </th>
-              <th
-                scope="col"
-                className="sticky top-0 z-10 border-b border-gray-900 px-1 lg:px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter"
+              </div>
+              <div
+                className="border-b border-gray-900 px-1 lg:px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter"
               >
                 Resolution
-              </th>
-            </tr>
-          </thead>
-          <tbody>
+              </div>
+          </div>
             {movies.map((movie, index) => (
               <MovieRow {...movie} number={index + 1} key={movie.name} />
             ))}
-          </tbody>
-        </table>
+        </div>
       </div>
     </Layout>
   );

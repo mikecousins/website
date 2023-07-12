@@ -2,7 +2,7 @@ import { faCheck, faX } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import clsx from 'clsx';
 import * as Popover from '@radix-ui/react-popover';
-import { Movie } from '~/data/movies';
+import { type Movie } from '~/data/movies';
 
 export const MovieRow = ({
   number,
@@ -14,11 +14,11 @@ export const MovieRow = ({
   watched,
   imdb,
 }: Movie & { number: number }) => (
-  <tr className="bg-black text-white">
-    <td className="whitespace-nowrap border-b border-gray-700 py-4 px-1 lg:px-3 text-sm font-medium">
+  <div className="bg-black text-white flex">
+    <div className="whitespace-nowrap border-b border-gray-700 py-4 px-1 lg:px-3 text-sm font-medium">
       {number}
-    </td>
-    <td className="whitespace-nowrap border-b border-gray-700 py-4 px-1 lg:px-3 text-sm font-medium truncate max-w-xs">
+    </div>
+    <div className="flex-1 whitespace-nowrap border-b border-gray-700 py-4 px-1 lg:px-3 text-sm font-medium truncate max-w-xs">
       <a
         href={`https://www.imdb.com/title/tt${imdb}`}
         className={clsx(
@@ -30,8 +30,8 @@ export const MovieRow = ({
       >
         {name}
       </a>
-    </td>
-    <td className="whitespace-nowrap border-b border-gray-700 px-1 lg:px-3 py-4 text-sm">
+    </div>
+    <div className="whitespace-nowrap border-b border-gray-700 px-1 lg:px-3 py-4 text-sm">
       <Popover.Root>
         <Popover.Trigger asChild>
           <button>{resolution}</button>
@@ -64,6 +64,6 @@ export const MovieRow = ({
           </Popover.Content>
         </Popover.Portal>
       </Popover.Root>
-    </td>
-  </tr>
+    </div>
+  </div>
 );
