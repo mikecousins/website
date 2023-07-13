@@ -1,5 +1,5 @@
 import { json } from '@remix-run/node';
-import { Link, V2_MetaFunction, useLoaderData } from '@remix-run/react';
+import { Link, type V2_MetaFunction, useLoaderData } from '@remix-run/react';
 import { compareAsc, format, parseISO } from 'date-fns';
 import Layout from '~/layouts';
 
