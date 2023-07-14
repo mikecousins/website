@@ -49,8 +49,8 @@ const Layout = ({ children }: Props) => (
                 Other <FontAwesomeIcon icon={faCaretDown} />
               </span>
             </NavigationMenu.Trigger>
-            <NavigationMenu.Content className="absolute top-12 right-0 w-full sm:w-auto bg-gray-950 border border-gray-700 p-4">
-              <div className="flex gap-4">
+            <NavigationMenu.Content className="absolute top-12 right-4 w-auto bg-gray-950 border border-gray-700 p-4">
+              <div className="flex flex-col gap-2">
                 <NavigationMenu.Link asChild>
                   <Link
                     to="/movies"
