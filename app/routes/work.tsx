@@ -32,6 +32,21 @@ const Work = () => (
         </div>
       </div>
       <div>
+        <div className="text-xl font-bold">Passiv/SnapTrade</div>
+        <div>Front End Architect (Contract)</div>
+        <a
+          href="https://www.passiv.com"
+          className="text-orange-500 hover:underline"
+        >
+          www.passiv.com
+        </a>
+        <div>
+          Helping self-directed investors manage their investment portfolios. Rewrote
+          the Django front end into React/Typescript. Got into YCombinator with the
+          new platform play called SnapTrade.
+        </div>
+      </div>
+      <div>
         <div className="text-xl font-bold">Foos</div>
         <a
           href="https://www.foos.ca"
