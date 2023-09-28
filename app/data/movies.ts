@@ -184,9 +184,9 @@ export const movies: Movie[] = [
     name: 'Seven Samurai',
     imdb: '0047478',
     watched: false,
-    resolution: '1080p',
-    source: 'BD',
-    remux: false,
+    resolution: '4k',
+    source: 'UHD BD',
+    remux: true,
     dolbyVision: false,
   },
   {
