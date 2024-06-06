@@ -9,7 +9,7 @@ import {
 } from '@headlessui/react';
 import clsx from 'clsx';
 import { Container } from './Container';
-import { Link } from '@remix-run/react';
+import { Link, NavLink, useLocation } from '@remix-run/react';
 
 function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -144,50 +144,52 @@ function MobileNavigation(
   );
 }
 
-function NavItem({
+const NavItem = ({
   href,
   children,
 }: {
   href: string;
   children: React.ReactNode;
-}) {
-  let isActive = usePathname() === href;
-
-  return (
+}) => (
     <li>
-      <Link
+      <NavLink
         to={href}
-        className={clsx(
-          'relative block px-3 py-2 transition',
-          isActive
-            ? 'text-teal-500 dark:text-teal-400'
-            : 'hover:text-teal-500 dark:hover:text-teal-400'
-        )}
+        className={({ isActive }) =>
+          clsx(
+            'relative block px-3 py-2 transition',
+            isActive
+              ? 'text-teal-500 dark:text-teal-400'
+              : 'hover:text-teal-500 dark:hover:text-teal-400'
+          )
+        }
       >
-        {children}
-        {isActive && (
-          <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0" />
+        {({ isActive }) => (
+          <>        
+            {children}
+            {isActive && (
+              <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0" />
+            )}
+          </>
         )}
-      </Link>
+      </NavLink>
     </li>
   );
-}
 
-function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
+const DesktopNavigation = (props: React.ComponentPropsWithoutRef<'nav'>) => {
   return (
     <nav {...props}>
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
         <NavItem href="/about">About</NavItem>
-        <NavItem href="/articles">Articles</NavItem>
         <NavItem href="/projects">Projects</NavItem>
-        <NavItem href="/speaking">Speaking</NavItem>
-        <NavItem href="/uses">Uses</NavItem>
+        <NavItem href="/services">Services</NavItem>
+        <NavItem href="/stuff">Stuff</NavItem>
+        <NavItem href="/movies">Movies</NavItem>
       </ul>
     </nav>
   );
 }
 
-function ThemeToggle() {
+/*const ThemeToggle = () => {
   let { resolvedTheme, setTheme } = useTheme();
   let otherTheme = resolvedTheme === 'dark' ? 'light' : 'dark';
   let [mounted, setMounted] = useState(false);
@@ -207,7 +209,7 @@ function ThemeToggle() {
       <MoonIcon className="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500" />
     </button>
   );
-}
+}*/
 
 function clamp(number: number, a: number, b: number) {
   let min = Math.min(a, b);
@@ -234,36 +236,36 @@ function Avatar({
   large = false,
   className,
   ...props
-}: Omit<React.ComponentPropsWithoutRef<typeof Link>, 'href'> & {
+}: Omit<React.ComponentPropsWithoutRef<typeof Link>, 'to'> & {
   large?: boolean;
 }) {
   return (
     <Link
-      href="/"
+      to="/"
       aria-label="Home"
       className={clsx(className, 'pointer-events-auto')}
       {...props}
     >
-      <Image
-        src={avatarImage}
+      <img
+        src="https://loremflickr.com/320/240"
         alt=""
         sizes={large ? '4rem' : '2.25rem'}
         className={clsx(
           'rounded-full bg-zinc-100 object-cover dark:bg-zinc-800',
           large ? 'h-16 w-16' : 'h-9 w-9'
         )}
-        priority
       />
     </Link>
   );
 }
 
-export function Header() {
-  let isHomePage = usePathname() === '/';
+export const Header = () => {
+  const { pathname } = useLocation();
+  const isHomePage = pathname === '/';
 
-  let headerRef = useRef<React.ElementRef<'div'>>(null);
-  let avatarRef = useRef<React.ElementRef<'div'>>(null);
-  let isInitial = useRef(true);
+  const headerRef = useRef<React.ElementRef<'div'>>(null);
+  const avatarRef = useRef<React.ElementRef<'div'>>(null);
+  const isInitial = useRef(true);
 
   useEffect(() => {
     let downDelay = avatarRef.current?.offsetTop ?? 0;
@@ -441,7 +443,7 @@ export function Header() {
               </div>
               <div className="flex justify-end md:flex-1">
                 <div className="pointer-events-auto">
-                  <ThemeToggle />
+                  {/** <ThemeToggle /> */}
                 </div>
               </div>
             </div>

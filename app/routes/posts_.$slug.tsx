@@ -1,9 +1,9 @@
-import { type LoaderArgs, json } from '@remix-run/node';
-import { type V2_MetaFunction, useLoaderData } from '@remix-run/react';
+import { json, type LoaderFunction } from '@remix-run/node';
+import { type MetaFunction, useLoaderData } from '@remix-run/react';
 import invariant from 'tiny-invariant';
 import Layout from '~/layouts';
 
-export const meta: V2_MetaFunction = () => {
+export const meta: MetaFunction = () => {
   return [
     {
       title: 'Mike Cousins - Post',
@@ -11,7 +11,7 @@ export const meta: V2_MetaFunction = () => {
   ];
 };
 
-export const loader = async ({ params }: LoaderArgs) => {
+export const loader: LoaderFunction = async ({ params }) => {
   invariant(params.slug, `params.slug is required`);
 
   console.log(
