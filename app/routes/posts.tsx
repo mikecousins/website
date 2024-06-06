@@ -1,9 +1,9 @@
 import { json } from '@remix-run/node';
-import { Link, type V2_MetaFunction, useLoaderData } from '@remix-run/react';
+import { Link, type MetaFunction, useLoaderData } from '@remix-run/react';
 import { compareAsc, format, parseISO } from 'date-fns';
 import Layout from '~/layouts';
 
-export const meta: V2_MetaFunction = () => {
+export const meta: MetaFunction = () => {
   return [
     {
       title: 'Mike Cousins - Posts',

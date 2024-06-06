@@ -1,9 +1,9 @@
-import { type V2_MetaFunction } from '@remix-run/node';
+import { type MetaFunction } from '@remix-run/node';
 import { movies } from '~/data/movies';
 import { MovieRow } from '~/components/MovieRow';
 import Layout from '~/layouts';
 
-export const meta: V2_MetaFunction = () => {
+export const meta: MetaFunction = () => {
   return [
     {
       title: 'Mike Cousins - Movies',
