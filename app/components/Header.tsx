@@ -156,7 +156,7 @@ function NavItem({
   return (
     <li>
       <Link
-        href={href}
+        to={href}
         className={clsx(
           'relative block px-3 py-2 transition',
           isActive
