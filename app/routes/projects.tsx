@@ -4,14 +4,14 @@ import Layout from '~/layouts';
 export const meta: MetaFunction = () => {
   return [
     {
-      title: 'Mike Cousins - Work',
+      title: 'Mike Cousins - Projects',
     },
   ];
 };
 
 const Projects = () => (
   <Layout>
-    <h1 className="text-6xl font-serif leading-none mb-8 mt-16">Work</h1>
+    <h1 className="text-6xl font-serif leading-none mb-8 mt-16">Projects</h1>
     <div className="font-mono flex flex-col gap-8">
       <div>
         <div className="text-xl font-bold">PurposeMed</div>
