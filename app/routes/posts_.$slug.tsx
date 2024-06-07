@@ -1,7 +1,8 @@
 import { json, type LoaderFunction } from '@remix-run/node';
 import { type MetaFunction, useLoaderData } from '@remix-run/react';
 import invariant from 'tiny-invariant';
-import Layout from '~/layouts';
+import { Container } from '~/components/Container';
+import { Layout } from '~/components/Layout';
 
 export const meta: MetaFunction = () => {
   return [
@@ -30,10 +31,12 @@ export default function Post() {
   const { title, html } = useLoaderData<typeof loader>();
   return (
     <Layout>
-      <h1 className="text-4xl font-bold font-serif my-8">{title}</h1>
-      <article className="prose text-white w-full">
-        <div dangerouslySetInnerHTML={{ __html: html }} />
-      </article>
+      <Container>
+        <h1 className="text-4xl font-bold font-serif my-8">{title}</h1>
+        <article className="prose text-white w-full">
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </article>
+      </Container>
     </Layout>
   );
 }

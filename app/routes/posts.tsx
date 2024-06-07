@@ -1,7 +1,8 @@
 import { json } from '@remix-run/node';
 import { Link, type MetaFunction, useLoaderData } from '@remix-run/react';
 import { compareAsc, format, parseISO } from 'date-fns';
-import Layout from '~/layouts';
+import { Container } from '~/components/Container';
+import { Layout } from '~/components/Layout';
 
 export const meta: MetaFunction = () => {
   return [
@@ -43,22 +44,24 @@ export default function Index() {
 
   return (
     <Layout>
-      <h1 className="text-4xl font-bold font-serif my-8">Cancer Journey</h1>
-      <div className="flex flex-col gap-4">
-        {posts.map((post) => (
-          <div key={post.attributes.meta.slug}>
-            <Link
-              to={post.attributes.meta.slug}
-              className="hover:underline decoration-orange-500 underline-offset-4"
-            >
-              <span>{post.attributes.meta.title}</span>
-              <span className="float-right text-gray-600 italic">
-                {format(parseISO(post.attributes.meta.date), 'MMMM do, yyyy')}
-              </span>
-            </Link>
-          </div>
-        ))}
-      </div>
+      <Container>
+        <h1 className="text-4xl font-bold font-serif my-8">Cancer Journey</h1>
+        <div className="flex flex-col gap-4">
+          {posts.map((post) => (
+            <div key={post.attributes.meta.slug}>
+              <Link
+                to={post.attributes.meta.slug}
+                className="hover:underline decoration-orange-500 underline-offset-4"
+              >
+                <span>{post.attributes.meta.title}</span>
+                <span className="float-right text-gray-600 italic">
+                  {format(parseISO(post.attributes.meta.date), 'MMMM do, yyyy')}
+                </span>
+              </Link>
+            </div>
+          ))}
+        </div>
+      </Container>
     </Layout>
   );
 }
