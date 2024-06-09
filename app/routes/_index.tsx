@@ -1,11 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faGithub,
-  faLinkedin,
-  faMastodon,
-  faTwitter,
-} from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { type MetaFunction } from '@remix-run/node';
 import { Link } from '@remix-run/react';
 import clsx from 'clsx';
@@ -16,8 +8,8 @@ import {
   InstagramIcon,
   LinkedInIcon,
   XIcon,
+  ThreadsIcon,
 } from '~/components/SocialIcons';
-import IconLink from '../components/IconLink';
 import image1 from '../images/elkvtc.jpg';
 import image2 from '../images/jaspersunset.jpg';
 import image3 from '../images/frostleaf.jpg';
@@ -104,22 +96,27 @@ const Index = () => (
           Tailwind. Crafting modern, simple, user-focused software.
         </p>
         <div className="mt-6 flex gap-6">
-          <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />
+          <SocialLink href="https://x.com/mikecousins" aria-label="Follow on X" icon={XIcon} />
           <SocialLink
-            href="#"
+            href="https://www.instagram.com/mikecousins"
             aria-label="Follow on Instagram"
             icon={InstagramIcon}
           />
           <SocialLink
-            href="#"
+            href="https://github.com/mikecousins"
             aria-label="Follow on GitHub"
             icon={GitHubIcon}
           />
           <SocialLink
-            href="#"
+            href="https://www.linkedin.com/in/mikecousins/"
             aria-label="Follow on LinkedIn"
             icon={LinkedInIcon}
           />
+          <SocialLink
+            href="https://www.threads.net/@mikecousins"
+            aria-label="Follow on Threads"
+            icon={ThreadsIcon}
+            />
         </div>
       </div>
     </Container>
