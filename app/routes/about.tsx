@@ -6,6 +6,7 @@ import {
   GitHubIcon,
   InstagramIcon,
   LinkedInIcon,
+  ThreadsIcon,
   XIcon,
 } from '~/components/SocialIcons';
 import portraitImage from '~/images/elkvtc.jpg';
@@ -95,24 +96,27 @@ const About = () => {
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href="#" icon={XIcon}>
+              <SocialLink href="https://x.com/mikecousins" icon={XIcon}>
                 Follow on X
               </SocialLink>
-              <SocialLink href="#" icon={InstagramIcon} className="mt-4">
+              <SocialLink href="https://www.instagram.com/mikecousins" icon={InstagramIcon} className="mt-4">
                 Follow on Instagram
               </SocialLink>
-              <SocialLink href="#" icon={GitHubIcon} className="mt-4">
+              <SocialLink href="https://github.com/mikecousins" icon={GitHubIcon} className="mt-4">
                 Follow on GitHub
               </SocialLink>
-              <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
+              <SocialLink href="https://www.linkedin.com/in/mikecousins" icon={LinkedInIcon} className="mt-4">
                 Follow on LinkedIn
               </SocialLink>
+              <SocialLink href="https://www.threads.net/@mikecousins" icon={ThreadsIcon} className="mt-4">
+                Follow on Threads
+              </SocialLink>
               <SocialLink
-                href="mailto:spencer@planetaria.tech"
+                href="mailto:mikecousins@gmail.com"
                 icon={MailIcon}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
-                spencer@planetaria.tech
+                mikecousins@gmail.com
               </SocialLink>
             </ul>
           </div>
