@@ -24,7 +24,7 @@ const Project = () => {
 
   return (
     <Layout>
-      <ArticleLayout article={frontmatter}>
+      <ArticleLayout article={frontmatter} back="/projects">
         <Component />
       </ArticleLayout>
     </Layout>

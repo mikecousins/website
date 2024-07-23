@@ -1,8 +1,12 @@
 import { json, type LoaderFunction } from '@remix-run/node';
 import { type MetaFunction, useLoaderData } from '@remix-run/react';
+import { getMDXComponent } from 'mdx-bundler/client';
+import { useMemo } from 'react';
 import invariant from 'tiny-invariant';
+import { ArticleLayout } from '~/components/ArticleLayout';
 import { Container } from '~/components/Container';
 import { Layout } from '~/components/Layout';
+import { getPost } from '~/utilities/post.server';
 
 export const meta: MetaFunction = () => {
   return [
@@ -13,30 +17,24 @@ export const meta: MetaFunction = () => {
 };
 
 export const loader: LoaderFunction = async ({ params }) => {
-  invariant(params.slug, `params.slug is required`);
+  const { slug } = params;
+  invariant(slug, 'Slug is required');
 
-  console.log(
-    `https://github-md.com/mikecousins/website/main/app/data/posts/${params.slug}.md`
-  );
+  const post = await getPost(slug);
+  invariant(post, 'Post not found');
 
-  const postData = await fetch(
-    `https://github-md.com/mikecousins/website/main/app/data/posts/${params.slug}.md`
-  ).then((res) => res.json());
-  console.log(postData);
-
-  return json({ html: postData.html, title: postData.attributes.meta.title });
+  const { frontmatter, code } = post;
+  return json({ frontmatter, code });
 };
 
 export default function Post() {
-  const { title, html } = useLoaderData<typeof loader>();
+  const { code, frontmatter } = useLoaderData<typeof loader>();
+  const Component = useMemo(() => getMDXComponent(code), [code]);
   return (
     <Layout>
-      <Container>
-        <h1 className="text-4xl font-bold font-serif my-8">{title}</h1>
-        <article className="prose text-white w-full">
-          <div dangerouslySetInnerHTML={{ __html: html }} />
-        </article>
-      </Container>
+      <ArticleLayout article={frontmatter} back="/posts">
+        <Component />
+      </ArticleLayout>
     </Layout>
   );
 }
