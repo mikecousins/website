@@ -4,10 +4,9 @@ import { getMDXComponent } from 'mdx-bundler/client/index.js';
 import { getProject, type Frontmatter } from '~/utilities/project.server';
 import type { LoaderFunctionArgs } from '@remix-run/node';
 import { ArticleLayout } from '~/components/ArticleLayout';
+import { Layout } from '~/components/Layout';
 
-export const loader = async ({
-  params,
-}: LoaderFunctionArgs) => {
+export const loader = async ({ params }: LoaderFunctionArgs) => {
   const slug = params['*'];
   if (!slug) throw new Response('Not found', { status: 404 });
 
@@ -34,8 +33,10 @@ export default function Project() {
   const Component = useMemo(() => getMDXComponent(code), [code]);
 
   return (
-    <ArticleLayout article={frontmatter}>
-      <Component />
-    </ArticleLayout>
+    <Layout>
+      <ArticleLayout article={frontmatter}>
+        <Component />
+      </ArticleLayout>
+    </Layout>
   );
 }
