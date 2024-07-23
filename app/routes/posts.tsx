@@ -4,6 +4,8 @@ import { compareAsc, format, parseISO } from 'date-fns';
 import { Container } from '~/components/Container';
 import { Layout } from '~/components/Layout';
 
+import * as TwoDown from '../data/posts/2-down.md';
+
 export const meta: MetaFunction = () => {
   return [
     {
