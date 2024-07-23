@@ -4,11 +4,21 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  type MetaFunction,
 } from '@remix-run/react';
 import styles from '~/tailwind.css?url';
 
 export const links = () => {
   return [{ rel: 'stylesheet', href: styles }];
+};
+
+export const meta: MetaFunction = () => {
+  return [
+    {
+      title: 'Mike Cousins',
+    },
+    { name: 'description', content: 'The personal site of Mike Cousins' },
+  ];
 };
 
 export default function App() {
