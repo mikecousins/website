@@ -7,7 +7,9 @@ export type Frontmatter = {
   meta: {
     title: string;
     description: string;
-    date: string;
+    startDate: Date;
+    endDate?: Date;
+    tags: string[];
   };
 };
 

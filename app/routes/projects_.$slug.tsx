@@ -1,11 +1,16 @@
 import { useMemo } from 'react';
 import { json, useLoaderData } from '@remix-run/react';
-import { getMDXComponent } from 'mdx-bundler/client/index.js';
 import type { LoaderFunctionArgs } from '@remix-run/node';
 import invariant from 'tiny-invariant';
-import { getProject } from '~/utilities/project.server';
-import { ArticleLayout } from '~/components/ArticleLayout';
+import { getMDXComponent } from 'mdx-bundler/client';
+import { getProject, type Frontmatter } from '~/utilities/project.server';
 import { Layout } from '~/components/Layout';
+import { ProjectLayout } from '~/components/ProjectLayout';
+
+type Project = Frontmatter & {
+  startDate: string;
+  endDate?: string;
+}
 
 export const loader = async ({ params }: LoaderFunctionArgs) => {
   const { slug } = params;
@@ -24,9 +29,9 @@ const Project = () => {
 
   return (
     <Layout>
-      <ArticleLayout article={frontmatter} back="/projects">
+      <ProjectLayout project={frontmatter} back="/projects">
         <Component />
-      </ArticleLayout>
+      </ProjectLayout>
     </Layout>
   );
 };

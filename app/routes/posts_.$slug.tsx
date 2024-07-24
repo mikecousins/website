@@ -3,8 +3,7 @@ import { type MetaFunction, useLoaderData } from '@remix-run/react';
 import { getMDXComponent } from 'mdx-bundler/client';
 import { useMemo } from 'react';
 import invariant from 'tiny-invariant';
-import { ArticleLayout } from '~/components/ArticleLayout';
-import { Container } from '~/components/Container';
+import { PostLayout } from '~/components/PostLayout';
 import { Layout } from '~/components/Layout';
 import { getPost } from '~/utilities/post.server';
 
@@ -32,9 +31,9 @@ export default function Post() {
   const Component = useMemo(() => getMDXComponent(code), [code]);
   return (
     <Layout>
-      <ArticleLayout article={frontmatter} back="/posts">
+      <PostLayout article={frontmatter}>
         <Component />
-      </ArticleLayout>
+      </PostLayout>
     </Layout>
   );
 }

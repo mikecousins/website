@@ -1,6 +1,5 @@
 import { Container } from './Container';
 import { Prose } from '~/components/Prose';
-import { type Frontmatter } from '~/utilities/project.server';
 import { Link } from '@remix-run/react';
 import { formatDate } from 'date-fns';
 
@@ -17,21 +16,20 @@ function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   );
 }
 
-export function ArticleLayout({
+export function PostLayout({
   article,
-  back,
   children,
 }: {
-  article: Frontmatter;
-  back?: string;
+  article: any;
   children: React.ReactNode;
 }) {
+  console.log(article.meta);
   return (
     <Container className="mt-16 lg:mt-32">
       <div className="xl:relative">
         <div className="mx-auto max-w-2xl">
           <Link
-            to={back ?? '/'}
+            to="/posts"
             aria-label="Go back to articles"
             className="group mb-8 flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 transition lg:absolute lg:-left-5 lg:-mt-2 lg:mb-0 xl:-top-1.5 xl:left-0 xl:mt-0 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0 dark:ring-white/10 dark:hover:border-zinc-700 dark:hover:ring-white/20"
           >
