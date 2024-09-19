@@ -59,14 +59,6 @@ const Layout = ({ children }: Props) => (
                     Movies
                   </Link>
                 </NavigationMenu.Link>
-                <NavigationMenu.Link asChild>
-                  <Link
-                    to="/stuff"
-                    className="decoration-orange-500 underline-offset-4 hover:underline"
-                  >
-                    Stuff
-                  </Link>
-                </NavigationMenu.Link>
               </div>
             </NavigationMenu.Content>
           </NavigationMenu.Item>
