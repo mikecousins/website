@@ -23,7 +23,6 @@ export function PostLayout({
   article: any;
   children: React.ReactNode;
 }) {
-  console.log(article.meta);
   return (
     <Container className="mt-16 lg:mt-32">
       <div className="xl:relative">

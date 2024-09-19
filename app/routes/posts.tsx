@@ -28,9 +28,11 @@ export default function Index() {
 
   return (
     <Layout>
-      <Container>
-        <h1 className="text-4xl font-bold font-serif my-8">Cancer Journey</h1>
-        <div className="flex flex-col gap-4">
+      <Container className="mt-16 sm:mt-32">
+        <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+          Cancer Journey
+        </h1>
+        <div className="flex flex-col gap-4 mt-4">
           {posts.map((post) => (
             <div key={post.slug}>
               <Link
