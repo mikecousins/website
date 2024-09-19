@@ -12,12 +12,12 @@ export const meta: MetaFunction = () => {
 
 const Stuff = () => (
   <Layout>
-    <Container>
-      <h1 className="text-6xl font-serif leading-none mb-2 mt-16">Stuff</h1>
-      <div className="font-mono">
-        <p className="font-mono">
-          All of the stuff that I personally use and recommend.
-        </p>
+    <Container className="mt-16 sm:mt-32">
+      <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+        Stuff
+      </h1>
+      <div>
+        <p>All of the stuff that I personally use and recommend.</p>
         <Category name="Tech" />
         <div>
           Phone -{' '}
@@ -147,13 +147,15 @@ const Stuff = () => (
 );
 
 const Category = ({ name }: { name: string }) => (
-  <h2 className="font-bold text-xl my-2">{name}</h2>
+  <h2 className="font-bold text-xl my-2 text-zinc-800 dark:text-zinc-100">
+    {name}
+  </h2>
 );
 
 const ExtLink = ({ href, text }: { href: string; text: string }) => (
   <a
     href={href}
-    className="decoration-orange-500 underline-offset-4 decoration-dashed hover:decoration-solid underline"
+    className="decoration-orange-500 underline-offset-4 decoration-dashed hover:text-orange-500 underline"
   >
     {text}
   </a>
