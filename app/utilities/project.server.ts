@@ -6,10 +6,11 @@ import { bundleMDX } from './mdx.server';
 export type Frontmatter = {
   meta: {
     title: string;
-    description: string;
     startDate: Date;
     endDate?: Date;
     tags: string[];
+    company: string;
+    role: string;
   };
 };
 

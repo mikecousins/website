@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { json, useLoaderData } from '@remix-run/react';
+import { json, useLoaderData, type MetaFunction } from '@remix-run/react';
 import type { LoaderFunctionArgs } from '@remix-run/node';
 import invariant from 'tiny-invariant';
 import { getMDXComponent } from 'mdx-bundler/client';
@@ -11,6 +11,14 @@ type Project = Frontmatter & {
   startDate: string;
   endDate?: string;
 }
+
+export const meta: MetaFunction<typeof loader> = ({ data }) => {
+  return [
+    {
+      title: `Mike Cousins - ${data?.frontmatter.meta.company}`,
+    },
+  ];
+};
 
 export const loader = async ({ params }: LoaderFunctionArgs) => {
   const { slug } = params;
