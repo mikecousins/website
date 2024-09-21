@@ -51,7 +51,7 @@ const Projects = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {posts.map((post) => (
+            {posts.sort((a, b) => a.frontmatter.meta.startDate < b.frontmatter.meta.startDate ? 1 : -1).map((post) => (
               <TableRow key={post.slug} href={post.slug}>
                 <TableCell className="font-medium">
                   {post.frontmatter.meta.company}

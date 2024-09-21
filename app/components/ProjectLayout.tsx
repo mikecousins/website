@@ -2,6 +2,7 @@ import { Container } from './Container';
 import { Prose } from '~/components/Prose';
 import { Link } from '@remix-run/react';
 import { formatDate } from 'date-fns';
+import { Badge } from './catalyst/badge';
 
 function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -44,11 +45,15 @@ export function ProjectLayout({
                 dateTime={project.meta.startDate}
                 className="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500"
               >
-                <span className="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500" />
-                <span className="ml-3"> 
-                  {formatDate(project.meta.startDate, 'P')}
+                <span>
+                  {formatDate(project.meta.startDate, 'yyyy')}
                 </span>
               </time>
+              <div className="flex gap-2 mt-2">
+                {project.meta.tags.map((tag: string) => (
+                  <Badge>{tag}</Badge>
+                ))}
+              </div>
             </header>
             <Prose className="mt-8" data-mdx-content>
               {children}
