@@ -51,7 +51,7 @@ export function ProjectLayout({
               </time>
               <div className="flex gap-2 mt-2">
                 {project.meta.tags.map((tag: string) => (
-                  <Badge>{tag}</Badge>
+                  <Badge key={tag}>{tag}</Badge>
                 ))}
               </div>
             </header>

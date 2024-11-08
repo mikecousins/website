@@ -62,7 +62,7 @@ const Projects = () => {
                 <TableCell>
                   <div className="flex gap-2">
                     {post.frontmatter.meta.tags.map((tag) => (
-                      <Badge>{tag}</Badge>
+                      <Badge key={tag}>{tag}</Badge>
                     ))}
                   </div>
                 </TableCell>
