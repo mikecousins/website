@@ -1,5 +1,5 @@
 import { json } from '@remix-run/node';
-import { Link, type MetaFunction, useLoaderData } from '@remix-run/react';
+import { type MetaFunction, useLoaderData } from '@remix-run/react';
 import { compareAsc, format, parseISO } from 'date-fns';
 import { Badge } from '~/components/catalyst/badge';
 import {
