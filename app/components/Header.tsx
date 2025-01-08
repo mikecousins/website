@@ -245,7 +245,7 @@ function Avatar({
       {...props}
     >
       <img
-        src="https://loremflickr.com/320/240"
+        src="/app/images/ski.jpg"
         alt=""
         sizes={large ? '4rem' : '2.25rem'}
         className={clsx(
