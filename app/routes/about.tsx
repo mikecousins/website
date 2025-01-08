@@ -5,10 +5,7 @@ import { Layout } from '~/components/Layout';
 import {
   CalendarIcon,
   GitHubIcon,
-  InstagramIcon,
   LinkedInIcon,
-  ThreadsIcon,
-  XIcon,
 } from '~/components/SocialIcons';
 import portraitImage from '~/images/elkvtc.jpg';
 
@@ -109,16 +106,6 @@ const About = () => {
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href="https://x.com/mikecousins" icon={XIcon}>
-                Follow on X
-              </SocialLink>
-              <SocialLink
-                href="https://www.instagram.com/mikecousins"
-                icon={InstagramIcon}
-                className="mt-4"
-              >
-                Follow on Instagram
-              </SocialLink>
               <SocialLink
                 href="https://github.com/mikecousins"
                 icon={GitHubIcon}
@@ -132,13 +119,6 @@ const About = () => {
                 className="mt-4"
               >
                 Follow on LinkedIn
-              </SocialLink>
-              <SocialLink
-                href="https://www.threads.net/@mikecousins"
-                icon={ThreadsIcon}
-                className="mt-4"
-              >
-                Follow on Threads
               </SocialLink>
               <SocialLink
                 href="mailto:mikecousins@gmail.com"
