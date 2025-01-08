@@ -3,13 +3,7 @@ import { Link } from '@remix-run/react';
 import clsx from 'clsx';
 import { Layout } from '~/components/Layout';
 import { Container } from '~/components/Container';
-import {
-  GitHubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  XIcon,
-  ThreadsIcon,
-} from '~/components/SocialIcons';
+import { GitHubIcon, LinkedInIcon } from '~/components/SocialIcons';
 import image1 from '../images/elkvtc.jpg';
 import image2 from '../images/jaspersunset.jpg';
 import image3 from '../images/frostleaf.jpg';
@@ -96,12 +90,6 @@ const Index = () => (
           Tailwind. Crafting modern, simple, user-focused software.
         </p>
         <div className="mt-6 flex gap-6">
-          <SocialLink href="https://x.com/mikecousins" aria-label="Follow on X" icon={XIcon} />
-          <SocialLink
-            href="https://www.instagram.com/mikecousins"
-            aria-label="Follow on Instagram"
-            icon={InstagramIcon}
-          />
           <SocialLink
             href="https://github.com/mikecousins"
             aria-label="Follow on GitHub"
@@ -112,11 +100,6 @@ const Index = () => (
             aria-label="Follow on LinkedIn"
             icon={LinkedInIcon}
           />
-          <SocialLink
-            href="https://www.threads.net/@mikecousins"
-            aria-label="Follow on Threads"
-            icon={ThreadsIcon}
-            />
         </div>
       </div>
     </Container>
