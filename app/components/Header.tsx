@@ -10,6 +10,7 @@ import {
 import clsx from 'clsx';
 import { Container } from './Container';
 import { Link, NavLink, useLocation } from '@remix-run/react';
+import image from '../images/ski.jpg';
 
 function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -245,7 +246,7 @@ function Avatar({
       {...props}
     >
       <img
-        src="/app/images/ski.jpg"
+        src={image}
         alt=""
         sizes={large ? '4rem' : '2.25rem'}
         className={clsx(
