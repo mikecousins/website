@@ -52,5 +52,10 @@
     "vite-tsconfig-paths": "^5.1.4"
   },
   "sideEffects": false,
-  "packageManager": "pnpm@10.4.0"
+  "packageManager": "pnpm@10.4.0",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
 }

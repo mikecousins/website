@@ -71,7 +71,7 @@ const Services = () => (
         </div>
         <p>
           Reach out if you would like to work together! I have various ways to
-          contact me on my <StyledLink to="about">about</StyledLink> page.
+          contact me on my <StyledLink to="/about">about</StyledLink> page.
         </p>
       </div>
     </Container>

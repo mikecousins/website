@@ -121,11 +121,11 @@ const About = () => {
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink
-                href="mailto:mikecousins@gmail.com"
+                href="mailto:mike@cousins.ai"
                 icon={MailIcon}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
-                mikecousins@gmail.com
+                mike@cousins.ai
               </SocialLink>
               <SocialLink
                 href="https://cal.com/mikecousins"
