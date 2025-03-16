@@ -105,7 +105,7 @@ const About = () => {
             </div>
           </div>
           <div className="lg:pl-20">
-            <ul role="list">
+            <ul>
               <SocialLink
                 href="https://github.com/mikecousins"
                 icon={GitHubIcon}
