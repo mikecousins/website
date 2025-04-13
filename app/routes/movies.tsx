@@ -28,13 +28,13 @@ const Movies = () => {
         <div className="my-8 font-mono text-4xl">Watched: {watched}/250</div>
         <div className="w-full border-separate border-spacing-0 font-mono">
           <div className="text-white flex">
-            <div className="border-b border-gray-900 px-1 lg:px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter">
+            <div className="border-b border-gray-900 px-1 lg:px-3 py-3.5 text-left text-sm font-semibold backdrop-blur-sm backdrop-filter">
               #
             </div>
-            <div className="flex-1 border-b border-gray-900 px-1 lg:px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter">
+            <div className="flex-1 border-b border-gray-900 px-1 lg:px-3 py-3.5 text-left text-sm font-semibold backdrop-blur-sm backdrop-filter">
               Name
             </div>
-            <div className="border-b border-gray-900 px-1 lg:px-3 py-3.5 text-left text-sm font-semibold backdrop-blur backdrop-filter">
+            <div className="border-b border-gray-900 px-1 lg:px-3 py-3.5 text-left text-sm font-semibold backdrop-blur-sm backdrop-filter">
               Resolution
             </div>
           </div>

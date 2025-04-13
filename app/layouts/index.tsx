@@ -11,7 +11,7 @@ type Props = {
 const Layout = ({ children }: Props) => (
   <div className="flex flex-col text-white">
     <div className="max-w-4xl w-full mx-auto text-xl font-mono">
-      <NavigationMenu.Root className="relative flex justify-end z-[1]">
+      <NavigationMenu.Root className="relative flex justify-end z-1">
         <NavigationMenu.List className="flex justify-center p-4 gap-4 list-none">
           <NavigationMenu.Item>
             <NavigationMenu.Link asChild>
