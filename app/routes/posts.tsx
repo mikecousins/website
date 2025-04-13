@@ -1,6 +1,5 @@
-import { json } from '@remix-run/node';
-import { Link, type MetaFunction, useLoaderData } from '@remix-run/react';
-import { compareAsc, format, parseISO } from 'date-fns';
+import { Link, type MetaFunction, useLoaderData } from 'react-router';
+import { compareAsc, format } from 'date-fns';
 import { Container } from '~/components/Container';
 import { Layout } from '~/components/Layout';
 import { getPosts } from '~/utilities/post.server';
@@ -16,10 +15,8 @@ export const meta: MetaFunction = () => {
 export async function loader() {
   const postList = await getPosts();
 
-  return json(
-    postList.sort((a, b) =>
-      compareAsc(a.frontmatter.meta.date, b.frontmatter.meta.date)
-    )
+  return postList.sort((a, b) =>
+    compareAsc(a.frontmatter.meta.date, b.frontmatter.meta.date)
   );
 }
 
@@ -41,10 +38,7 @@ export default function Index() {
               >
                 <span>{post.frontmatter.meta.title}</span>
                 <span className="float-right text-gray-600 italic">
-                  {format(
-                    parseISO(post.frontmatter.meta.date),
-                    'MMMM do, yyyy'
-                  )}
+                  {format(post.frontmatter.meta.date, 'MMMM do, yyyy')}
                 </span>
               </Link>
             </div>

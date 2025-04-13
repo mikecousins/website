@@ -1,6 +1,4 @@
-import { json } from '@remix-run/node';
-import { type MetaFunction, useLoaderData } from '@remix-run/react';
-import { compareAsc, format, parseISO } from 'date-fns';
+import { compareAsc, format } from 'date-fns';
 import { Badge } from '~/components/catalyst/badge';
 import {
   Table,
@@ -13,8 +11,9 @@ import {
 import { Container } from '~/components/Container';
 import { Layout } from '~/components/Layout';
 import { getProjects } from '~/utilities/project.server';
+import type { Route } from './+types/projects';
 
-export const meta: MetaFunction = () => {
+export const meta: Route.MetaFunction = () => {
   return [
     {
       title: 'Mike Cousins - Projects',
@@ -25,15 +24,13 @@ export const meta: MetaFunction = () => {
 export const loader = async () => {
   const projectList = await getProjects();
 
-  return json(
-    projectList.sort((a, b) =>
-      compareAsc(a.frontmatter.meta.startDate, b.frontmatter.meta.startDate)
-    )
+  return projectList.sort((a, b) =>
+    compareAsc(a.frontmatter.meta.startDate, b.frontmatter.meta.startDate)
   );
 };
 
-const Projects = () => {
-  const posts = useLoaderData<typeof loader>();
+const Projects = ({ loaderData }: Route.ComponentProps) => {
+  const posts = loaderData;
 
   return (
     <Layout>
@@ -51,29 +48,34 @@ const Projects = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {posts.sort((a, b) => a.frontmatter.meta.startDate < b.frontmatter.meta.startDate ? 1 : -1).map((post) => (
-              <TableRow key={post.slug} href={post.slug}>
-                <TableCell className="font-medium">
-                  {post.frontmatter.meta.company}
-                </TableCell>
-                <TableCell className="font-medium">
-                  {post.frontmatter.meta.role}
-                </TableCell>
-                <TableCell>
-                  <div className="flex gap-2">
-                    {post.frontmatter.meta.tags.map((tag) => (
-                      <Badge key={tag}>{tag}</Badge>
-                    ))}
-                  </div>
-                </TableCell>
-                <TableCell className="text-zinc-500">
-                  {format(
-                    parseISO(post.frontmatter.meta.startDate),
-                    'MMMM do, yyyy'
-                  )}
-                </TableCell>
-              </TableRow>
-            ))}
+            {posts
+              .sort((a, b) =>
+                a.frontmatter.meta.startDate < b.frontmatter.meta.startDate
+                  ? 1
+                  : -1
+              )
+              .map((post) => (
+                <TableRow key={post.slug} href={post.slug}>
+                  <TableCell className="font-medium">
+                    {post.frontmatter.meta.company}
+                  </TableCell>
+                  <TableCell className="font-medium">
+                    {post.frontmatter.meta.role}
+                  </TableCell>
+                  <TableCell>
+                    <div className="flex gap-2">
+                      {post.frontmatter.meta.tags.map((tag) => (
+                        <Badge key={tag}>{tag}</Badge>
+                      ))}
+                    </div>
+                  </TableCell>
+                  <TableCell className="text-zinc-500">
+                    {format(post.frontmatter.meta.startDate,
+                      'MMMM do, yyyy'
+                    )}
+                  </TableCell>
+                </TableRow>
+              ))}
           </TableBody>
         </Table>
       </Container>

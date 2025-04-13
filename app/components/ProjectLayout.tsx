@@ -1,6 +1,6 @@
 import { Container } from './Container';
 import { Prose } from '~/components/Prose';
-import { Link } from '@remix-run/react';
+import { Link } from 'react-router';
 import { formatDate } from 'date-fns';
 import { Badge } from './catalyst/badge';
 

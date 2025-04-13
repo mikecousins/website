@@ -1,13 +1,12 @@
-import { json, type LoaderFunction } from '@remix-run/node';
-import { type MetaFunction, useLoaderData } from '@remix-run/react';
 import { getMDXComponent } from 'mdx-bundler/client';
 import { useMemo } from 'react';
 import invariant from 'tiny-invariant';
 import { PostLayout } from '~/components/PostLayout';
 import { Layout } from '~/components/Layout';
 import { getPost } from '~/utilities/post.server';
+import type { Route } from './+types/posts_.$slug';
 
-export const meta: MetaFunction = () => {
+export const meta: Route.MetaFunction = () => {
   return [
     {
       title: 'Mike Cousins - Post',
@@ -15,7 +14,7 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export const loader: LoaderFunction = async ({ params }) => {
+export const loader = async ({ params }: Route.LoaderArgs) => {
   const { slug } = params;
   invariant(slug, 'Slug is required');
 
@@ -23,11 +22,11 @@ export const loader: LoaderFunction = async ({ params }) => {
   invariant(post, 'Post not found');
 
   const { frontmatter, code } = post;
-  return json({ frontmatter, code });
+  return { frontmatter, code };
 };
 
-export default function Post() {
-  const { code, frontmatter } = useLoaderData<typeof loader>();
+export default function Post({ loaderData }: Route.ComponentProps) {
+  const { code, frontmatter } = loaderData;
   const Component = useMemo(() => getMDXComponent(code), [code]);
   return (
     <Layout>

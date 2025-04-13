@@ -1,4 +1,4 @@
-import { Link } from '@remix-run/react';
+import { Link } from 'react-router';
 
 type Props = React.ComponentProps<typeof Link>;
 

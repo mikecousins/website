@@ -1,5 +1,5 @@
 import * as Headless from '@headlessui/react';
-import { Link as RemixLink, type LinkProps } from '@remix-run/react';
+import { Link as RemixLink, type LinkProps } from 'react-router';
 import React from 'react';
 
 export const Link = React.forwardRef(function Link(

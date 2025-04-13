@@ -1,4 +1,4 @@
-import { type MetaFunction } from '@remix-run/node';
+import { type MetaFunction } from 'react-router';
 import { movies } from '~/data/movies';
 import { MovieRow } from '~/components/MovieRow';
 import { Layout } from '~/components/Layout';

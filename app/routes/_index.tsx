@@ -1,5 +1,4 @@
-import { type MetaFunction } from '@remix-run/node';
-import { Link } from '@remix-run/react';
+import { Link } from 'react-router';
 import clsx from 'clsx';
 import { Layout } from '~/components/Layout';
 import { Container } from '~/components/Container';
@@ -10,7 +9,7 @@ import image3 from '../images/frostleaf.jpg';
 import image4 from '../images/goldstreamfalls.jpg';
 import image5 from '../images/glass.jpg';
 
-function SocialLink({
+const SocialLink = ({
   className,
   href,
   children,
@@ -20,7 +19,7 @@ function SocialLink({
   href: string;
   icon: React.ComponentType<{ className?: string }>;
   children?: React.ReactNode;
-}) {
+}) => {
   return (
     <li className={clsx(className, 'flex')}>
       <Link
@@ -34,7 +33,7 @@ function SocialLink({
   );
 }
 
-function Photos() {
+const Photos = () => {
   let rotations = [
     'rotate-2',
     '-rotate-2',
@@ -67,7 +66,7 @@ function Photos() {
   );
 }
 
-export const meta: MetaFunction = () => {
+export const meta = () => {
   return [
     {
       title: 'Mike Cousins',

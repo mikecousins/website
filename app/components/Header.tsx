@@ -9,7 +9,7 @@ import {
 } from '@headlessui/react';
 import clsx from 'clsx';
 import { Container } from './Container';
-import { Link, NavLink, useLocation } from '@remix-run/react';
+import { Link, NavLink, useLocation } from 'react-router';
 import image from '../images/ski.jpg';
 
 function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
