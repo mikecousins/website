@@ -1,4 +1,11 @@
-import { Links, Meta, Outlet, Scripts, ScrollRestoration, type MetaFunction } from 'react-router';
+import {
+  Links,
+  Meta,
+  Outlet,
+  Scripts,
+  ScrollRestoration,
+  type MetaFunction,
+} from 'react-router';
 import styles from '~/tailwind.css?url';
 
 export const links = () => {
