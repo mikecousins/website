@@ -16,3 +16,4 @@ api
 
 .react-router/
 .vercel/
+.netlify/
