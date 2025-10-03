@@ -1,5 +1,5 @@
 import { Container } from './Container';
-import { Prose } from '~/components/Prose';
+import { Prose } from './Prose';
 import { formatDate } from 'date-fns';
 
 function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
