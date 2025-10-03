@@ -34,7 +34,10 @@ export function ProjectsTable({ projects }: { projects: Project[] }) {
       </TableHead>
       <TableBody>
         {projects.map((project) => (
-          <TableRow key={project.id} href={`/projects/${project.id.replace('.mdx', '')}`}>
+          <TableRow
+            key={project.id}
+            href={`/projects/${project.id.replace('.mdx', '')}`}
+          >
             <TableCell className="font-medium">
               {project.data.meta.company}
             </TableCell>
