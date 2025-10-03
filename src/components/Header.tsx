@@ -220,7 +220,7 @@ function Avatar({
       {...props}
     >
       <img
-        src={skiImage}
+        src={typeof skiImage === 'string' ? skiImage : skiImage.src}
         alt=""
         sizes={large ? '4rem' : '2.25rem'}
         className={clsx(
