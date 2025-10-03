@@ -40,38 +40,6 @@ function ChevronDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   );
 }
 
-function SunIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-      {...props}
-    >
-      <path d="M8 12.25A4.25 4.25 0 0 1 12.25 8v0a4.25 4.25 0 0 1 4.25 4.25v0a4.25 4.25 0 0 1-4.25 4.25v0A4.25 4.25 0 0 1 8 12.25v0Z" />
-      <path
-        d="M12.25 3v1.5M21.5 12.25H20M18.791 18.791l-1.06-1.06M18.791 5.709l-1.06 1.06M12.25 20v1.5M4.5 12.25H3M6.77 6.77 5.709 5.709M6.77 17.73l-1.061 1.061"
-        fill="none"
-      />
-    </svg>
-  );
-}
-
-function MoonIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path
-        d="M17.25 16.22a6.937 6.937 0 0 1-9.47-9.47 7.451 7.451 0 1 0 9.47 9.47ZM12.75 7C17 7 17 2.75 17 2.75S17 7 21.25 7C17 7 17 11.25 17 11.25S17 7 12.75 7Z"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-
 function MobileNavItem({
   href,
   children,
@@ -217,8 +185,8 @@ const DesktopNavigation = ({
 }*/
 
 function clamp(number: number, a: number, b: number) {
-  let min = Math.min(a, b);
-  let max = Math.max(a, b);
+  const min = Math.min(a, b);
+  const max = Math.max(a, b);
   return Math.min(Math.max(number, min), max);
 }
 
@@ -252,7 +220,7 @@ function Avatar({
       {...props}
     >
       <img
-        src={typeof skiImage === 'string' ? skiImage : skiImage.src}
+        src={skiImage}
         alt=""
         sizes={large ? '4rem' : '2.25rem'}
         className={clsx(
@@ -272,8 +240,8 @@ export const Header = ({ pathname }: { pathname: string }) => {
   const isInitial = useRef(true);
 
   useEffect(() => {
-    let downDelay = avatarRef.current?.offsetTop ?? 0;
-    let upDelay = 64;
+    const downDelay = avatarRef.current?.offsetTop ?? 0;
+    const upDelay = 64;
 
     function setProperty(property: string, value: string) {
       document.documentElement.style.setProperty(property, value);
@@ -288,8 +256,8 @@ export const Header = ({ pathname }: { pathname: string }) => {
         return;
       }
 
-      let { top, height } = headerRef.current.getBoundingClientRect();
-      let scrollY = clamp(
+      const { top, height } = headerRef.current.getBoundingClientRect();
+      const scrollY = clamp(
         window.scrollY,
         0,
         document.body.scrollHeight - window.innerHeight
@@ -305,7 +273,7 @@ export const Header = ({ pathname }: { pathname: string }) => {
         setProperty('--header-height', `${downDelay + height}px`);
         setProperty('--header-mb', `${-downDelay}px`);
       } else if (top + height < -upDelay) {
-        let offset = Math.max(height, scrollY - upDelay);
+        const offset = Math.max(height, scrollY - upDelay);
         setProperty('--header-height', `${offset}px`);
         setProperty('--header-mb', `${height - offset}px`);
       } else if (top === 0) {
@@ -329,12 +297,12 @@ export const Header = ({ pathname }: { pathname: string }) => {
         return;
       }
 
-      let fromScale = 1;
-      let toScale = 36 / 64;
-      let fromX = 0;
-      let toX = 2 / 16;
+      const fromScale = 1;
+      const toScale = 36 / 64;
+      const fromX = 0;
+      const toX = 2 / 16;
 
-      let scrollY = downDelay - window.scrollY;
+      const scrollY = downDelay - window.scrollY;
 
       let scale = (scrollY * (fromScale - toScale)) / downDelay + toScale;
       scale = clamp(scale, fromScale, toScale);
@@ -347,9 +315,9 @@ export const Header = ({ pathname }: { pathname: string }) => {
         `translate3d(${x}rem, 0, 0) scale(${scale})`
       );
 
-      let borderScale = 1 / (toScale / scale);
-      let borderX = (-toX + x) * borderScale;
-      let borderTransform = `translate3d(${borderX}rem, 0, 0) scale(${borderScale})`;
+      const borderScale = 1 / (toScale / scale);
+      const borderX = (-toX + x) * borderScale;
+      const borderTransform = `translate3d(${borderX}rem, 0, 0) scale(${borderScale})`;
 
       setProperty('--avatar-border-transform', borderTransform);
       setProperty('--avatar-border-opacity', scale === toScale ? '1' : '0');
