@@ -18,15 +18,10 @@ const { title, description = 'The personal site of Mike Cousins' } = Astro.props
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <script>
-      (function () {
-        window.counterscale = {
-          q: [["set", "siteId", "mikecousins"], ["trackPageview"]],
-        };
-      })();
-    </script>
     <script
+      is:inline
       id="counterscale-script"
+      data-site-id="mikecousins"
       src="https://counterscale.cousins.ai/tracker.js"
       defer
     ></script>
