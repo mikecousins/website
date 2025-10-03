@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { movies } from '../../app/data/movies';
 import { MovieRow } from '../components/MovieRow';
-import { Container } from '../components/Container';
+import Container from '../components/Container.astro';
 
 const watched = movies.filter((movie) => !!movie.watched).length;
 ---

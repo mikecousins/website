@@ -8,7 +8,7 @@ import {
   TransitionChild,
 } from '@headlessui/react';
 import clsx from 'clsx';
-import { Container } from './Container';
+import { Container } from './Container.tsx';
 import skiImage from '../images/ski.jpg';
 
 function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
