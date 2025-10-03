@@ -36,13 +36,13 @@
   "devDependencies": {
     "@eslint/js": "^9.36.0",
     "@mdx-js/rollup": "^3.1.1",
+    "@netlify/vite-plugin-react-router": "^1.0.1",
     "@react-router/dev": "^7.9.3",
     "@react-router/serve": "^7.9.3",
     "@tailwindcss/postcss": "^4.1.14",
     "@tailwindcss/typography": "^0.5.19",
     "@types/react": "^19.1.17",
     "@types/react-dom": "^19.1.11",
-    "@netlify/vite-plugin-react-router": "^1.0.1",
     "eslint": "^9.36.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-jsx-a11y": "^6.10.2",
@@ -59,7 +59,7 @@
     "vite-tsconfig-paths": "^5.1.4"
   },
   "sideEffects": false,
-  "packageManager": "pnpm@10.4.0",
+  "packageManager": "pnpm@10.18.0",
   "pnpm": {
     "onlyBuiltDependencies": [
       "@tailwindcss/oxide",
