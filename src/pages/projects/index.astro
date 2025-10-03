@@ -1,0 +1,20 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { ProjectsTable } from '../../components/ProjectsTable';
+import { Container } from '../../components/Container';
+
+const projects = await getCollection('projects');
+const sortedProjects = projects.sort((a, b) =>
+  b.data.meta.startDate.getTime() - a.data.meta.startDate.getTime()
+);
+---
+
+<BaseLayout title="Mike Cousins - Projects">
+  <Container className="mt-16 sm:mt-32">
+    <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+      Projects
+    </h1>
+    <ProjectsTable projects={sortedProjects} client:load />
+  </Container>
+</BaseLayout>

@@ -1,0 +1,28 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { ProjectLayout } from '../../components/ProjectLayout';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  return projects.map((project) => ({
+    params: { slug: project.id.replace('.mdx', '') },
+  }));
+}
+
+const { slug } = Astro.params;
+const projects = await getCollection('projects');
+const project = projects.find(p => p.id.replace('.mdx', '') === slug);
+
+if (!project) {
+  return Astro.redirect('/404');
+}
+
+const { Content } = await render(project);
+---
+
+<BaseLayout title={`Mike Cousins - ${project.data.meta.company}`}>
+  <ProjectLayout article={project.data} client:load>
+    <Content />
+  </ProjectLayout>
+</BaseLayout>

@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { movies } from '../../app/data/movies';
+import { MovieRow } from '../components/MovieRow';
+import { Container } from '../components/Container';
+
+const watched = movies.filter((movie) => !!movie.watched).length;
+---
+
+<BaseLayout title="Mike Cousins - Movies" description="imdb Top 250 Movies">
+  <Container className="mt-16 sm:mt-32">
+    <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+      Mike's IMDb Top 250 Movie List
+    </h1>
+    <p class="mt-3 text-xl text-gray-300 sm:mt-4 font-mono">
+      Bucket list endeavour to watch all of the best movies ever made.
+    </p>
+    <div class="my-8 font-mono text-4xl">Watched: {watched}/250</div>
+    <div class="w-full border-separate border-spacing-0 font-mono">
+      <div class="text-white flex">
+        <div class="border-b border-gray-900 px-1 lg:px-3 py-3.5 text-left text-sm font-semibold backdrop-blur-sm backdrop-filter">
+          #
+        </div>
+        <div class="flex-1 border-b border-gray-900 px-1 lg:px-3 py-3.5 text-left text-sm font-semibold backdrop-blur-sm backdrop-filter">
+          Name
+        </div>
+        <div class="border-b border-gray-900 px-1 lg:px-3 py-3.5 text-left text-sm font-semibold backdrop-blur-sm backdrop-filter">
+          Resolution
+        </div>
+      </div>
+      {movies.map((movie, index) => (
+        <MovieRow {...movie} number={index + 1} key={movie.name} client:load />
+      ))}
+    </div>
+  </Container>
+</BaseLayout>

@@ -1,4 +1,3 @@
-import { Link } from 'react-router';
 import { ContainerInner, ContainerOuter } from './Container';
 
 function NavLink({
@@ -9,12 +8,12 @@ function NavLink({
   children: React.ReactNode;
 }) {
   return (
-    <Link
-      to={href}
+    <a
+      href={href}
       className="transition hover:text-teal-500 dark:hover:text-teal-400"
     >
       {children}
-    </Link>
+    </a>
   );
 }
 

@@ -1,0 +1,109 @@
+---
+import clsx from 'clsx';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Container } from '../components/Container';
+import {
+  CalendarIcon,
+  GitHubIcon,
+  LinkedInIcon,
+} from '../components/SocialIcons';
+import { MailIcon } from '../components/MailIcon';
+import portraitImage from '../images/elkvtc.jpg';
+---
+
+<BaseLayout title="Mike Cousins - About">
+  <Container className="mt-16 sm:mt-32">
+    <div class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
+      <div class="lg:pl-20">
+        <div class="max-w-xs px-2.5 lg:max-w-none">
+          <img
+            src={portraitImage.src}
+            alt=""
+            class="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+          />
+        </div>
+      </div>
+      <div class="lg:order-first lg:row-span-2">
+        <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+          I'm Mike Cousins. I live in Calgary, where I help companies start
+          and scale.
+        </h1>
+        <div class="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+          <p>
+            I started my life in the shadow of my father, a career software
+            developer and ravenous learner. He inspired my love of computers
+            and all kinds of technology. I had a computer in my bedroom by
+            the time I was 6, and I began exploring it with day and night.
+          </p>
+          <p>
+            After school I set off on a mission to work in as many different
+            industries as possible. This is one of my favourite aspects of
+            technology, the ability to work in any industry. Since then I
+            have worked in telecommunications, oil and gas, healthcare,
+            finance, energy, and many more.
+          </p>
+          <p>
+            I have also done many different roles at those companies from
+            being a pure software developer, to architecting and tech
+            leadership, all the way up to CTO/VP roles. I still don't know
+            what I like best, so I keep doing them all. Maybe when I get
+            older I'll figure it out.
+          </p>
+          <p>
+            Along the way I have realized that I love small companies, as I
+            find that I get the most opportunities to make a real impact. I
+            usually get a widely defined role where I get to touch a lot of
+            the business. True happiness for me is learning about a new
+            business, a new industry, meeting new people, and getting to
+            solve a fun problem.
+          </p>
+          <p>
+            Today, I am tackling as many problems as I can get my hands on.
+            I usually have a few things going on at all times to keep me
+            busy.
+          </p>
+        </div>
+      </div>
+      <div class="lg:pl-20">
+        <ul>
+          <li class="flex mt-4">
+            <a
+              href="https://github.com/mikecousins"
+              class="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+            >
+              <GitHubIcon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
+              <span class="ml-4">Follow on GitHub</span>
+            </a>
+          </li>
+          <li class="flex mt-4">
+            <a
+              href="https://www.linkedin.com/in/mikecousins"
+              class="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+            >
+              <LinkedInIcon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
+              <span class="ml-4">Follow on LinkedIn</span>
+            </a>
+          </li>
+          <li class="flex mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40">
+            <a
+              href="mailto:mike@cousins.ai"
+              class="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+            >
+              <MailIcon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
+              <span class="ml-4">mike@cousins.ai</span>
+            </a>
+          </li>
+          <li class="flex mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40">
+            <a
+              href="https://cal.com/mikecousins"
+              class="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+            >
+              <CalendarIcon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
+              <span class="ml-4">Book a meeting with me</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </Container>
+</BaseLayout>

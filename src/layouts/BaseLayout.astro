@@ -1,0 +1,48 @@
+---
+import { Header } from '../components/Header';
+import { Footer } from '../components/Footer';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'The personal site of Mike Cousins' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <script>
+      (function () {
+        window.counterscale = {
+          q: [["set", "siteId", "mikecousins"], ["trackPageview"]],
+        };
+      })();
+    </script>
+    <script
+      id="counterscale-script"
+      src="https://counterscale.cousins.ai/tracker.js"
+      defer
+    ></script>
+  </head>
+  <body class="bg-black dark">
+    <div class="fixed inset-0 flex justify-center sm:px-8">
+      <div class="flex w-full max-w-7xl lg:px-8">
+        <div class="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20" />
+      </div>
+    </div>
+    <div class="relative flex w-full flex-col">
+      <Header pathname={Astro.url.pathname} client:load />
+      <main class="flex-auto text-zinc-600 dark:text-zinc-400">
+        <slot />
+      </main>
+      <Footer />
+    </div>
+  </body>
+</html>

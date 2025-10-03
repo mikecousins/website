@@ -17,3 +17,5 @@ api
 .react-router/
 .vercel/
 .netlify/
+.astro/
+dist/

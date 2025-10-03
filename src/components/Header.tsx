@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import {
   Popover,
   PopoverButton,
@@ -9,8 +9,7 @@ import {
 } from '@headlessui/react';
 import clsx from 'clsx';
 import { Container } from './Container';
-import { Link, NavLink, useLocation } from 'react-router';
-import image from '../images/ski.jpg';
+import skiImage from '../images/ski.jpg';
 
 function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -82,7 +81,7 @@ function MobileNavItem({
 }) {
   return (
     <li>
-      <PopoverButton as={Link} to={href} className="block py-2">
+      <PopoverButton as="a" href={href} className="block py-2">
         {children}
       </PopoverButton>
     </li>
@@ -147,46 +146,53 @@ function MobileNavigation(
 const NavItem = ({
   href,
   children,
+  isActive,
 }: {
   href: string;
   children: React.ReactNode;
+  isActive: boolean;
 }) => (
-    <li>
-      <NavLink
-        to={href}
-        className={({ isActive }) =>
-          clsx(
-            'relative block px-3 py-2 transition',
-            isActive
-              ? 'text-teal-500 dark:text-teal-400'
-              : 'hover:text-teal-500 dark:hover:text-teal-400'
-          )
-        }
-      >
-        {({ isActive }) => (
-          <>        
-            {children}
-            {isActive && (
-              <span className="absolute inset-x-1 -bottom-px h-px bg-linear-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0" />
-            )}
-          </>
-        )}
-      </NavLink>
-    </li>
-  );
+  <li>
+    <a
+      href={href}
+      className={clsx(
+        'relative block px-3 py-2 transition',
+        isActive
+          ? 'text-teal-500 dark:text-teal-400'
+          : 'hover:text-teal-500 dark:hover:text-teal-400'
+      )}
+    >
+      {children}
+      {isActive && (
+        <span className="absolute inset-x-1 -bottom-px h-px bg-linear-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0" />
+      )}
+    </a>
+  </li>
+);
 
-const DesktopNavigation = (props: React.ComponentPropsWithoutRef<'nav'>) => {
+const DesktopNavigation = ({
+  pathname,
+  ...props
+}: React.ComponentPropsWithoutRef<'nav'> & { pathname: string }) => {
   return (
     <nav {...props}>
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-        <NavItem href="/about">About</NavItem>
-        <NavItem href="/projects">Projects</NavItem>
-        <NavItem href="/services">Services</NavItem>
-        <NavItem href="/movies">Movies</NavItem>
+        <NavItem href="/about" isActive={pathname === '/about'}>
+          About
+        </NavItem>
+        <NavItem href="/projects" isActive={pathname.startsWith('/projects')}>
+          Projects
+        </NavItem>
+        <NavItem href="/services" isActive={pathname === '/services'}>
+          Services
+        </NavItem>
+        <NavItem href="/movies" isActive={pathname === '/movies'}>
+          Movies
+        </NavItem>
       </ul>
     </nav>
   );
-}
+};
 
 /*const ThemeToggle = () => {
   let { resolvedTheme, setTheme } = useTheme();
@@ -235,18 +241,18 @@ function Avatar({
   large = false,
   className,
   ...props
-}: Omit<React.ComponentPropsWithoutRef<typeof Link>, 'to'> & {
+}: React.ComponentPropsWithoutRef<'a'> & {
   large?: boolean;
 }) {
   return (
-    <Link
-      to="/"
+    <a
+      href="/"
       aria-label="Home"
       className={clsx(className, 'pointer-events-auto')}
       {...props}
     >
       <img
-        src={image}
+        src={typeof skiImage === 'string' ? skiImage : skiImage.src}
         alt=""
         sizes={large ? '4rem' : '2.25rem'}
         className={clsx(
@@ -254,12 +260,11 @@ function Avatar({
           large ? 'h-16 w-16' : 'h-9 w-9'
         )}
       />
-    </Link>
+    </a>
   );
 }
 
-export const Header = () => {
-  const { pathname } = useLocation();
+export const Header = ({ pathname }: { pathname: string }) => {
   const isHomePage = pathname === '/';
 
   const headerRef = useRef<React.ElementRef<'div'>>(null);
@@ -438,7 +443,10 @@ export const Header = () => {
               </div>
               <div className="flex flex-1 justify-end md:justify-center">
                 <MobileNavigation className="pointer-events-auto md:hidden" />
-                <DesktopNavigation className="pointer-events-auto hidden md:block" />
+                <DesktopNavigation
+                  pathname={pathname}
+                  className="pointer-events-auto hidden md:block"
+                />
               </div>
               <div className="flex justify-end md:flex-1">
                 <div className="pointer-events-auto">
@@ -457,4 +465,4 @@ export const Header = () => {
       )}
     </>
   );
-}
+};
