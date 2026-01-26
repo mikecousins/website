@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Container from '../components/Container.astro';
 import GitHubIcon from '../components/icons/GitHubIcon.astro';
@@ -13,9 +14,9 @@ import portraitImage from '../images/elkvtc.jpg';
     <div class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
       <div class="lg:pl-20">
         <div class="max-w-xs px-2.5 lg:max-w-none">
-          <img
-            src={portraitImage.src}
-            alt=""
+          <Image
+            src={portraitImage}
+            alt="Mike Cousins"
             class="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
           />
         </div>

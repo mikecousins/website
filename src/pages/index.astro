@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import clsx from 'clsx';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Container from '../components/Container.astro';
@@ -53,8 +54,8 @@ const rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
             rotations[imageIndex % rotations.length]
           )}
         >
-          <img
-            src={image.src}
+          <Image
+            src={image}
             alt=""
             class="absolute inset-0 h-full w-full object-cover"
           />
