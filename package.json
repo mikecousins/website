@@ -12,8 +12,8 @@
     "lint": "eslint src/**/*.{ts,tsx}"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.13",
-    "@astrojs/react": "^4.4.2",
+    "@astrojs/mdx": "5.0.0-beta.2",
+    "@astrojs/react": "5.0.0-beta.3",
     "@fortawesome/fontawesome-svg-core": "^7.1.0",
     "@fortawesome/free-brands-svg-icons": "^7.1.0",
     "@fortawesome/free-regular-svg-icons": "^7.1.0",
@@ -23,7 +23,7 @@
     "@radix-ui/react-navigation-menu": "^1.2.14",
     "@radix-ui/react-popover": "^1.1.15",
     "@react-router/node": "^7.13.0",
-    "astro": "^5.16.15",
+    "astro": "6.0.0-beta.5",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
     "front-matter": "^4.0.2",
