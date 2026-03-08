@@ -1,11 +1,11 @@
 {
-  "include": ["**/*.ts", "**/*.tsx", ".react-router/types/**/*"],
+  "include": ["**/*.ts", "**/*.tsx"],
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ES2019"],
     "isolatedModules": true,
     "esModuleInterop": true,
     "jsx": "react-jsx",
-    "types": ["@react-router/node", "vite/client"],
+    "types": ["vite/client"],
     "skipLibCheck": true,
     "module": "ESNext",
     "moduleResolution": "Bundler",
@@ -16,7 +16,7 @@
     "paths": {
       "~/*": ["./src/*"]
     },
-    "rootDirs": [".", "./.react-router/types"],
+    "rootDirs": ["."],
     "noEmit": true,
     "allowJs": true,
     "forceConsistentCasingInFileNames": true

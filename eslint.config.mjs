@@ -8,7 +8,7 @@ import reactHooks from 'eslint-plugin-react-hooks';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 
 export default tseslint.config([
-  globalIgnores(['!**/.server', '!**/.client', 'build/', '.react-router/']),
+  globalIgnores(['!**/.server', '!**/.client', 'build/']),
   {
     files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
   },
