@@ -5,13 +5,15 @@
       "name": "astro",
       "runtimeExecutable": "pnpm",
       "runtimeArgs": ["dev"],
-      "port": 4321
+      "port": 4321,
+      "autoPort": true
     },
     {
       "name": "astro-preview",
       "runtimeExecutable": "pnpm",
       "runtimeArgs": ["start"],
-      "port": 4321
+      "port": 4321,
+      "autoPort": true
     }
   ]
 }
