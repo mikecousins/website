@@ -1,1 +1,140 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&display=swap');
+
+@theme {
+  /* Propane orange. Committed identity color: not teal, not SaaS-blue. */
+  --color-flare-50: oklch(0.97 0.025 55);
+  --color-flare-100: oklch(0.94 0.05 55);
+  --color-flare-200: oklch(0.88 0.09 55);
+  --color-flare-300: oklch(0.83 0.13 55);
+  --color-flare-400: oklch(0.78 0.17 52);
+  --color-flare-500: oklch(0.72 0.21 50);
+  --color-flare-600: oklch(0.65 0.2 45);
+  --color-flare-700: oklch(0.55 0.18 40);
+  --color-flare-800: oklch(0.42 0.15 35);
+  --color-flare-900: oklch(0.3 0.1 30);
+
+  /* Warm-dark neutrals, tinted toward the flare hue. */
+  --color-ink-50: oklch(0.97 0.005 55);
+  --color-ink-100: oklch(0.92 0.005 55);
+  --color-ink-200: oklch(0.82 0.006 55);
+  --color-ink-300: oklch(0.68 0.008 50);
+  --color-ink-400: oklch(0.54 0.01 50);
+  --color-ink-500: oklch(0.4 0.012 48);
+  --color-ink-600: oklch(0.3 0.012 45);
+  --color-ink-700: oklch(0.22 0.012 42);
+  --color-ink-800: oklch(0.15 0.01 38);
+  --color-ink-900: oklch(0.1 0.008 35);
+  --color-ink-950: oklch(0.06 0.005 30);
+
+  --font-display: 'Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif;
+  --font-architecture:
+    'Big Shoulders Display', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@utility type-architecture {
+  font-family: var(--font-architecture);
+  letter-spacing: -0.015em;
+  line-height: 0.86;
+  font-feature-settings: 'tnum' on;
+}
+
+@utility small-caps {
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-feature-settings: 'tnum' on;
+}
+
+@utility prose-mike {
+  & p {
+    @apply text-base leading-relaxed text-ink-200 mb-5 max-w-[68ch];
+  }
+  & p:last-child {
+    margin-bottom: 0;
+  }
+  & h2 {
+    @apply mt-12 mb-4 text-3xl font-extrabold tracking-tight text-ink-50;
+    font-family: var(--font-architecture);
+  }
+  & h3 {
+    @apply mt-8 mb-3 text-xl font-bold tracking-tight text-ink-50;
+    font-family: var(--font-architecture);
+  }
+  & a {
+    @apply text-flare-400 underline decoration-flare-700/60 underline-offset-2 hover:text-flare-300 transition-colors;
+  }
+  & strong {
+    @apply text-ink-50 font-semibold;
+  }
+  & em {
+    @apply italic text-ink-100;
+  }
+  & code {
+    @apply rounded bg-ink-900 px-1.5 py-0.5 text-sm text-flare-300;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  & pre {
+    @apply my-6 overflow-x-auto rounded-md bg-ink-900 p-4 text-sm leading-relaxed;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  & pre code {
+    @apply bg-transparent p-0 text-ink-100;
+  }
+  & ul,
+  & ol {
+    @apply mb-5 ml-6 space-y-2 text-ink-200;
+  }
+  & ul {
+    @apply list-disc;
+  }
+  & ol {
+    @apply list-decimal;
+  }
+  & ul::marker,
+  & ol::marker {
+    @apply text-flare-500;
+  }
+  & blockquote {
+    @apply my-8 italic text-ink-100;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    max-width: 58ch;
+  }
+  & blockquote p::before {
+    content: '“';
+    @apply mr-1 text-flare-500;
+  }
+  & blockquote p::after {
+    content: '”';
+    @apply ml-1 text-flare-500;
+  }
+  & hr {
+    @apply my-12 border-ink-800;
+  }
+  & img {
+    @apply my-8 rounded-sm;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

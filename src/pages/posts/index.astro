@@ -1,34 +1,69 @@
 ---
 import { getCollection } from 'astro:content';
-import { format } from 'date-fns';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import Container from '../../components/Container.astro';
 
 const posts = await getCollection('posts');
-const sortedPosts = posts.sort((a, b) =>
-  a.data.meta.date.getTime() - b.data.meta.date.getTime()
+const sortedPosts = posts.sort(
+  (a, b) => a.data.meta.date.getTime() - b.data.meta.date.getTime()
 );
+
+const months = [
+  'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+  'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
+];
+const formatShortDate = (d: Date) =>
+  `${months[d.getUTCMonth()]} ${d.getUTCDate()}, ${d.getUTCFullYear()}`;
 ---
 
-<BaseLayout title="Mike Cousins - Cancer Posts">
-  <Container className="mt-16 sm:mt-32">
-    <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-      Cancer Journey
+<BaseLayout
+  title="Cancer Journey — Mike Cousins"
+  description="A diary of a cancer journey."
+>
+  <section class="mx-auto max-w-4xl px-4 py-12 sm:px-8 sm:py-20 lg:px-12">
+    <p class="small-caps mb-6 text-[10px] text-flare-400 sm:text-xs">
+      <span class="text-flare-500">◊</span> Writing · Cancer Journey
+    </p>
+
+    <h1
+      class="type-architecture mb-8 font-extrabold text-ink-50"
+      style="font-size: clamp(2.5rem, 6.5vw, 5.5rem)"
+    >
+      Cancer Journey.
     </h1>
-    <div class="flex flex-col gap-4 mt-4">
-      {sortedPosts.map((post) => (
-        <div>
-          <a
-            href={`/posts/${post.id.replace('.md', '')}`}
-            class="hover:underline decoration-orange-500 underline-offset-4"
-          >
-            <span>{post.data.meta.title}</span>
-            <span class="float-right text-gray-600 italic">
-              {format(post.data.meta.date, 'MMMM do, yyyy')}
-            </span>
-          </a>
-        </div>
-      ))}
-    </div>
-  </Container>
+
+    <p class="mb-16 max-w-[58ch] text-lg leading-snug text-ink-200">
+      A diary kept during a cancer journey, in the order it happened.
+    </p>
+
+    <ol class="flex flex-col">
+      {
+        sortedPosts.map((post, index) => {
+          const slug = post.id.replace('.md', '');
+          return (
+            <li class="border-t border-ink-800 first:border-t-0">
+              <a
+                href={`/posts/${slug}`}
+                class="group flex flex-col gap-1 py-5 transition-colors hover:bg-ink-900/40 focus-visible:bg-ink-900/40 focus-visible:outline-2 focus-visible:outline-flare-400 focus-visible:outline-offset-[-2px] sm:flex-row sm:items-baseline sm:justify-between sm:gap-6 sm:py-6"
+              >
+                <div class="flex items-baseline gap-4">
+                  <span class="small-caps text-[10px] tabular-nums text-ink-500">
+                    {String(index + 1).padStart(2, '0')}
+                  </span>
+                  <span class="text-base font-medium text-ink-100 transition-colors group-hover:text-flare-400 sm:text-lg">
+                    {post.data.meta.title}
+                  </span>
+                </div>
+                <time
+                  datetime={post.data.meta.date.toISOString()}
+                  class="small-caps shrink-0 pl-8 text-[10px] tabular-nums text-ink-400 sm:pl-0"
+                >
+                  {formatShortDate(post.data.meta.date)}
+                </time>
+              </a>
+            </li>
+          );
+        })
+      }
+    </ol>
+  </section>
 </BaseLayout>

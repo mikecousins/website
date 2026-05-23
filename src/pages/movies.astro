@@ -1,36 +1,87 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { movies } from '../../app/data/movies';
-import { MovieRow } from '../components/MovieRow';
-import Container from '../components/Container.astro';
+import { MoviesTable } from '../components/MoviesTable';
 
 const watched = movies.filter((movie) => !!movie.watched).length;
+const percent = Math.round((watched / movies.length) * 100);
 ---
 
-<BaseLayout title="Mike Cousins - Movies" description="imdb Top 250 Movies">
-  <Container className="mt-16 sm:mt-32">
-    <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-      Mike's IMDb Top 250 Movie List
-    </h1>
-    <p class="mt-3 text-xl text-gray-300 sm:mt-4 font-mono">
-      Bucket list endeavour to watch all of the best movies ever made.
+<BaseLayout
+  title="IMDb Top 250 — Mike Cousins"
+  description="A bucket-list endeavour to watch the IMDb Top 250."
+>
+  <section class="mx-auto max-w-6xl px-4 py-12 sm:px-8 sm:py-20 lg:px-12">
+    <p class="small-caps mb-6 text-[10px] text-flare-400 sm:text-xs">
+      <span class="text-flare-500">◊</span> Movies
     </p>
-    <div class="my-8 font-mono text-4xl">Watched: {watched}/250</div>
-    <div class="w-full border-separate border-spacing-0 font-mono">
-      <div class="text-white flex">
-        <div class="border-b border-gray-900 px-1 lg:px-3 py-3.5 text-left text-sm font-semibold backdrop-blur-sm backdrop-filter">
-          #
-        </div>
-        <div class="flex-1 border-b border-gray-900 px-1 lg:px-3 py-3.5 text-left text-sm font-semibold backdrop-blur-sm backdrop-filter">
-          Name
-        </div>
-        <div class="border-b border-gray-900 px-1 lg:px-3 py-3.5 text-left text-sm font-semibold backdrop-blur-sm backdrop-filter">
-          Resolution
-        </div>
+
+    <h1
+      class="type-architecture mb-8 font-extrabold text-ink-50"
+      style="font-size: clamp(2.5rem, 6.5vw, 5.5rem)"
+    >
+      IMDb Top 250.
+    </h1>
+
+    <p class="mb-12 max-w-[58ch] text-lg leading-snug text-ink-200">
+      Bucket-list endeavour to watch the best movies ever made. Tracked here as
+      I go.
+    </p>
+
+    <div
+      class="mb-16 grid grid-cols-2 gap-6 border-y border-ink-800 py-8 sm:grid-cols-4 sm:gap-12"
+    >
+      <div>
+        <p class="small-caps text-[10px] text-ink-400">Watched</p>
+        <p
+          class="mt-1 tabular-nums text-ink-50"
+          style="font-family: var(--font-architecture); font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 800; line-height: 1"
+        >
+          {watched}
+        </p>
       </div>
-      {movies.map((movie, index) => (
-        <MovieRow {...movie} number={index + 1} key={movie.name} client:load />
-      ))}
+      <div>
+        <p class="small-caps text-[10px] text-ink-400">Remaining</p>
+        <p
+          class="mt-1 tabular-nums text-ink-300"
+          style="font-family: var(--font-architecture); font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 800; line-height: 1"
+        >
+          {movies.length - watched}
+        </p>
+      </div>
+      <div>
+        <p class="small-caps text-[10px] text-ink-400">Progress</p>
+        <p
+          class="mt-1 tabular-nums text-flare-500"
+          style="font-family: var(--font-architecture); font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 800; line-height: 1"
+        >
+          {percent}<span class="text-flare-700">%</span>
+        </p>
+      </div>
+      <div>
+        <p class="small-caps text-[10px] text-ink-400">Total</p>
+        <p
+          class="mt-1 tabular-nums text-ink-300"
+          style="font-family: var(--font-architecture); font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 800; line-height: 1"
+        >
+          {movies.length}
+        </p>
+      </div>
     </div>
-  </Container>
+
+    <div
+      class="w-full overflow-x-auto whitespace-nowrap font-mono"
+      style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace"
+    >
+      <div
+        class="small-caps flex border-b border-ink-800 text-[10px] text-ink-400"
+      >
+        <div class="px-2 py-3 sm:px-4">#</div>
+        <div class="flex-1 px-2 py-3 sm:px-4">Title</div>
+        <div class="px-2 py-3 sm:px-4">Resolution</div>
+      </div>
+      <MoviesTable movies={movies} client:load />
+
+    </div>
+  </section>
 </BaseLayout>
