@@ -45,10 +45,12 @@ const navLinks = [
       </div>
     </div>
 
-    {/* The name as architecture. Two stacked monumental lines. */}
+    {/* The name as architecture. Two stacked monumental lines.
+        Font-size caps on both width (19vw) and height (32svh) so the type
+        can't outgrow the viewport on wide-but-short laptop windows. */}
     <h1
       class="absolute left-[clamp(0.75rem,4vw,4rem)] top-[clamp(7svh,8svh,11svh)] sm:top-[clamp(14svh,18svh,22svh)] font-display font-extrabold type-architecture text-ink-50 select-none pointer-events-none z-10"
-      style="font-size: clamp(4.5rem, 19vw, 24rem)"
+      style="font-size: clamp(4.5rem, min(19vw, 32svh), 24rem)"
     >
       <span class="block">mike<span class="text-flare-500">.</span></span>
       <span class="block translate-x-[0.18em] -mt-[0.14em]"
@@ -73,18 +75,26 @@ const navLinks = [
       <div>Fractional CTO.</div>
     </div>
 
-    {/* Supporting sentence. Sits tight under the name, on the dark side. */}
+    {/* Supporting sentence on mobile only. Sits between the name and the orange band. */}
     <p
-      class="absolute left-[clamp(0.75rem,4vw,4rem)] top-[34svh] sm:top-[clamp(58svh,64svh,68svh)] max-w-[28ch] sm:max-w-[36ch] text-base sm:text-lg leading-snug text-ink-200 z-20"
+      class="absolute left-[clamp(0.75rem,4vw,4rem)] top-[34svh] max-w-[28ch] text-base leading-snug text-ink-200 z-20 sm:hidden"
     >
       Twenty-plus years building software. Early-stage startup junkie,
       fractional CTO, contract mercenary. Calgary based, mostly reachable.
     </p>
 
-    {/* Bottom-left: tenure stamp + primary nav. On mobile it sits on orange; colors flip. */}
+    {/* Bottom-left info column: bio · tenure stamp · primary nav.
+        On mobile the stack sits on the orange band (paragraph is rendered above);
+        on desktop the bio joins the stack so it never collides with the headline. */}
     <div
-      class="absolute bottom-[3svh] left-[clamp(0.75rem,4vw,4rem)] z-20 flex flex-col gap-3 max-w-[55vw] sm:max-w-none"
+      class="absolute bottom-[3svh] left-[clamp(0.75rem,4vw,4rem)] z-20 flex flex-col gap-3 sm:gap-5 max-w-[55vw] sm:max-w-none"
     >
+      <p
+        class="hidden sm:block max-w-[36ch] text-base leading-snug text-ink-200"
+      >
+        Twenty-plus years building software. Early-stage startup junkie,
+        fractional CTO, contract mercenary. Calgary based, mostly reachable.
+      </p>
       <div class="small-caps text-[10px] text-ink-950/70 sm:text-ink-400">
         <span class="text-ink-950/60 sm:text-flare-400">▸</span> Practicing since
         2003
