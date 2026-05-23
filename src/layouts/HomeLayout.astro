@@ -1,7 +1,5 @@
 ---
 import '../styles/global.css';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 
 interface Props {
   title: string;
@@ -30,11 +28,26 @@ const {
       src="https://counterscale.cousins.ai/tracker.js"
       defer></script>
   </head>
-  <body class="flex min-h-svh flex-col bg-ink-950 font-sans text-ink-100 antialiased">
-    <Header pathname={Astro.url.pathname} />
-    <main class="flex-1">
-      <slot />
-    </main>
-    <Footer />
+  <body class="bg-ink-950 text-ink-100 font-sans antialiased overflow-hidden">
+    <slot />
+    <script>
+      // Curious visitors: hello.
+      const banner = [
+        '',
+        '  m i k e .',
+        '  c o u s i n s .',
+        '',
+        '  architect / developer / fractional CTO',
+        '  calgary  ·  51.0°N',
+        '',
+        '  mike@cousins.ai  ·  cal.com/mikecousins',
+        '',
+      ].join('\n');
+      // eslint-disable-next-line no-console
+      console.log(
+        '%c' + banner,
+        'color: oklch(0.72 0.21 50); font-family: ui-monospace, monospace; font-size: 12px; line-height: 1.4;'
+      );
+    </script>
   </body>
 </html>

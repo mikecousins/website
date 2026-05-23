@@ -1,20 +1,74 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import ProjectsTable from '../../components/ProjectsTable.astro';
-import Container from '../../components/Container.astro';
 
 const projects = await getCollection('projects');
-const sortedProjects = projects.sort((a, b) =>
-  b.data.meta.startDate.getTime() - a.data.meta.startDate.getTime()
+const sortedProjects = projects.sort(
+  (a, b) =>
+    b.data.meta.startDate.getTime() - a.data.meta.startDate.getTime()
 );
+
+const formatRange = (start: Date, end?: Date) => {
+  const startYear = start.getUTCFullYear();
+  if (!end) return `${startYear}–now`;
+  const endYear = end.getUTCFullYear();
+  return startYear === endYear ? `${startYear}` : `${startYear}–${endYear}`;
+};
 ---
 
-<BaseLayout title="Mike Cousins - Projects">
-  <Container className="mt-16 sm:mt-32">
-    <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-      Projects
+<BaseLayout title="Projects — Mike Cousins">
+  <section class="mx-auto max-w-6xl px-4 py-12 sm:px-8 sm:py-20 lg:px-12">
+    <p class="small-caps mb-6 text-[10px] text-flare-400 sm:text-xs">
+      <span class="text-flare-500">◊</span> Projects
+    </p>
+
+    <h1
+      class="type-architecture mb-12 font-extrabold text-ink-50"
+      style="font-size: clamp(2.5rem, 6.5vw, 5.5rem)"
+    >
+      Selected work, <span class="text-ink-500">in reverse order.</span>
     </h1>
-    <ProjectsTable projects={sortedProjects} />
-  </Container>
+
+    <ol class="flex flex-col">
+      {
+        sortedProjects.map((project, index) => {
+          const slug = project.id.replace('.mdx', '');
+          const dateRange = formatRange(
+            project.data.meta.startDate,
+            project.data.meta.endDate
+          );
+          return (
+            <li class="border-t border-ink-800/80 first:border-t-0">
+              <a
+                href={`/projects/${slug}`}
+                class="group grid items-baseline gap-x-4 gap-y-1 py-3 transition-colors hover:bg-ink-900/40 focus-visible:bg-ink-900/40 focus-visible:outline-2 focus-visible:outline-flare-400 focus-visible:outline-offset-[-2px] sm:gap-x-6 sm:py-4"
+                style="grid-template-columns: 2rem 1fr"
+              >
+                <span class="small-caps text-[10px] tabular-nums text-ink-500">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+                <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1 sm:grid sm:gap-x-6 sm:grid-cols-[minmax(0,5fr)_minmax(0,4fr)_5rem]">
+                  <h2
+                    class="text-lg font-bold tracking-tight text-ink-50 transition-colors group-hover:text-flare-400 sm:text-xl"
+                    style="font-family: var(--font-architecture)"
+                  >
+                    {project.data.meta.company}
+                  </h2>
+                  <p class="text-sm text-ink-300 sm:truncate">
+                    {project.data.meta.role}
+                  </p>
+                  <time
+                    datetime={project.data.meta.startDate.toISOString()}
+                    class="small-caps ml-auto text-[10px] tabular-nums text-ink-400 sm:ml-0 sm:text-right"
+                  >
+                    {dateRange}
+                  </time>
+                </div>
+              </a>
+            </li>
+          );
+        })
+      }
+    </ol>
+  </section>
 </BaseLayout>

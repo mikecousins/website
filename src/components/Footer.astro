@@ -1,27 +1,42 @@
 ---
-import ContainerOuter from './ContainerOuter.astro';
-import ContainerInner from './ContainerInner.astro';
-
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="mt-32 flex-none">
-  <ContainerOuter>
-    <div class="border-t border-zinc-100 pb-16 pt-10 dark:border-zinc-700/40">
-      <ContainerInner>
-        <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
-          <div class="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
-            <a href="/" class="transition hover:text-teal-500 dark:hover:text-teal-400">Home</a>
-            <a href="/about" class="transition hover:text-teal-500 dark:hover:text-teal-400">About</a>
-            <a href="/projects" class="transition hover:text-teal-500 dark:hover:text-teal-400">Projects</a>
-            <a href="/services" class="transition hover:text-teal-500 dark:hover:text-teal-400">Services</a>
-            <a href="/movies" class="transition hover:text-teal-500 dark:hover:text-teal-400">Movies</a>
-          </div>
-          <p class="text-sm text-zinc-400 dark:text-zinc-500">
-            &copy; {currentYear} Mike Cousins. All rights reserved.
-          </p>
-        </div>
-      </ContainerInner>
+<footer class="mt-24 border-t border-ink-800/70 bg-ink-950 sm:mt-32">
+  <div
+    class="flex flex-col gap-8 px-4 py-10 sm:flex-row sm:items-end sm:justify-between sm:gap-6 sm:px-8 sm:py-12 lg:px-12"
+  >
+    <div>
+      <a
+        href="/"
+        class="leading-none font-extrabold tracking-tight text-ink-50 transition-colors hover:text-flare-400"
+        style="font-family: var(--font-architecture); font-size: clamp(1.5rem, 3vw, 2rem)"
+      >
+        mike<span class="text-flare-500">.</span>
+      </a>
+      <p class="small-caps mt-3 text-[10px] text-ink-400">
+        <span class="text-flare-400">◊</span> Calgary 51.0°N · {currentYear}
+      </p>
     </div>
-  </ContainerOuter>
+    <div class="text-sm text-ink-300 sm:text-right">
+      <div class="flex flex-wrap gap-x-5 gap-y-2 sm:justify-end">
+        <a
+          href="mailto:mike@cousins.ai"
+          class="transition-colors hover:text-flare-400">mike@cousins.ai</a
+        >
+        <a
+          href="https://cal.com/mikecousins"
+          class="transition-colors hover:text-flare-400">cal.com/mikecousins</a
+        >
+        <a
+          href="https://github.com/mikecousins"
+          class="transition-colors hover:text-flare-400">github</a
+        >
+        <a
+          href="https://www.linkedin.com/in/mikecousins"
+          class="transition-colors hover:text-flare-400">linkedin</a
+        >
+      </div>
+    </div>
+  </div>
 </footer>
