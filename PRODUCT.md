@@ -45,7 +45,7 @@ Emotional goal: a visitor recognizes craft and conviction. They may not love eve
 
 2. **Break the template.** The Spotlight starting point is the negative space. Any design choice that would also work on a YC fintech landing or another developer's Spotlight clone should be rejected. Idiosyncrasy is the goal, not a side effect.
 
-3. **A real person, not a brand.** Hand-built energy beats polished-template energy. The Calgary mountain photographs, the personal voice in the about page, the movies page, the side projects — these are the load-bearing details. Lean into them.
+3. **A real person, not a brand.** Hand-built energy beats polished-template energy. The Calgary mountain photographs, the personal voice in the about page, the side projects — these are the load-bearing details. Lean into them.
 
 4. **Reward the curious.** Visitors who scroll, hover, or come back should find things that visitors who skim do not. Unexpected transitions, small moments of personality, micro-interactions that demonstrate care. Easter eggs are on-brand here.
 
