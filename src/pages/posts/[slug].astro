@@ -5,24 +5,35 @@ import PostLayout from '../../components/PostLayout.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
-  return posts.map((post) => ({
+  const sortedPosts = posts.sort(
+    (a, b) => a.data.meta.date.getTime() - b.data.meta.date.getTime()
+  );
+
+  const toNav = (p: (typeof sortedPosts)[number], i: number) => ({
+    slug: p.id.replace('.md', ''),
+    title: p.data.meta.title,
+    number: String(i + 1).padStart(2, '0'),
+  });
+
+  return sortedPosts.map((post, i) => ({
     params: { slug: post.id.replace('.md', '') },
+    props: {
+      post,
+      prev: i > 0 ? toNav(sortedPosts[i - 1], i - 1) : null,
+      next:
+        i < sortedPosts.length - 1
+          ? toNav(sortedPosts[i + 1], i + 1)
+          : null,
+    },
   }));
 }
 
-const { slug } = Astro.params;
-const posts = await getCollection('posts');
-const post = posts.find(p => p.id.replace('.md', '') === slug);
-
-if (!post) {
-  return Astro.redirect('/404');
-}
-
+const { post, prev, next } = Astro.props;
 const { Content } = await render(post);
 ---
 
 <BaseLayout title={`Mike Cousins - ${post.data.meta.title}`}>
-  <PostLayout article={post.data}>
+  <PostLayout article={post.data} prev={prev} next={next}>
     <Content />
   </PostLayout>
 </BaseLayout>

@@ -1,4 +1,10 @@
 ---
+interface NavItem {
+  slug: string;
+  title: string;
+  number: string;
+}
+
 interface Props {
   article: {
     meta: {
@@ -6,6 +12,8 @@ interface Props {
       date: Date;
     };
   };
+  prev?: NavItem | null;
+  next?: NavItem | null;
 }
 
 const monthsLong = [
@@ -13,7 +21,7 @@ const monthsLong = [
   'July', 'August', 'September', 'October', 'November', 'December',
 ];
 
-const { article } = Astro.props;
+const { article, prev, next } = Astro.props;
 const d = article.meta.date;
 const formattedDate = `${monthsLong[d.getUTCMonth()]} ${d.getUTCDate()}, ${d.getUTCFullYear()}`;
 ---
@@ -57,4 +65,83 @@ const formattedDate = `${monthsLong[d.getUTCMonth()]} ${d.getUTCDate()}, ${d.get
   <div class="prose-mike" data-mdx-content>
     <slot />
   </div>
+
+  {
+    (prev || next) && (
+      <nav
+        aria-label="More chapters"
+        class="mt-20 grid grid-cols-1 border-t border-ink-800 sm:mt-24 sm:grid-cols-2"
+      >
+        {prev ? (
+          <a
+            href={`/posts/${prev.slug}`}
+            class="group flex flex-col gap-3 border-b border-ink-800 py-8 transition-colors hover:bg-ink-900/40 focus-visible:bg-ink-900/40 focus-visible:outline-2 focus-visible:outline-flare-400 focus-visible:outline-offset-[-2px] sm:border-b-0 sm:pr-6"
+          >
+            <span class="small-caps inline-flex items-center gap-2 text-[10px] text-ink-400 transition-colors group-hover:text-flare-400">
+              <svg
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden="true"
+                class="h-3 w-3 stroke-current"
+              >
+                <path
+                  d="M7.25 11.25 3.75 8m0 0 3.5-3.25M3.75 8h8.5"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Previous
+              <span class="text-flare-500 group-hover:text-flare-400">·</span>
+              <span class="tabular-nums text-ink-500 group-hover:text-flare-500">
+                {prev.number}
+              </span>
+            </span>
+            <span
+              class="type-architecture text-2xl font-bold text-ink-100 transition-colors group-hover:text-flare-300 sm:text-3xl"
+            >
+              {prev.title}
+            </span>
+          </a>
+        ) : (
+          <div aria-hidden="true" class="hidden sm:block" />
+        )}
+
+        {next ? (
+          <a
+            href={`/posts/${next.slug}`}
+            class="group flex flex-col items-start gap-3 py-8 transition-colors hover:bg-ink-900/40 focus-visible:bg-ink-900/40 focus-visible:outline-2 focus-visible:outline-flare-400 focus-visible:outline-offset-[-2px] sm:items-end sm:pl-6 sm:text-right"
+          >
+            <span class="small-caps inline-flex items-center gap-2 text-[10px] text-ink-400 transition-colors group-hover:text-flare-400">
+              <span class="tabular-nums text-ink-500 group-hover:text-flare-500">
+                {next.number}
+              </span>
+              <span class="text-flare-500 group-hover:text-flare-400">·</span>
+              Next
+              <svg
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden="true"
+                class="h-3 w-3 stroke-current"
+              >
+                <path
+                  d="M8.75 11.25 12.25 8m0 0-3.5-3.25M12.25 8h-8.5"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <span
+              class="type-architecture text-2xl font-bold text-ink-100 transition-colors group-hover:text-flare-300 sm:text-3xl"
+            >
+              {next.title}
+            </span>
+          </a>
+        ) : (
+          <div aria-hidden="true" class="hidden sm:block" />
+        )}
+      </nav>
+    )
+  }
 </article>
