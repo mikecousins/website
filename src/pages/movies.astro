@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { movies } from '../../app/data/movies';
-import { MovieRow } from '../components/MovieRow';
+import { MoviesTable } from '../components/MoviesTable';
 
 const watched = movies.filter((movie) => !!movie.watched).length;
 const percent = Math.round((watched / movies.length) * 100);
@@ -80,16 +80,8 @@ const percent = Math.round((watched / movies.length) * 100);
         <div class="flex-1 px-2 py-3 sm:px-4">Title</div>
         <div class="px-2 py-3 sm:px-4">Resolution</div>
       </div>
-      {
-        movies.map((movie, index) => (
-          <MovieRow
-            {...movie}
-            number={index + 1}
-            key={movie.name}
-            client:load
-          />
-        ))
-      }
+      <MoviesTable movies={movies} client:load />
+
     </div>
   </section>
 </BaseLayout>
