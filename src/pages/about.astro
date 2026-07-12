@@ -6,9 +6,17 @@ import LinkedInIcon from '../components/icons/LinkedInIcon.astro';
 import CalendarIcon from '../components/icons/CalendarIcon.astro';
 import MailIcon from '../components/icons/MailIcon.astro';
 import portraitImage from '../images/elkvtc.jpg';
+import { personJsonLd } from '../lib/seo';
 ---
 
-<BaseLayout title="About — Mike Cousins">
+<BaseLayout
+  title="About"
+  description="Mike Cousins is a Calgary-based software architect and fractional CTO who has spent 20+ years helping companies start and scale across telecom, energy, healthcare, and finance."
+  jsonLd={{
+    '@type': 'ProfilePage',
+    mainEntity: personJsonLd,
+  }}
+>
   <article class="mx-auto max-w-6xl px-4 py-12 sm:px-8 sm:py-20 lg:px-12">
     <p class="small-caps mb-6 text-[10px] text-flare-400 sm:text-xs">
       <span class="text-flare-500">◊</span> About

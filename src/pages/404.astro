@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Page not found"
+  description="This page doesn't exist. Head back to mikecousins.com."
+  noindex
+>
+  <section class="mx-auto max-w-6xl px-4 py-12 sm:px-8 sm:py-20 lg:px-12">
+    <p class="small-caps mb-6 text-[10px] text-flare-400 sm:text-xs">
+      <span class="text-flare-500">◊</span> 404
+    </p>
+
+    <h1
+      class="type-architecture mb-8 font-extrabold text-ink-50"
+      style="font-size: clamp(2.5rem, 6.5vw, 5.5rem)"
+    >
+      Not found<span class="text-flare-500">.</span>
+    </h1>
+
+    <p class="mb-12 max-w-[58ch] text-lg leading-snug text-ink-200">
+      Whatever was here has moved on, or never existed. Try one of these
+      instead.
+    </p>
+
+    <nav aria-label="Suggested pages">
+      <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium">
+        {
+          [
+            { href: '/', label: 'Home' },
+            { href: '/about', label: 'About' },
+            { href: '/projects', label: 'Projects' },
+            { href: '/services', label: 'Services' },
+            { href: '/posts', label: 'Cancer Journey' },
+          ].map((link) => (
+            <li>
+              <a
+                href={link.href}
+                class="group inline-flex items-baseline gap-1 text-ink-100 transition-colors hover:text-flare-400 focus-visible:text-flare-400 focus-visible:outline-2 focus-visible:outline-flare-400 focus-visible:outline-offset-4"
+              >
+                <span class="text-flare-500 group-hover:text-flare-300">/</span>
+                {link.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </section>
+</BaseLayout>

@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ProjectLayout from '../../components/ProjectLayout.astro';
+import { SITE, excerpt } from '../../lib/seo';
 
 export async function getStaticPaths() {
   const projects = await getCollection('projects');
@@ -19,9 +20,35 @@ if (!project) {
 }
 
 const { Content } = await render(project);
+
+const description =
+  excerpt(project.body ?? '') ||
+  `${project.data.meta.role} at ${project.data.meta.company}.`;
+
+const jsonLd = {
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Projects',
+      item: `${SITE.url}/projects/`,
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: project.data.meta.company,
+      item: `${SITE.url}/projects/${slug}/`,
+    },
+  ],
+};
 ---
 
-<BaseLayout title={`Mike Cousins - ${project.data.meta.company}`}>
+<BaseLayout
+  title={`${project.data.meta.company} — ${project.data.meta.role}`}
+  description={description}
+  jsonLd={jsonLd}
+>
   <ProjectLayout article={project.data}>
     <Content />
   </ProjectLayout>
