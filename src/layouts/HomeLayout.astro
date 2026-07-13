@@ -1,15 +1,7 @@
 ---
 import '../styles/global.css';
-
-interface Props {
-  title: string;
-  description?: string;
-}
-
-const {
-  title,
-  description = 'Mike Cousins. Architect, developer, fractional CTO. Calgary.',
-} = Astro.props;
+import SeoHead from '../components/SeoHead.astro';
+import { personJsonLd, websiteJsonLd } from '../lib/seo';
 ---
 
 <!doctype html>
@@ -17,8 +9,7 @@ const {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>{title}</title>
-    <meta name="description" content={description} />
+    <SeoHead jsonLd={[personJsonLd, websiteJsonLd]} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="alternate icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />

@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import StyledLink from '../components/StyledLink.astro';
+import { PERSON_ID } from '../lib/seo';
 
 const services = [
   {
@@ -26,7 +27,24 @@ const services = [
 ];
 ---
 
-<BaseLayout title="Services — Mike Cousins">
+<BaseLayout
+  title="Services"
+  description="Work with Mike Cousins as a technical co-founder, fractional CTO, software developer, or technical consultant. 20+ years of experience, based in Calgary."
+  jsonLd={{
+    '@type': 'Service',
+    serviceType: 'Software consulting',
+    provider: { '@id': PERSON_ID },
+    areaServed: 'Calgary, Alberta, Canada',
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Services',
+      itemListElement: services.map((s) => ({
+        '@type': 'Offer',
+        itemOffered: { '@type': 'Service', name: s.title, description: s.body },
+      })),
+    },
+  }}
+>
   <section class="mx-auto max-w-6xl px-4 py-12 sm:px-8 sm:py-20 lg:px-12">
     <p class="small-caps mb-6 text-[10px] text-flare-400 sm:text-xs">
       <span class="text-flare-500">◊</span> Services
