@@ -1,7 +1,6 @@
 ---
-interface Props {
+interface Props extends astroHTML.JSX.SVGAttributes {
   className?: string;
-  [key: string]: any;
 }
 
 const { className, ...props } = Astro.props;
